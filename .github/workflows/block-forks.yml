@@ -1,0 +1,27 @@
+name: Block Unauthorized Forks
+
+on:
+  pull_request_target:
+    types:
+      - opened
+      - reopened
+
+jobs:
+  block-forks:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check if PR is from a fork
+        id: check
+        run: |
+          echo "from_fork=${{ github.event.pull_request.head.repo.fork }}" >> $GITHUB_OUTPUT
+
+      - name: Close PR if from fork
+        if: steps.check.outputs.from_fork == 'true'
+        run: |
+          echo "🚫 Unauthorized fork PR detected. Closing."
+          gh pr close "${{ github.event.pull_request.number }}" --repo "${{ github.repository }}" --comment "This repository does not allow forks or external pull requests. This PR has been automatically closed."
+
+      - name: Fail workflow to prevent merge
+        if: steps.check.outputs.from_fork == 'true'
+        run: exit 1
