@@ -1,0 +1,7 @@
+# Hide language breakdown on GitHub
+* linguist-detectable=false
+* linguist-documentation=false
+* linguist-generated=true
+
+# Prevent GitHub from analyzing code for stats
+* linguist-vendored
