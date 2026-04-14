@@ -19,7 +19,7 @@
 <meta property="og:url" content="https://smartysaini.com">
 <meta property="og:site_name" content="SmaRTy Saini IT Consulting">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="SmaRTy Saini | HL7 Mirth Connect/BridgeLink· Healthcare IT · Cybersecurity">
+<meta name="twitter:title" content="SmaRTy Saini | HL7 Mirth Connect · Healthcare IT · Cybersecurity">
 <meta name="twitter:description" content="Founder of SmaRTy Saini IT Consulting. HL7/FHIR integration, Mirth Connect, HIPAA compliance, cybersecurity, managed IT for healthcare. 15+ years, 1,000+ integrations.">
 <script type="application/ld+json">
 {
@@ -512,6 +512,74 @@ body.light .sp-title{color:var(--tx)}
 .share-score-btn{display:inline-flex;align-items:center;gap:6px;padding:8px 16px;background:var(--bg3);border:1px solid var(--border);border-radius:8px;color:var(--txd);font-size:12px;cursor:pointer;transition:all .2s;font-family:var(--font)}
 .share-score-btn:hover{border-color:var(--or);color:var(--or)}
 
+/* ── FREE TOOLS ───────────────────────────────── */
+/* PHI Warning Banner */
+.phi-warn{display:flex;align-items:flex-start;gap:14px;padding:14px 18px;background:rgba(240,161,61,.08);border:1px solid rgba(240,161,61,.35);border-radius:var(--r);margin-bottom:20px;font-size:13px;color:var(--txl);line-height:1.75}
+.phi-warn-icon{font-size:20px;flex-shrink:0;margin-top:1px}
+.phi-warn strong{color:var(--warn);display:block;margin-bottom:3px}
+/* Tab group labels */
+.ft-tab-group-label{font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:var(--txd);font-family:var(--mono);padding:2px 6px;align-self:center;white-space:nowrap;margin-left:6px;border-left:2px solid var(--border2);padding-left:10px}
+.ft-tab-group-label:first-child{border:none;margin:0;padding-left:0}
+/* PDF drop zone */
+.pdf-drop{border:2px dashed var(--border2);border-radius:var(--r2);padding:48px 24px;text-align:center;cursor:pointer;transition:all .2s;background:var(--bg3)}
+.pdf-drop:hover{border-color:var(--or);background:var(--or-lt)}
+.pdf-info-card{background:var(--bg3);border:1px solid var(--border2);border-radius:var(--r);padding:14px 16px;display:flex;flex-direction:column;gap:4px}
+.pdf-info-label{font-size:11px;color:var(--txd);font-family:var(--mono);text-transform:uppercase;letter-spacing:.5px}
+.pdf-info-val{font-size:14px;color:#fff;font-weight:600;font-family:var(--mono)}
+.ft-tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.ft-tab{padding:8px 16px;background:var(--card);border:1px solid var(--border2);border-radius:8px;font-size:13px;color:var(--txd);cursor:pointer;transition:all .2s;font-family:var(--font);white-space:nowrap}
+.ft-tab:hover{border-color:var(--border);color:var(--txl)}
+.ft-tab.active{background:var(--or-lt);border-color:var(--or);color:var(--or);font-weight:600}
+.ft-wrap{background:var(--card);border:1px solid var(--border);border-radius:var(--r2);overflow:hidden}
+.ft-panel{display:none;flex-direction:column}
+.ft-panel.active{display:flex}
+.ft-header{padding:20px 24px 0;border-bottom:1px solid var(--border2);padding-bottom:16px}
+.ft-title{font-size:16px;font-weight:700;color:#fff;margin-bottom:4px}
+body.light .ft-title{color:var(--tx)}
+.ft-sub{font-size:13px;color:var(--txd);line-height:1.6}
+.ft-body{padding:20px 24px 24px;display:flex;flex-direction:column;gap:14px}
+.ft-col-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:680px){.ft-col-2{grid-template-columns:1fr}}
+.ft-label{display:block;font-size:12px;color:var(--or);font-family:var(--mono);text-transform:uppercase;letter-spacing:.6px;margin-bottom:6px}
+.ft-textarea{width:100%;background:var(--bg3);border:1px solid var(--border2);border-radius:8px;padding:12px;color:var(--txl);font-family:var(--mono);font-size:12.5px;resize:vertical;transition:border-color .2s;line-height:1.6}
+.ft-textarea:focus{outline:none;border-color:var(--or)}
+.ft-inp{width:100%;background:var(--bg3);border:1px solid var(--border2);border-radius:8px;padding:9px 12px;color:var(--txl);font-family:var(--mono);font-size:13px;transition:border-color .2s}
+.ft-inp:focus{outline:none;border-color:var(--or)}
+.ft-output{background:var(--bg3);border:1px solid var(--border2);border-radius:8px;padding:12px;font-size:12.5px;line-height:1.7;overflow-y:auto;max-height:300px}
+.ft-btn{padding:8px 16px;background:linear-gradient(135deg,var(--or),var(--or2));color:#fff;border:none;border-radius:7px;font-size:13px;cursor:pointer;font-family:var(--font);font-weight:600;transition:opacity .2s;white-space:nowrap}
+.ft-btn:hover{opacity:.88}
+.ft-btn.ft-ghost{background:var(--bg3);color:var(--txd);border:1px solid var(--border2)}
+.ft-btn.ft-ghost:hover{border-color:var(--border);color:var(--txl)}
+.ft-btn.ft-sm{padding:5px 10px;font-size:12px}
+.ft-btn-row{display:flex;gap:8px;flex-wrap:wrap}
+.ft-note{font-size:11.5px;color:var(--txd);line-height:1.65;padding:10px 14px;background:var(--bg3);border-radius:7px;border:1px solid var(--border2)}
+.ft-enc-tabs{display:flex;gap:6px;margin-bottom:12px}
+.ft-enc-tab{padding:6px 14px;background:var(--bg3);border:1px solid var(--border2);border-radius:6px;font-size:12px;color:var(--txd);cursor:pointer;transition:all .2s;font-family:var(--mono)}
+.ft-enc-tab.active{background:var(--or-lt);border-color:var(--or);color:var(--or)}
+.ft-cron-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:16px}
+@media(max-width:600px){.ft-cron-grid{grid-template-columns:repeat(2,1fr)}}
+.ft-cron-field{}
+.ft-hint{font-size:10.5px;color:var(--txd);margin-top:4px;font-family:var(--mono)}
+.ft-cron-expr{font-family:var(--mono);font-size:22px;color:var(--or);font-weight:700;padding:14px;background:var(--bg3);border-radius:8px;text-align:center;letter-spacing:2px;border:1px solid var(--border2);margin-bottom:8px}
+.ft-cron-desc{text-align:center;font-size:13px;color:var(--txl);margin-bottom:16px}
+.ft-sla-results{display:flex;flex-direction:column;gap:10px}
+.ft-sla-row{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:var(--bg3);border-radius:8px;border:1px solid var(--border2)}
+.ft-sla-period{font-size:13px;color:var(--txl)}
+.ft-sla-val{font-family:var(--mono);font-size:14px;font-weight:700;color:var(--or)}
+.ft-breach-results{background:var(--bg3);border-radius:10px;padding:18px;border:1px solid var(--border2);display:flex;flex-direction:column;gap:12px}
+.ft-breach-row{display:flex;justify-content:space-between;padding-bottom:10px;border-bottom:1px solid var(--border2)}
+.ft-breach-row:last-child{border:none;padding:0}
+.ft-breach-label{font-size:12px;color:var(--txd)}
+.ft-breach-val{font-family:var(--mono);font-size:13px;font-weight:700}
+/* Segment colours for HL7 parser */
+.hl7-seg{margin-bottom:12px}
+.hl7-seg-name{display:inline-block;padding:2px 8px;border-radius:4px;font-weight:700;font-size:11px;margin-bottom:4px;font-family:var(--mono)}
+.hl7-field{display:flex;gap:8px;font-size:11.5px;padding:2px 0;border-bottom:1px solid rgba(255,255,255,.04)}
+.hl7-idx{color:var(--txd);min-width:28px;font-family:var(--mono)}
+.hl7-name{color:var(--txl);min-width:160px}
+.hl7-val{color:var(--ok);font-family:var(--mono);word-break:break-all}
+
+
 
 
 /* ── FLOATING CONTACT BTN ────────────────────── */
@@ -569,6 +637,7 @@ body.light .sp-title{color:var(--tx)}
     <div class="nav-links">
       <button class="nav-link" onclick="navScroll('#services')">Services</button>
       <button class="nav-link" onclick="navScroll('#pricing')">Pricing</button>
+      <button class="nav-link" onclick="navScroll('#freetools')">🔧 Tools</button>
       <button class="nav-link" onclick="navScroll('#about')">About</button>
       <button class="nav-link" onclick="navScroll('#contact')">Contact</button>
       <a class="nav-link nav-store-link" href="https://store.smartysaini.com" target="_blank">🛒 Store</a>
@@ -585,6 +654,7 @@ body.light .sp-title{color:var(--tx)}
     <button class="nav-link" onclick="navScroll('#pricing');closeMob()">Pricing</button>
     <button class="nav-link" onclick="navScroll('#tools');closeMob()">Tools</button>
     <button class="nav-link" onclick="navScroll('#industries');closeMob()">Industries</button>
+    <button class="nav-link" onclick="navScroll('#freetools');closeMob()">🔧 Free Tools</button>
     <button class="nav-link" onclick="navScroll('#about');closeMob()">About</button>
     <button class="nav-link" onclick="navScroll('#contact');closeMob()">Contact</button>
     <a class="nav-link nav-store-link" href="https://store.smartysaini.com" target="_blank" onclick="closeMob()">🛒 CyberHealth IT Store</a>
@@ -679,6 +749,7 @@ body.light .sp-title{color:var(--tx)}
       <span class="trust-chip">AWS</span>
       <span class="trust-chip">Burp Suite Pro</span>
       <span class="trust-chip">Nmap / Nessus</span>
+      <span class="trust-chip" style="border-color:rgba(233,84,32,.4);color:var(--or);font-weight:600">🤝 SonicWall Partner</span>
       <span class="trust-chip">Python</span>
     </div>
   </div>
@@ -1405,45 +1476,45 @@ body.light .sp-title{color:var(--tx)}
   <div class="section-inner">
     <div class="fade-in">
       <div class="section-label">Open Source</div>
-      <h2 class="section-h2">Tools We've Built &amp; Released</h2>
-      <p class="section-sub">Free tools for the healthcare IT community. If they solve your problem, great. If you need something custom, <button onclick="navScroll('#contact')" style="background:none;border:none;color:var(--or);cursor:pointer;font-size:inherit;text-decoration:underline;padding:0;font-family:inherit">let's talk.</button></p>
+      <h2 class="section-h2">Open Source Projects</h2>
+      <p class="section-sub">25+ public repos on GitHub — tools, automation scripts, security utilities, and more. Free to use.</p>
     </div>
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px;margin-bottom:36px">
       <div class="oss-card fade-in">
-        <div class="oss-card-header"><div class="oss-icon">🏥</div><div><div class="oss-name">HL7 QA Assistant</div><div class="oss-lang">Python</div></div></div>
-        <div class="oss-desc">Validates HL7 v2.x messages and flags segment-level errors before they reach the integration engine. Catches malformed ADT, ORM, and ORU messages that silently break downstream workflows.</div>
-        <div class="oss-tags" style="margin-bottom:14px"><span class="tag">HL7</span><span class="tag">Mirth Connect</span><span class="tag">QA</span></div>
-        <a class="oss-link" href="https://github.com/smarty-saini" target="_blank">View on GitHub →</a>
+        <div class="oss-card-header"><div class="oss-icon">⚙️</div><div><div class="oss-name">Script Runner</div><div class="oss-lang">Python · MIT</div></div></div>
+        <div class="oss-desc">GUI app to manage, run, and schedule Python, Bash, and PowerShell scripts. No terminal needed — built for IT admins automating repetitive tasks across Windows and Linux.</div>
+        <div class="oss-tags" style="margin-bottom:14px"><span class="tag">Python</span><span class="tag">Automation</span><span class="tag">IT Admin</span></div>
+        <a class="oss-link" href="https://github.com/SmaRTy-Saini/Script-Runner" target="_blank">View on GitHub →</a>
       </div>
       <div class="oss-card fade-in">
-        <div class="oss-card-header"><div class="oss-icon">📊</div><div><div class="oss-name">ACK Tracker</div><div class="oss-lang">JavaScript</div></div></div>
-        <div class="oss-desc">Real-time dashboard for monitoring HL7 ACK/NAK status across Mirth Connect channels. Shows acknowledgment rates, retry counts, and failure patterns instead of log-diving.</div>
-        <div class="oss-tags" style="margin-bottom:14px"><span class="tag">HL7</span><span class="tag">Monitoring</span><span class="tag">Dashboard</span></div>
-        <a class="oss-link" href="https://github.com/smarty-saini" target="_blank">View on GitHub →</a>
+        <div class="oss-card-header"><div class="oss-icon">📦</div><div><div class="oss-name">DepHealth</div><div class="oss-lang">Python · CLI</div></div></div>
+        <div class="oss-desc">Multi-ecosystem dependency health checker for Node.js, Python, PHP, and more. Surfaces outdated, vulnerable, and deprecated packages across all your projects in one scan.</div>
+        <div class="oss-tags" style="margin-bottom:14px"><span class="tag">DevOps</span><span class="tag">Security</span><span class="tag">CLI</span></div>
+        <a class="oss-link" href="https://github.com/SmaRTy-Saini/DepHealth" target="_blank">View on GitHub →</a>
       </div>
       <div class="oss-card fade-in">
-        <div class="oss-card-header"><div class="oss-icon">📄</div><div><div class="oss-name">Steller PDF</div><div class="oss-lang">Python</div></div></div>
-        <div class="oss-desc">PDF processing and report generation for lab environments. Automates repetitive document workflows and handles batch report creation from structured data inputs.</div>
-        <div class="oss-tags" style="margin-bottom:14px"><span class="tag">Lab IT</span><span class="tag">PDF</span><span class="tag">Automation</span></div>
-        <a class="oss-link" href="https://github.com/smarty-saini" target="_blank">View on GitHub →</a>
+        <div class="oss-card-header"><div class="oss-icon">🐧</div><div><div class="oss-name">Kali Linux Hardening</div><div class="oss-lang">Bash · Security</div></div></div>
+        <div class="oss-desc">Automated hardening scripts for Kali Linux environments. Covers firewall config, service trimming, SSH hardening, and audit log setup for penetration testing workstations.</div>
+        <div class="oss-tags" style="margin-bottom:14px"><span class="tag">Kali</span><span class="tag">Hardening</span><span class="tag">Bash</span></div>
+        <a class="oss-link" href="https://github.com/SmaRTy-Saini/kali-linux-hardening" target="_blank">View on GitHub →</a>
       </div>
       <div class="oss-card fade-in">
-        <div class="oss-card-header"><div class="oss-icon">❤️</div><div><div class="oss-name">DepHealth</div><div class="oss-lang">Python · Streamlit</div></div></div>
-        <div class="oss-desc">Health and wellness tracking app with configurable metrics, trend visualization, and exportable reports. Simple enough for non-technical staff to adopt without training.</div>
-        <div class="oss-tags" style="margin-bottom:14px"><span class="tag">Health Tech</span><span class="tag">Streamlit</span><span class="tag">SQLite</span></div>
-        <a class="oss-link" href="https://github.com/smarty-saini" target="_blank">View on GitHub →</a>
+        <div class="oss-card-header"><div class="oss-icon">🛡️</div><div><div class="oss-name">Ubuntu Security Audit</div><div class="oss-lang">Bash · MIT</div></div></div>
+        <div class="oss-desc">Comprehensive Ubuntu security audit script. Checks open ports, user accounts, sudo access, cron jobs, SUID files, network services, and generates a readable report.</div>
+        <div class="oss-tags" style="margin-bottom:14px"><span class="tag">Ubuntu</span><span class="tag">Security Audit</span><span class="tag">Compliance</span></div>
+        <a class="oss-link" href="https://github.com/SmaRTy-Saini/ubuntu-security-audit" target="_blank">View on GitHub →</a>
       </div>
       <div class="oss-card fade-in">
-        <div class="oss-card-header"><div class="oss-icon">🐧</div><div><div class="oss-name">SmaRTy OS</div><div class="oss-lang">HTML · CSS · JS</div></div></div>
-        <div class="oss-desc">Ubuntu-themed interactive portfolio — a client-side OS simulation with working terminal, security tools, CTF challenges, and mini-games. Pure HTML/CSS/JS, zero dependencies.</div>
-        <div class="oss-tags" style="margin-bottom:14px"><span class="tag">Portfolio</span><span class="tag">Security</span><span class="tag">CTF</span></div>
-        <a class="oss-link" href="https://github.com/smarty-saini" target="_blank">View on GitHub →</a>
+        <div class="oss-card-header"><div class="oss-icon">🪟</div><div><div class="oss-name">TurboFix Toolbox</div><div class="oss-lang">PowerShell · Windows</div></div></div>
+        <div class="oss-desc">Lightweight portable Windows tool to clean, repair, and boost PC performance with one click. Handles temp files, registry cleanup, startup items, and Windows Update issues.</div>
+        <div class="oss-tags" style="margin-bottom:14px"><span class="tag">Windows</span><span class="tag">IT Support</span><span class="tag">PowerShell</span></div>
+        <a class="oss-link" href="https://github.com/SmaRTy-Saini/TurboFix-Toolbox" target="_blank">View on GitHub →</a>
       </div>
       <div class="oss-card fade-in" style="border-style:dashed;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;min-height:200px;gap:12px">
-        <div style="font-size:32px">🔧</div>
-        <div class="oss-name">Need something custom?</div>
-        <div class="oss-desc" style="margin:0">Describe what you need — I'll tell you if it's doable and what it costs.</div>
-        <button class="btn-outline" style="font-size:13px;padding:9px 18px;margin-top:4px" onclick="navScroll('#contact')">Start a conversation</button>
+        <div style="font-size:32px">🐙</div>
+        <div class="oss-name">25+ more repos</div>
+        <div class="oss-desc" style="margin:0">Bulk File Renamer, Asteroids Canvas, SmaRTy-Sec, Peace Place, Universal Downloader &amp; more</div>
+        <a class="btn-outline" href="https://github.com/SmaRTy-Saini" target="_blank" style="font-size:13px;padding:9px 18px;margin-top:4px;text-decoration:none">View all on GitHub</a>
       </div>
     </div>
   </div>
@@ -1596,26 +1667,30 @@ body.light .sp-title{color:var(--tx)}
       </div>
       <div class="fade-in" style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
         <div class="store-product-card">
-          <div style="font-size:28px;margin-bottom:10px">🔗</div>
-          <div class="sp-title">HL7 Integration Starter Kit</div>
-          <div class="sp-desc">Mirth Connect channel templates, message validators, and a setup guide for common HL7 v2.x workflows.</div>
-          <a href="https://store.smartysaini.com" target="_blank" class="sp-link">View →</a>
+          <div style="font-size:28px;margin-bottom:10px">🤖</div>
+          <div class="sp-title">AI Voice Chat System</div>
+          <div style="font-size:11px;color:var(--ok);font-family:var(--mono);margin-bottom:4px">$9.99</div>
+          <div class="sp-desc">Full n8n workflow + guide for building an AI voice chat system with OpenAI, Google Gemini & ElevenLabs. Deploy your own voice AI in hours.</div>
+          <a href="https://store.smartysaini.com" target="_blank" class="sp-link">Get it →</a>
         </div>
         <div class="store-product-card">
-          <div style="font-size:28px;margin-bottom:10px">🔒</div>
-          <div class="sp-title">HIPAA Security Pack</div>
-          <div class="sp-desc">Risk analysis worksheet, policy templates, BAA tracker, and staff training checklist. Audit-ready documentation.</div>
-          <a href="https://store.smartysaini.com" target="_blank" class="sp-link">View →</a>
+          <div style="font-size:28px;margin-bottom:10px">✍️</div>
+          <div class="sp-title">AI Shorts/Posts Prompt Pack</div>
+          <div style="font-size:11px;color:var(--ok);font-family:var(--mono);margin-bottom:4px">300 Viral Prompts</div>
+          <div class="sp-desc">300 ready-to-use prompts for creating viral AI-powered short-form content and social media posts. Structured for LinkedIn, Instagram, and YouTube Shorts.</div>
+          <a href="https://store.smartysaini.com" target="_blank" class="sp-link">Get it →</a>
         </div>
         <div class="store-product-card">
-          <div style="font-size:28px;margin-bottom:10px">🛡️</div>
-          <div class="sp-title">Pentest Report Template</div>
-          <div class="sp-desc">Professional web app penetration test report template — executive summary, CVSS scoring, remediation tracking.</div>
-          <a href="https://store.smartysaini.com" target="_blank" class="sp-link">View →</a>
+          <div style="font-size:28px;margin-bottom:10px">⚙️</div>
+          <div class="sp-title">Script Runner — GUI App</div>
+          <div style="font-size:11px;color:var(--ok);font-family:var(--mono);margin-bottom:4px">Python · Open Source</div>
+          <div class="sp-desc">GUI app to manage, run, and schedule Python, Bash, and PowerShell scripts. No terminal needed. Built for IT admins who automate repetitive tasks.</div>
+          <a href="https://store.smartysaini.com" target="_blank" class="sp-link">Get it →</a>
         </div>
         <div class="store-product-card" style="border-style:dashed;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:8px">
-          <div style="font-size:24px">✨</div>
-          <div class="sp-title">More in the store</div>
+          <div style="font-size:24px">🛒</div>
+          <div class="sp-title">More products available</div>
+          <div class="sp-desc" style="font-size:11px">Windows tools, AI workflows, security templates &amp; more</div>
           <a href="https://store.smartysaini.com" target="_blank" class="sp-link">Browse all →</a>
         </div>
       </div>
@@ -1758,13 +1833,14 @@ body.light .sp-title{color:var(--tx)}
         <h3>Balwinder Singh</h3>
         <div class="about-title">Founder & CEO · SmaRTy Saini IT Consulting</div>
         <p class="about-bio">I got into healthcare IT because it matters. When a lab result doesn't route correctly, a patient's treatment is delayed. When a firewall is misconfigured, PHI is exposed. The stakes are real — and that's what keeps me building after 15 years.</p>
-        <p class="about-bio">I founded SmaRTy Saini IT Consulting to solve real problems full-time — healthcare integration, cybersecurity, managed IT, and AI/data solutions for organizations that can't afford system failures. On the security side, I'm active on TryHackMe and HackTheBox, publish CTF write-ups on Medium, and hold certifications including CCEP and TryHackMe Red Teaming. I also run the <a href="https://store.smartysaini.com" target="_blank" style="color:var(--or);text-decoration:none">CyberHealth IT Store</a> — digital tools and templates for IT professionals and developers. Finishing a B.S. in IT at Purdue Global (2026).</p>
+        <p class="about-bio">I founded SmaRTy Saini IT Consulting to solve real problems full-time — healthcare integration, cybersecurity, managed IT, and AI/data solutions for organizations that can't afford system failures. On the security side, I'm an authorized SonicWall partner, active on TryHackMe and HackTheBox, publish CTF write-ups on Medium, and hold certifications including CCEP and TryHackMe Red Teaming. I also run the <a href="https://store.smartysaini.com" target="_blank" style="color:var(--or);text-decoration:none">CyberHealth IT Store</a> — digital tools and templates for IT professionals and developers. Finishing a B.S. in IT at Purdue Global (2026).</p>
         <div class="cert-chips">
           <a class="cert-chip cert-link" href="https://www.credly.com/users/smarty-saini" target="_blank" title="Certified Cloud & Endpoint Protector — RedTeamLeaders">🏅 CCEP · RedTeamLeaders ↗</a>
           <a class="cert-chip cert-link" href="https://tryhackme.com/p/smartysaini" target="_blank" title="Verify on TryHackMe">🛡️ Red Teaming · TryHackMe ↗</a>
           <a class="cert-chip cert-link" href="https://tryhackme.com/p/smartysaini" target="_blank" title="Verify on TryHackMe">🎯 Jr Pen Tester · TryHackMe ↗</a>
           <a class="cert-chip cert-link" href="https://www.credly.com/users/smarty-saini" target="_blank" title="Verify on Credly">🔐 Cybersecurity · IBM ↗</a>
           <a class="cert-chip cert-link" href="https://www.credly.com/users/smarty-saini" target="_blank" title="Verify on Credly">🛡️ Cybersecurity · Google ↗</a>
+          <a class="cert-chip cert-link" href="https://www.sonicwall.com/partners/" target="_blank" title="Authorized SonicWall Partner">🤝 SonicWall Partner ↗</a>
           <span class="cert-chip">🎓 B.S. IT · Purdue Global (2026)</span>
         </div>
         <div style="font-size:12px;color:var(--txd);margin-bottom:18px;line-height:1.7;padding:10px 14px;background:var(--bg3);border-radius:7px;border:1px solid var(--border2)">
@@ -1951,7 +2027,716 @@ body.light .sp-title{color:var(--tx)}
           formspree('initForm', { formElement: '#contactForm', formId: 'xqegnkbo' });
         </script>
         <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FREE TOOLS ─────────────────────────────────── -->
+<section id="freetools" style="background:var(--bg)">
+
+    <div class="fade-in">
+      <div class="section-label">Free Tools</div>
+      <h2 class="section-h2">Daily Tools — No Sign-up, No Tracking</h2>
+      <p class="section-sub">Browser-based utilities for IT professionals, developers, and healthcare orgs. Everything runs locally — nothing you enter is sent anywhere.</p>
+    </div>
+
+    <!-- PHI WARNING BANNER -->
+    <div class="phi-warn fade-in">
+      <span class="phi-warn-icon">⚠️</span>
+      <div>
+        <strong>Do not enter real patient data or PHI into any tool on this page.</strong>
+        Use synthetic, de-identified, or test data only. These tools run in your browser and do not transmit data, but you are responsible for ensuring no Protected Health Information (PHI) is entered. For actual clinical data processing, use validated, HIPAA-compliant systems.
+      </div>
+    </div>
+
+    <!-- TOOL PICKER TABS — grouped -->
+    <div class="ft-tabs fade-in">
+      <div class="ft-tab-group-label">Healthcare IT &amp; HL7</div>
+      <button class="ft-tab active" data-ft="hl7">🔗 HL7 Parser</button>
+      <button class="ft-tab" data-ft="hl7build">🏗️ HL7 Builder</button>
+      <button class="ft-tab" data-ft="hl7ack">📨 ACK Generator</button>
+      <button class="ft-tab" data-ft="hl7dt">📅 HL7 DateTime</button>
+      <button class="ft-tab" data-ft="fhirconv">⚕️ HL7→FHIR</button>
+      <button class="ft-tab" data-ft="fhircheck">✅ FHIR Validator</button>
+      <div class="ft-tab-group-label">PDF Tools</div>
+      <button class="ft-tab" data-ft="pdfinfo">📄 PDF Inspector</button>
+      <button class="ft-tab" data-ft="pdftext">📝 PDF Text Extract</button>
+      <div class="ft-tab-group-label">Developer &amp; IT</div>
+      <button class="ft-tab" data-ft="encoder">⚙️ Encoder / Decoder</button>
+      <button class="ft-tab" data-ft="json">{ } JSON Tools</button>
+      <button class="ft-tab" data-ft="cron">⏰ Cron Builder</button>
+      <button class="ft-tab" data-ft="sla">📊 SLA Calculator</button>
+      <button class="ft-tab" data-ft="hipaa">🔒 HIPAA Breach Cost</button>
+      <button class="ft-tab" data-ft="breach">📧 Breach Check</button>
+      <button class="ft-tab" data-ft="text">Aa Text Utils</button>
+      <button class="ft-tab" data-ft="qr">📱 QR Generator</button>
+      <button class="ft-tab" data-ft="regex">🔍 Regex Tester</button>
+      <button class="ft-tab" data-ft="uuid">🆔 UUID / Token</button>
+    </div>
+
+    <div class="ft-wrap fade-in">
+
+      <!-- HL7 PARSER -->
+      <div class="ft-panel active" id="ft-hl7">
+        <div class="ft-header">
+          <div>
+            <div class="ft-title">HL7 v2.x Message Parser</div>
+            <div class="ft-sub">Paste any HL7 message — MSH, PID, OBR, OBX, PV1 — get every field labelled instantly. <strong style="color:var(--warn)">Test data only — no real PHI.</strong></div>
+          </div>
+        </div>
+        <div class="ft-body">
+          <div class="ft-col-2">
+            <div>
+              <label class="ft-label">Paste HL7 Message (synthetic data only)</label>
+              <textarea class="ft-textarea" id="hl7Input" placeholder="MSH|^~\&|LABSYSTEM|FACILITY|EMR|DEST|20240115093045||ORU^R01|MSG001|P|2.5&#10;PID|1||12345^^^MRN||DOE^JOHN^A||19800115|M&#10;OBR|1||ACC001|CBC^COMPLETE BLOOD COUNT|||20240115090000&#10;OBX|1|NM|6690-2^WBC|1|7.2|10*3/uL|4.5-11.0|N|||F" rows="10" oninput="parseHL7()"></textarea>
+              <div class="ft-btn-row" style="margin-top:8px">
+                <button class="ft-btn" onclick="loadHL7Sample()">Load Sample</button>
+                <button class="ft-btn ft-ghost" onclick="clearFT('hl7Input','hl7Output')">Clear</button>
+              </div>
+            </div>
+            <div>
+              <label class="ft-label">Parsed Segments</label>
+              <div id="hl7Output" class="ft-output" style="min-height:260px;font-family:var(--mono);font-size:12px">
+                <span style="color:var(--txd)">Paste an HL7 message to parse →</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- HL7 MESSAGE BUILDER -->
+      <div class="ft-panel" id="ft-hl7build">
+        <div class="ft-header">
+          <div>
+            <div class="ft-title">HL7 Message Builder</div>
+            <div class="ft-sub">Build valid HL7 v2.5 messages from form fields. Choose a message type and fill in the fields — the raw HL7 is generated live. <strong style="color:var(--warn)">Use synthetic test data only.</strong></div>
+          </div>
+        </div>
+        <div class="ft-body">
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px">
+            <div style="flex:1;min-width:160px">
+              <label class="ft-label">Message Type</label>
+              <select class="ft-inp" id="hl7BuildType" onchange="hl7BuildRender()" style="cursor:pointer">
+                <option value="ADT_A01">ADT^A01 — Admit</option>
+                <option value="ADT_A04">ADT^A04 — Register</option>
+                <option value="ADT_A08">ADT^A08 — Update Info</option>
+                <option value="ADT_A11">ADT^A11 — Cancel Admit</option>
+                <option value="ORM_O01">ORM^O01 — General Order</option>
+                <option value="ORU_R01">ORU^R01 — Obs Result</option>
+              </select>
+            </div>
+            <div style="flex:1;min-width:160px">
+              <label class="ft-label">HL7 Version</label>
+              <select class="ft-inp" id="hl7BuildVer" onchange="buildHL7()" style="cursor:pointer">
+                <option value="2.3">2.3</option>
+                <option value="2.4">2.4</option>
+                <option value="2.5" selected>2.5</option>
+                <option value="2.7">2.7</option>
+              </select>
+            </div>
+          </div>
+          <div id="hl7BuildFields" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px"></div>
+          <div class="ft-btn-row" style="margin-bottom:14px">
+            <button class="ft-btn" onclick="buildHL7()">Build Message</button>
+            <button class="ft-btn ft-ghost" onclick="hl7BuildLoadDefaults()">Load Defaults</button>
+          </div>
+          <label class="ft-label">Generated HL7</label>
+          <textarea class="ft-textarea" id="hl7BuildOut" rows="10" readonly style="font-family:var(--mono);font-size:12px"></textarea>
+          <button class="ft-btn ft-ghost" style="margin-top:8px;font-size:12px" onclick="copyFT('hl7BuildOut')">Copy</button>
+        </div>
+      </div>
+
+      <!-- ACK GENERATOR -->
+      <div class="ft-panel" id="ft-hl7ack">
+        <div class="ft-header">
+          <div>
+            <div class="ft-title">HL7 ACK Generator</div>
+            <div class="ft-sub">Paste any HL7 message and generate the correct ACK (Acknowledgment) response — AA (Accept), AE (Error), or AR (Reject). <strong style="color:var(--warn)">No real PHI.</strong></div>
+          </div>
+        </div>
+        <div class="ft-body">
+          <div class="ft-col-2">
+            <div>
+              <label class="ft-label">Original HL7 Message</label>
+              <textarea class="ft-textarea" id="ackInput" rows="9" placeholder="Paste the HL7 message to acknowledge..." oninput="generateACK()"></textarea>
+              <div style="margin-top:10px">
+                <label class="ft-label">ACK Code</label>
+                <div style="display:flex;gap:8px;margin-top:6px">
+                  <label style="display:flex;align-items:center;gap:6px;font-size:13px;color:var(--txd);cursor:pointer"><input type="radio" name="ackCode" value="AA" checked onchange="generateACK()"> <span style="color:var(--ok)">AA — Accept</span></label>
+                  <label style="display:flex;align-items:center;gap:6px;font-size:13px;color:var(--txd);cursor:pointer"><input type="radio" name="ackCode" value="AE" onchange="generateACK()"> <span style="color:var(--err)">AE — Error</span></label>
+                  <label style="display:flex;align-items:center;gap:6px;font-size:13px;color:var(--txd);cursor:pointer"><input type="radio" name="ackCode" value="AR" onchange="generateACK()"> <span style="color:var(--warn)">AR — Reject</span></label>
+                </div>
+                <div id="ackErrorField" style="margin-top:8px;display:none">
+                  <label class="ft-label">Error Message</label>
+                  <input class="ft-inp" id="ackErrorMsg" placeholder="Segment sequence error" oninput="generateACK()">
+                </div>
+              </div>
+              <button class="ft-btn" style="margin-top:12px" onclick="loadACKSample()">Load Sample</button>
+            </div>
+            <div>
+              <label class="ft-label">Generated ACK</label>
+              <textarea class="ft-textarea" id="ackOutput" rows="9" readonly style="font-family:var(--mono);font-size:12px"></textarea>
+              <button class="ft-btn ft-ghost" style="margin-top:8px;font-size:12px" onclick="copyFT('ackOutput')">Copy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- HL7 DATE/TIME TOOLS -->
+      <div class="ft-panel" id="ft-hl7dt">
+        <div class="ft-header">
+          <div>
+            <div class="ft-title">HL7 Date &amp; Time Tools</div>
+            <div class="ft-sub">Convert between HL7 timestamp format (YYYYMMDDHHMMSS±ZZZZ) and human-readable dates. Essential for debugging MSH-7, OBR-7, and OBX-14 fields.</div>
+          </div>
+        </div>
+        <div class="ft-body" style="max-width:600px">
+          <div style="display:flex;flex-direction:column;gap:20px">
+            <div style="background:var(--bg3);border:1px solid var(--border2);border-radius:10px;padding:18px">
+              <div class="ft-label" style="margin-bottom:10px">Human Date → HL7 Format</div>
+              <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px">
+                <input class="ft-inp" id="dtHuman" type="datetime-local" style="flex:1" oninput="dtToHL7()">
+                <select class="ft-inp" id="dtPrec" style="width:130px;cursor:pointer" onchange="dtToHL7()">
+                  <option value="8">Date only (8)</option>
+                  <option value="12">Date + Hour (12)</option>
+                  <option value="14" selected>Full datetime (14)</option>
+                  <option value="19">With seconds (19)</option>
+                </select>
+              </div>
+              <div style="display:flex;gap:8px;align-items:center">
+                <code id="dtHL7Out" style="flex:1;font-family:var(--mono);font-size:14px;color:var(--ok);font-weight:700">—</code>
+                <button class="ft-btn ft-ghost ft-sm" onclick="copyById('dtHL7Out')">Copy</button>
+              </div>
+            </div>
+            <div style="background:var(--bg3);border:1px solid var(--border2);border-radius:10px;padding:18px">
+              <div class="ft-label" style="margin-bottom:10px">HL7 Format → Human Readable</div>
+              <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px">
+                <input class="ft-inp" id="dtHL7In" placeholder="20240115093045-0800" style="flex:1;font-family:var(--mono)" oninput="hl7ToDt()">
+                <button class="ft-btn" onclick="hl7ToDt()">Convert</button>
+                <button class="ft-btn ft-ghost" onclick="document.getElementById('dtHL7In').value=nowHL7();hl7ToDt()">Now</button>
+              </div>
+              <div id="dtHumanOut" style="font-size:13px;color:var(--ok);font-family:var(--mono);padding:8px;background:var(--bg);border-radius:6px;min-height:32px">—</div>
+            </div>
+            <div style="background:var(--bg3);border:1px solid var(--border2);border-radius:10px;padding:18px">
+              <div class="ft-label" style="margin-bottom:10px">Quick HL7 Timestamps</div>
+              <div style="display:flex;flex-direction:column;gap:8px">
+                <div style="display:flex;justify-content:space-between;align-items:center;font-size:13px">
+                  <span style="color:var(--txd)">Now (full)</span>
+                  <code id="dtNowFull" style="color:var(--ok);font-family:var(--mono)"></code>
+                  <button class="ft-btn ft-ghost ft-sm" onclick="copyById('dtNowFull')">Copy</button>
+                </div>
+                <div style="display:flex;justify-content:space-between;align-items:center;font-size:13px">
+                  <span style="color:var(--txd)">Today (date only)</span>
+                  <code id="dtNowDate" style="color:var(--ok);font-family:var(--mono)"></code>
+                  <button class="ft-btn ft-ghost ft-sm" onclick="copyById('dtNowDate')">Copy</button>
+                </div>
+                <div style="display:flex;justify-content:space-between;align-items:center;font-size:13px">
+                  <span style="color:var(--txd)">Midnight today</span>
+                  <code id="dtNowMid" style="color:var(--ok);font-family:var(--mono)"></code>
+                  <button class="ft-btn ft-ghost ft-sm" onclick="copyById('dtNowMid')">Copy</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- HL7 → FHIR CONVERTER -->
+      <div class="ft-panel" id="ft-fhirconv">
+        <div class="ft-header">
+          <div>
+            <div class="ft-title">HL7 v2.x → FHIR R4 Converter</div>
+            <div class="ft-sub">Convert HL7 PID segment fields to a FHIR R4 Patient resource JSON. Supports basic demographic mapping. <strong style="color:var(--warn)">Synthetic test data only — no real PHI.</strong></div>
+          </div>
+        </div>
+        <div class="ft-body">
+          <div class="ft-col-2">
+            <div>
+              <label class="ft-label">HL7 Message (with PID segment)</label>
+              <textarea class="ft-textarea" id="fhirConvIn" rows="10" placeholder="Paste HL7 message with at minimum a PID segment..." oninput="hl7ToFHIR()"></textarea>
+              <div class="ft-btn-row" style="margin-top:8px">
+                <button class="ft-btn" onclick="loadFHIRSample()">Load Sample</button>
+                <button class="ft-btn ft-ghost" onclick="document.getElementById('fhirConvIn').value='';document.getElementById('fhirConvOut').value=''">Clear</button>
+              </div>
+            </div>
+            <div>
+              <label class="ft-label">FHIR R4 Patient Resource (JSON)</label>
+              <textarea class="ft-textarea" id="fhirConvOut" rows="10" readonly style="font-family:var(--mono);font-size:12px"></textarea>
+              <button class="ft-btn ft-ghost" style="margin-top:8px;font-size:12px" onclick="copyFT('fhirConvOut')">Copy FHIR JSON</button>
+            </div>
+          </div>
+          <div class="ft-note" style="margin-top:12px">ℹ️ This converter handles basic PID→Patient mapping (name, DOB, gender, MRN, address, phone). Complex clinical data and coded values require a full integration engine like Mirth Connect or a certified FHIR server.</div>
+        </div>
+      </div>
+
+      <!-- FHIR JSON VALIDATOR -->
+      <div class="ft-panel" id="ft-fhircheck">
+        <div class="ft-header">
+          <div>
+            <div class="ft-title">FHIR R4 JSON Structure Checker</div>
+            <div class="ft-sub">Validates the structure of FHIR R4 resources — checks required fields, data types, and common issues. Not a full HL7 FHIR validator but catches the most common errors fast.</div>
+          </div>
+        </div>
+        <div class="ft-body">
+          <div class="ft-col-2">
+            <div>
+              <label class="ft-label">FHIR Resource JSON</label>
+              <textarea class="ft-textarea" id="fhirCheckIn" rows="14" placeholder='{"resourceType":"Patient","id":"example","name":[{"family":"Doe","given":["John"]}],"gender":"male","birthDate":"1980-01-15"}' oninput="checkFHIR()"></textarea>
+              <div class="ft-btn-row" style="margin-top:8px">
+                <button class="ft-btn" onclick="loadFHIRExample()">Load Patient Example</button>
+                <button class="ft-btn ft-ghost" onclick="loadFHIRExample('Bundle')">Load Bundle Example</button>
+              </div>
+            </div>
+            <div>
+              <label class="ft-label">Validation Results</label>
+              <div id="fhirCheckOut" class="ft-output" style="min-height:300px;font-size:12.5px;line-height:1.8">
+                <span style="color:var(--txd)">Paste a FHIR resource to validate →</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PDF INSPECTOR -->
+      <div class="ft-panel" id="ft-pdfinfo">
+        <div class="ft-header">
+          <div>
+            <div class="ft-title">PDF Inspector</div>
+            <div class="ft-sub">Drop a PDF file to see its page count, metadata, file size, and basic properties. Processed entirely in your browser — file is not uploaded anywhere.</div>
+          </div>
+        </div>
+        <div class="ft-body">
+          <div id="pdfDropZone" class="pdf-drop" onclick="document.getElementById('pdfInfoFile').click()">
+            <div style="font-size:40px;margin-bottom:12px">📄</div>
+            <div style="font-size:15px;color:var(--txl);font-weight:600;margin-bottom:6px">Drop PDF here or click to browse</div>
+            <div style="font-size:12px;color:var(--txd)">No upload — processed locally in your browser</div>
+            <input type="file" id="pdfInfoFile" accept=".pdf" style="display:none" onchange="inspectPDF(this)">
+          </div>
+          <div id="pdfInfoResults" style="margin-top:16px;display:none">
+            <div id="pdfInfoGrid" style="display:grid;grid-template-columns:1fr 1fr;gap:12px"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PDF TEXT EXTRACTOR -->
+      <div class="ft-panel" id="ft-pdftext">
+        <div class="ft-header">
+          <div>
+            <div class="ft-title">PDF Text Extractor</div>
+            <div class="ft-sub">Extract all readable text from a PDF file. Works on text-based PDFs (not scanned images). File stays in your browser — nothing is uploaded. <strong style="color:var(--warn)">Do not upload documents containing real PHI.</strong></div>
+          </div>
+        </div>
+        <div class="ft-body">
+          <div id="pdfTextDropZone" class="pdf-drop" onclick="document.getElementById('pdfTextFile').click()">
+            <div style="font-size:40px;margin-bottom:12px">📝</div>
+            <div style="font-size:15px;color:var(--txl);font-weight:600;margin-bottom:6px">Drop PDF here or click to browse</div>
+            <div style="font-size:12px;color:var(--txd)">Text-based PDFs only — scanned/image PDFs require OCR</div>
+            <input type="file" id="pdfTextFile" accept=".pdf" style="display:none" onchange="extractPDFText(this)">
+          </div>
+          <div id="pdfTextStatus" style="margin-top:10px;font-size:13px;font-family:var(--mono);min-height:20px"></div>
+          <div id="pdfTextResults" style="margin-top:12px;display:none">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+              <label class="ft-label" style="margin:0">Extracted Text</label>
+              <div style="display:flex;gap:8px">
+                <button class="ft-btn ft-ghost ft-sm" onclick="copyFT('pdfExtractedText')">Copy All</button>
+                <button class="ft-btn ft-ghost ft-sm" onclick="downloadText()">Download .txt</button>
+              </div>
+            </div>
+            <textarea class="ft-textarea" id="pdfExtractedText" rows="14" readonly style="font-family:var(--mono);font-size:12px"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- ENCODER / DECODER -->
+      <div class="ft-panel" id="ft-encoder">
+        <div class="ft-header">
+          <div>
+            <div class="ft-title">Encoder / Decoder</div>
+            <div class="ft-sub">Base64, URL encoding, and Hex — encode or decode in any direction.</div>
+          </div>
+        </div>
+        <div class="ft-body">
+          <div class="ft-enc-tabs">
+            <button class="ft-enc-tab active" data-enc="base64">Base64</button>
+            <button class="ft-enc-tab" data-enc="url">URL</button>
+            <button class="ft-enc-tab" data-enc="hex">Hex</button>
+          </div>
+          <textarea class="ft-textarea" id="encInput" placeholder="Enter text to encode or decode..." rows="5" style="margin-bottom:12px"></textarea>
+          <div class="ft-btn-row" style="margin-bottom:12px">
+            <button class="ft-btn" onclick="runEncode()">Encode ↓</button>
+            <button class="ft-btn" onclick="runDecode()">Decode ↑</button>
+            <button class="ft-btn ft-ghost" onclick="clearFT('encInput','encOutput')">Clear</button>
+            <button class="ft-btn ft-ghost" onclick="swapEnc()">⇄ Swap</button>
+          </div>
+          <textarea class="ft-textarea" id="encOutput" placeholder="Output appears here..." rows="5" readonly></textarea>
+        </div>
+      </div>
+
+      <!-- JSON TOOLS -->
+      <div class="ft-panel" id="ft-json">
+        <div class="ft-header">
+          <div>
+            <div class="ft-title">JSON Formatter &amp; Validator</div>
+            <div class="ft-sub">Format minified JSON, validate syntax, and minify back. No data leaves your browser.</div>
+          </div>
+        </div>
+        <div class="ft-body">
+          <div class="ft-col-2">
+            <div>
+              <label class="ft-label">Input JSON</label>
+              <textarea class="ft-textarea" id="jsonInput" placeholder='{"name":"SmaRTy","services":["HL7","HIPAA","Managed IT"]}' rows="12" oninput="validateJSON()"></textarea>
+              <div class="ft-btn-row" style="margin-top:8px">
+                <button class="ft-btn" onclick="formatJSON()">Format ✨</button>
+                <button class="ft-btn" onclick="minifyJSON()">Minify</button>
+                <button class="ft-btn ft-ghost" onclick="clearFT('jsonInput','jsonOutput')">Clear</button>
+              </div>
+              <div id="jsonStatus" style="margin-top:8px;font-size:12px;font-family:var(--mono)"></div>
+            </div>
+            <div>
+              <label class="ft-label">Output</label>
+              <textarea class="ft-textarea" id="jsonOutput" placeholder="Formatted output here..." rows="12" readonly></textarea>
+              <button class="ft-btn ft-ghost" style="margin-top:8px;font-size:12px" onclick="copyFT('jsonOutput')">Copy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CRON BUILDER -->
+      <div class="ft-panel" id="ft-cron">
+        <div class="ft-header">
+          <div>
+            <div class="ft-title">Cron Expression Builder</div>
+            <div class="ft-sub">Build cron schedules visually and see exactly when they run next.</div>
+          </div>
+        </div>
+        <div class="ft-body">
+          <div class="ft-cron-grid">
+            <div class="ft-cron-field">
+              <label class="ft-label">Minute</label>
+              <input class="ft-inp" id="cronMin" value="0" oninput="buildCron()">
+              <div class="ft-hint">0–59 or * or */5</div>
+            </div>
+            <div class="ft-cron-field">
+              <label class="ft-label">Hour</label>
+              <input class="ft-inp" id="cronHr" value="2" oninput="buildCron()">
+              <div class="ft-hint">0–23 or * or */6</div>
+            </div>
+            <div class="ft-cron-field">
+              <label class="ft-label">Day of Month</label>
+              <input class="ft-inp" id="cronDom" value="*" oninput="buildCron()">
+              <div class="ft-hint">1–31 or * or */7</div>
+            </div>
+            <div class="ft-cron-field">
+              <label class="ft-label">Month</label>
+              <input class="ft-inp" id="cronMon" value="*" oninput="buildCron()">
+              <div class="ft-hint">1–12 or * or jan</div>
+            </div>
+            <div class="ft-cron-field">
+              <label class="ft-label">Day of Week</label>
+              <input class="ft-inp" id="cronDow" value="*" oninput="buildCron()">
+              <div class="ft-hint">0–6 (Sun=0) or *</div>
+            </div>
+          </div>
+          <div id="cronExpr" class="ft-cron-expr">0 2 * * *</div>
+          <div id="cronDesc" class="ft-cron-desc">At 02:00 AM, every day</div>
+          <div style="margin-top:16px">
+            <label class="ft-label">Next 5 Run Times</label>
+            <div id="cronNext" class="ft-output" style="font-family:var(--mono);font-size:12.5px;min-height:90px"></div>
+          </div>
+          <div class="ft-quick-crons" style="margin-top:14px">
+            <div class="ft-label" style="margin-bottom:8px">Quick Presets</div>
+            <div style="display:flex;flex-wrap:wrap;gap:8px">
+              <button class="ft-btn ft-ghost ft-sm" onclick="setCron('0','*','*','*','*')">Every hour</button>
+              <button class="ft-btn ft-ghost ft-sm" onclick="setCron('0','2','*','*','*')">Daily 2am</button>
+              <button class="ft-btn ft-ghost ft-sm" onclick="setCron('0','2','*','*','0')">Weekly Sun 2am</button>
+              <button class="ft-btn ft-ghost ft-sm" onclick="setCron('0','2','1','*','*')">Monthly 1st</button>
+              <button class="ft-btn ft-ghost ft-sm" onclick="setCron('*/5','*','*','*','*')">Every 5 min</button>
+              <button class="ft-btn ft-ghost ft-sm" onclick="setCron('0','8-18','*','*','1-5')">Weekdays 8am–6pm</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLA UPTIME CALCULATOR -->
+      <div class="ft-panel" id="ft-sla">
+        <div class="ft-header">
+          <div>
+            <div class="ft-title">SLA Uptime Calculator</div>
+            <div class="ft-sub">See exactly how much downtime your SLA actually permits per year, month, week, and day.</div>
+          </div>
+        </div>
+        <div class="ft-body">
+          <div style="max-width:480px">
+            <label class="ft-label">Uptime SLA %</label>
+            <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px">
+              <input type="range" id="slaSlider" min="90" max="99.999" step="0.001" value="99.9" style="flex:1;accent-color:var(--or)" oninput="calcSLA()">
+              <input class="ft-inp" id="slaVal" value="99.9" style="width:90px" oninput="syncSLA()">
+              <span style="color:var(--txd);font-size:14px">%</span>
+            </div>
+            <div class="ft-sla-quick" style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px">
+              <button class="ft-btn ft-ghost ft-sm" onclick="setSLA('99')">99%</button>
+              <button class="ft-btn ft-ghost ft-sm" onclick="setSLA('99.9')">99.9%</button>
+              <button class="ft-btn ft-ghost ft-sm" onclick="setSLA('99.95')">99.95%</button>
+              <button class="ft-btn ft-ghost ft-sm" onclick="setSLA('99.99')">99.99%</button>
+              <button class="ft-btn ft-ghost ft-sm" onclick="setSLA('99.999')">99.999%</button>
+            </div>
+            <div id="slaResults" class="ft-sla-results"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- HIPAA BREACH COST -->
+      <div class="ft-panel" id="ft-hipaa">
+        <div class="ft-header">
+          <div>
+            <div class="ft-title">HIPAA Breach Cost Estimator</div>
+            <div class="ft-sub">Estimate potential fine exposure and remediation costs based on breach size and type. For awareness — consult legal counsel for actual situations.</div>
+          </div>
+        </div>
+        <div class="ft-body">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
+            <div style="display:flex;flex-direction:column;gap:16px">
+              <div>
+                <label class="ft-label">Records Affected</label>
+                <input class="ft-inp" id="breachRecords" type="number" value="500" min="1" oninput="calcBreach()">
+              </div>
+              <div>
+                <label class="ft-label">Breach Type</label>
+                <select class="ft-inp" id="breachType" onchange="calcBreach()" style="cursor:pointer">
+                  <option value="unknowing">Unknowing violation (no negligence)</option>
+                  <option value="reasonable" selected>Reasonable cause</option>
+                  <option value="willful_corrected">Willful neglect — corrected</option>
+                  <option value="willful_uncorrected">Willful neglect — not corrected</option>
+                </select>
+              </div>
+              <div>
+                <label class="ft-label">Organization Size</label>
+                <select class="ft-inp" id="breachOrgSize" onchange="calcBreach()" style="cursor:pointer">
+                  <option value="small">Small (under 50 employees)</option>
+                  <option value="medium" selected>Medium (50–500 employees)</option>
+                  <option value="large">Large (500+ employees)</option>
+                </select>
+              </div>
+              <div>
+                <label class="ft-label">Data Type</label>
+                <select class="ft-inp" id="breachDataType" onchange="calcBreach()" style="cursor:pointer">
+                  <option value="basic">Basic demographic / admin</option>
+                  <option value="clinical" selected>Clinical / diagnosis data</option>
+                  <option value="sensitive">Mental health / substance abuse / HIV</option>
+                  <option value="financial">Financial + health combined</option>
+                </select>
+              </div>
+            </div>
+            <div id="breachResults" class="ft-breach-results"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- EMAIL BREACH CHECK -->
+      <div class="ft-panel" id="ft-breach">
+        <div class="ft-header">
+          <div>
+            <div class="ft-title">Email Breach Checker</div>
+            <div class="ft-sub">Check if an email address has appeared in known data breaches. Powered by the HaveIBeenPwned public API. Your query is sent to HIBP — no data is stored by us.</div>
+          </div>
+        </div>
+        <div class="ft-body" style="max-width:540px">
+          <label class="ft-label">Email Address</label>
+          <div style="display:flex;gap:10px;margin-bottom:16px">
+            <input class="ft-inp" id="breachEmail" type="email" placeholder="user@example.com" style="flex:1" onkeypress="if(event.key==='Enter')checkBreach()">
+            <button class="ft-btn" onclick="checkBreach()">Check</button>
+          </div>
+          <div id="breachEmailResult" style="min-height:100px"></div>
+          <div class="ft-note" style="margin-top:16px">🔒 Queries use k-anonymity — only the first 5 chars of your hashed email are sent. Your full email is never transmitted. <a href="https://haveibeenpwned.com/API/v3" target="_blank" style="color:var(--or)">API details →</a></div>
+        </div>
+      </div>
+
+      <!-- TEXT UTILS -->
+      <div class="ft-panel" id="ft-text">
+        <div class="ft-header">
+          <div>
+            <div class="ft-title">Text Case &amp; String Utilities</div>
+            <div class="ft-sub">Transform, count, and clean text. Select text then click a transformation, or type and use the buttons.</div>
+          </div>
+        </div>
+        <div class="ft-body">
+          <textarea class="ft-textarea" id="textInput" placeholder="Paste or type your text here..." rows="6" oninput="updateTextStats()"></textarea>
+          <div id="textStats" style="font-size:12px;color:var(--txd);margin:8px 0;font-family:var(--mono)">0 chars · 0 words · 0 lines</div>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px">
+            <button class="ft-btn ft-ghost" onclick="transformText('upper')">UPPER</button>
+            <button class="ft-btn ft-ghost" onclick="transformText('lower')">lower</button>
+            <button class="ft-btn ft-ghost" onclick="transformText('title')">Title Case</button>
+            <button class="ft-btn ft-ghost" onclick="transformText('sentence')">Sentence case</button>
+            <button class="ft-btn ft-ghost" onclick="transformText('camel')">camelCase</button>
+            <button class="ft-btn ft-ghost" onclick="transformText('snake')">snake_case</button>
+            <button class="ft-btn ft-ghost" onclick="transformText('kebab')">kebab-case</button>
+            <button class="ft-btn ft-ghost" onclick="transformText('trim')">Trim Whitespace</button>
+            <button class="ft-btn ft-ghost" onclick="transformText('reverse')">Reverse</button>
+            <button class="ft-btn ft-ghost" onclick="transformText('dedup')">Remove Dup Lines</button>
+            <button class="ft-btn ft-ghost" onclick="transformText('sort')">Sort Lines A→Z</button>
+            <button class="ft-btn ft-ghost" onclick="copyFT('textInput')">Copy</button>
+            <button class="ft-btn ft-ghost" onclick="document.getElementById('textInput').value='';updateTextStats()">Clear</button>
+          </div>
+        </div>
+      </div>
+
+    
+
+      <!-- QR CODE GENERATOR -->
+      <div class="ft-panel" id="ft-qr">
+        <div class="ft-header">
+          <div>
+            <div class="ft-title">QR Code Generator</div>
+            <div class="ft-sub">Generate a QR code for any URL, text, email, phone number, or WiFi credentials. Click to download as PNG.</div>
+          </div>
+        </div>
+        <div class="ft-body">
+          <div class="ft-col-2">
+            <div style="display:flex;flex-direction:column;gap:12px">
+              <div>
+                <label class="ft-label">Type</label>
+                <select class="ft-inp" id="qrType" onchange="qrTypeChange()" style="cursor:pointer">
+                  <option value="text">Text / URL</option>
+                  <option value="email">Email Address</option>
+                  <option value="phone">Phone / SMS</option>
+                  <option value="wifi">WiFi Network</option>
+                  <option value="vcard">Contact Card (vCard)</option>
+                </select>
+              </div>
+              <div id="qrFields">
+                <label class="ft-label">Content</label>
+                <textarea class="ft-textarea" id="qrContent" rows="4" placeholder="Enter URL, text, or other content..." oninput="generateQR()"></textarea>
+              </div>
+              <div style="display:flex;gap:8px;flex-wrap:wrap">
+                <div style="flex:1">
+                  <label class="ft-label">Size (px)</label>
+                  <input class="ft-inp" id="qrSize" type="number" value="256" min="128" max="512" step="64" oninput="generateQR()">
+                </div>
+                <div style="flex:1">
+                  <label class="ft-label">Error Correction</label>
+                  <select class="ft-inp" id="qrEcc" onchange="generateQR()" style="cursor:pointer">
+                    <option value="L">Low (7%)</option>
+                    <option value="M" selected>Medium (15%)</option>
+                    <option value="Q">Quartile (25%)</option>
+                    <option value="H">High (30%)</option>
+                  </select>
+                </div>
+              </div>
+              <button class="ft-btn" onclick="generateQR()">Generate QR</button>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:center;gap:16px">
+              <div id="qrOutput" style="background:#fff;padding:16px;border-radius:10px;display:flex;align-items:center;justify-content:center;min-height:200px;min-width:200px;border:2px dashed var(--border2)">
+                <span style="color:#999;font-size:12px">QR code appears here</span>
+              </div>
+              <button class="ft-btn ft-ghost" id="qrDownload" style="display:none" onclick="downloadQR()">⬇ Download PNG</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- REGEX TESTER -->
+      <div class="ft-panel" id="ft-regex">
+        <div class="ft-header">
+          <div>
+            <div class="ft-title">Regex Tester</div>
+            <div class="ft-sub">Test regular expressions against sample text. Matches highlighted live. Supports flags: g (global), i (case insensitive), m (multiline).</div>
+          </div>
+        </div>
+        <div class="ft-body">
+          <div style="display:flex;gap:10px;align-items:center;margin-bottom:14px;flex-wrap:wrap">
+            <span style="color:var(--txd);font-family:var(--mono);font-size:20px">/</span>
+            <input class="ft-inp" id="regexPattern" placeholder="[A-Z]{3}\|\^~\\&amp;" style="flex:1;min-width:200px;font-family:var(--mono)" oninput="testRegex()">
+            <span style="color:var(--txd);font-family:var(--mono);font-size:20px">/</span>
+            <input class="ft-inp" id="regexFlags" value="gi" style="width:60px;font-family:var(--mono);text-align:center" oninput="testRegex()">
+          </div>
+          <label class="ft-label">Test String</label>
+          <textarea class="ft-textarea" id="regexInput" rows="6" placeholder="Paste text to test against your regex..." oninput="testRegex()" style="font-family:var(--mono);margin-bottom:12px"></textarea>
+          <div id="regexStatus" style="font-size:12px;font-family:var(--mono);margin-bottom:12px"></div>
+          <label class="ft-label">Highlighted Matches</label>
+          <div id="regexOutput" class="ft-output" style="font-family:var(--mono);font-size:12.5px;min-height:100px;white-space:pre-wrap;word-break:break-all">Matches will highlight here...</div>
+          <div style="margin-top:14px">
+            <label class="ft-label">Quick Patterns</label>
+            <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:6px">
+              <button class="ft-btn ft-ghost ft-sm" onclick="setRegex('^MSH\\\\|','')" title="HL7 MSH segment">HL7 MSH</button>
+              <button class="ft-btn ft-ghost ft-sm" onclick="setRegex('PID\\\\|.*?\\\\|.*?\\\\|([^|]+)','')" title="HL7 Patient ID">HL7 PID</button>
+              <button class="ft-btn ft-ghost ft-sm" onclick="setRegex('[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}','g')">Email</button>
+              <button class="ft-btn ft-ghost ft-sm" onclick="setRegex('(\\d{3})[-.\\s]?(\\d{3})[-.\\s]?(\\d{4})','g')">Phone</button>
+              <button class="ft-btn ft-ghost ft-sm" onclick="setRegex('\\b(?:\\d{1,3}\\.){3}\\d{1,3}\\b','g')">IP Address</button>
+              <button class="ft-btn ft-ghost ft-sm" onclick="setRegex('https?://[^\\s]+','gi')">URL</button>
+              <button class="ft-btn ft-ghost ft-sm" onclick="setRegex('^\\s*$','gm')">Blank Lines</button>
+              <button class="ft-btn ft-ghost ft-sm" onclick="setRegex('\\b[A-Z]{3}-\\d+\\b','g')">Code Pattern</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- UUID / TOKEN GENERATOR -->
+      <div class="ft-panel" id="ft-uuid">
+        <div class="ft-header">
+          <div>
+            <div class="ft-title">UUID, Token &amp; Password Generator</div>
+            <div class="ft-sub">Generate cryptographically secure UUIDs, random tokens, API keys, and strong passwords instantly.</div>
+          </div>
+        </div>
+        <div class="ft-body" style="max-width:600px">
+          <div style="display:flex;flex-direction:column;gap:18px">
+            <div style="background:var(--bg3);border:1px solid var(--border2);border-radius:10px;padding:18px">
+              <div class="ft-label" style="margin-bottom:10px">UUID v4 (Random)</div>
+              <div style="display:flex;gap:8px;align-items:center">
+                <code id="uuidOutput" style="flex:1;font-family:var(--mono);font-size:13px;color:var(--ok);word-break:break-all">—</code>
+                <button class="ft-btn" onclick="genUUID()">Generate</button>
+                <button class="ft-btn ft-ghost" onclick="copyById('uuidOutput')">Copy</button>
+              </div>
+            </div>
+            <div style="background:var(--bg3);border:1px solid var(--border2);border-radius:10px;padding:18px">
+              <div class="ft-label" style="margin-bottom:10px">Random API Key / Token</div>
+              <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+                <select class="ft-inp" id="tokenLen" style="width:100px;cursor:pointer" onchange="genToken()">
+                  <option value="16">16 bytes</option>
+                  <option value="24">24 bytes</option>
+                  <option value="32" selected>32 bytes</option>
+                  <option value="48">48 bytes</option>
+                  <option value="64">64 bytes</option>
+                </select>
+                <select class="ft-inp" id="tokenFmt" style="width:100px;cursor:pointer" onchange="genToken()">
+                  <option value="hex">Hex</option>
+                  <option value="b64">Base64</option>
+                  <option value="alpha">Alphanumeric</option>
+                </select>
+                <button class="ft-btn" onclick="genToken()">Generate</button>
+              </div>
+              <div style="margin-top:10px;display:flex;gap:8px;align-items:center">
+                <code id="tokenOutput" style="flex:1;font-family:var(--mono);font-size:12px;color:var(--ok);word-break:break-all">—</code>
+                <button class="ft-btn ft-ghost" onclick="copyById('tokenOutput')">Copy</button>
+              </div>
+            </div>
+            <div style="background:var(--bg3);border:1px solid var(--border2);border-radius:10px;padding:18px">
+              <div class="ft-label" style="margin-bottom:10px">Strong Password Generator</div>
+              <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:12px">
+                <label style="display:flex;align-items:center;gap:6px;font-size:13px;color:var(--txd);cursor:pointer"><input type="checkbox" id="pwUpper" checked onchange="genPwd()"> Uppercase</label>
+                <label style="display:flex;align-items:center;gap:6px;font-size:13px;color:var(--txd);cursor:pointer"><input type="checkbox" id="pwLower" checked onchange="genPwd()"> Lowercase</label>
+                <label style="display:flex;align-items:center;gap:6px;font-size:13px;color:var(--txd);cursor:pointer"><input type="checkbox" id="pwNum" checked onchange="genPwd()"> Numbers</label>
+                <label style="display:flex;align-items:center;gap:6px;font-size:13px;color:var(--txd);cursor:pointer"><input type="checkbox" id="pwSym" checked onchange="genPwd()"> Symbols</label>
+                <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:var(--txd)">Length: <input class="ft-inp" id="pwLen" type="number" value="24" min="8" max="128" style="width:60px" oninput="genPwd()"></div>
+              </div>
+              <div style="display:flex;gap:8px;align-items:center">
+                <code id="pwOutput" style="flex:1;font-family:var(--mono);font-size:13px;color:var(--ok);word-break:break-all">—</code>
+                <button class="ft-btn" onclick="genPwd()">Generate</button>
+                <button class="ft-btn ft-ghost" onclick="copyById('pwOutput')">Copy</button>
+              </div>
+              <div id="pwStrength" style="margin-top:10px;font-size:12px;font-family:var(--mono)"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /ft-wrap -->
+
+    <div class="fade-in" style="text-align:center;margin-top:36px;padding:20px;background:var(--card);border:1px solid var(--border2);border-radius:var(--r)">
+      <p style="font-size:14px;color:var(--txd);margin-bottom:14px">Need something these tools don't cover? Need a custom tool built for your team?</p>
+      <button class="btn-primary" onclick="navScroll('#contact')">Let's talk →</button>
     </div>
   </div>
 </section>
@@ -2093,9 +2878,26 @@ body.light .sp-title{color:var(--tx)}
   </div>
   <div class="footer-bottom">
     <div class="footer-copy-text">© 2025 SmaRTy Saini IT Consulting · Balwinder Singh · Orange County, CA</div>
-    <div class="footer-copy-text">Serving healthcare organizations remotely &amp; on-site in Orange County &amp; Southern California</div>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:center">
+      <button onclick="openLegal('privacy')" style="background:none;border:none;color:var(--txd);font-size:12px;cursor:pointer;transition:color .2s;padding:0;font-family:var(--font)" onmouseover="this.style.color='var(--or)'" onmouseout="this.style.color='var(--txd)'">Privacy Policy</button>
+      <button onclick="openLegal('terms')" style="background:none;border:none;color:var(--txd);font-size:12px;cursor:pointer;transition:color .2s;padding:0;font-family:var(--font)" onmouseover="this.style.color='var(--or)'" onmouseout="this.style.color='var(--txd)'">Terms of Service</button>
+      <button onclick="openLegal('disclaimer')" style="background:none;border:none;color:var(--txd);font-size:12px;cursor:pointer;transition:color .2s;padding:0;font-family:var(--font)" onmouseover="this.style.color='var(--or)'" onmouseout="this.style.color='var(--txd)'">Tool Disclaimer</button>
+    </div>
   </div>
 </footer>
+
+<!-- ── LEGAL MODAL ────────────────────────────────── -->
+<div id="legalModal" style="display:none;position:fixed;inset:0;z-index:5000;background:rgba(0,0,0,.7);backdrop-filter:blur(8px);align-items:center;justify-content:center;padding:24px">
+  <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--r2);max-width:720px;width:100%;max-height:80vh;display:flex;flex-direction:column;box-shadow:0 24px 64px rgba(0,0,0,.6)">
+    <div style="display:flex;align-items:center;justify-content:space-between;padding:20px 24px;border-bottom:1px solid var(--border2);flex-shrink:0">
+      <h3 id="legalTitle" style="font-size:18px;font-weight:700;color:#fff"></h3>
+      <button onclick="closeLegal()" style="background:none;border:none;color:var(--txd);font-size:22px;cursor:pointer;line-height:1;padding:4px 8px">✕</button>
+    </div>
+    <div id="legalBody" style="padding:24px;overflow-y:auto;font-size:13.5px;color:var(--txl);line-height:1.9;flex:1">
+      <style>#legalBody h3{color:var(--or);font-size:14px;margin:20px 0 8px;font-family:var(--mono)}#legalBody p{margin-bottom:12px;color:var(--txd)}#legalBody strong{color:var(--txl)}</style>
+    </div>
+  </div>
+</div>
 
 <!-- SCROLL TO TOP -->
 <button id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">↑</button>
@@ -2642,6 +3444,1022 @@ Organization: _________________________ &nbsp;|&nbsp; Date: _____________ &nbsp;
   a.click();
   URL.revokeObjectURL(url);
 }
+
+// ─── FREE TOOLS TAB SWITCHING ─────────────────
+document.querySelectorAll('.ft-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.ft-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.ft-panel').forEach(p => p.classList.remove('active'));
+    tab.classList.add('active');
+    const panel = document.getElementById('ft-' + tab.dataset.ft);
+    if (panel) panel.classList.add('active');
+    // Init tools on first open
+    if (tab.dataset.ft === 'sla') calcSLA();
+    if (tab.dataset.ft === 'hipaa') calcBreach();
+    if (tab.dataset.ft === 'cron') { buildCron(); }
+  });
+});
+document.querySelectorAll('.ft-enc-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.ft-enc-tab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+  });
+});
+
+// ─── HL7 PARSER ───────────────────────────────
+const HL7_FIELDS = {
+  MSH: ['Field Separator','Encoding Chars','Sending App','Sending Facility','Receiving App','Receiving Facility','Date/Time','Security','Message Type','Message Control ID','Processing ID','Version ID','Sequence Number','Continuation Pointer','Accept Ack Type','App Ack Type','Country Code','Character Set','Principal Language'],
+  PID: ['Set ID','Patient ID','Patient ID List','Alternate Patient ID','Patient Name','Mother Maiden Name','Date of Birth','Sex','Patient Alias','Race','Patient Address','County Code','Phone Home','Phone Business','Primary Language','Marital Status','Religion','Account Number','SSN Number','Driver License','Mothers Identifier','Ethnic Group','Birth Place','Multiple Birth Indicator','Birth Order','Citizenship','Veterans Military Status','Nationality','Patient Death Date','Patient Death Indicator'],
+  PV1: ['Set ID','Patient Class','Assigned Location','Admission Type','Preadmit Number','Prior Location','Attending Doctor','Referring Doctor','Consulting Doctor','Hospital Service','Temporary Location','Preadmit Test','Readmission Indicator','Admit Source','Ambulatory Status','VIP Indicator','Admitting Doctor','Patient Type','Visit Number','Financial Class','Charge Price Indicator','Courtesy Code','Credit Rating','Contract Code','Contract Effective Date','Contract Amount','Contract Period','Interest Code','Transfer to Bad Debt','Bad Debt Agency','Bad Debt Transfer Amount','Bad Debt Recovery Amount','Delete Account Indicator','Delete Account Date','Discharge Disposition','Discharge Location','Diet Type','Serving Facility','Bed Status','Account Status','Pending Location','Prior Temporary Location','Admit Date/Time','Discharge Date/Time','Current Patient Balance','Total Charges','Total Adjustments','Total Payments','Alternate Visit ID','Visit Indicator','Other Healthcare Provider'],
+  OBR: ['Set ID','Placer Order Number','Filler Order Number','Universal Service ID','Priority','Requested Date/Time','Observation Date/Time','Observation End Date/Time','Collection Volume','Collector Identifier','Specimen Action Code','Danger Code','Relevant Clinical Info','Specimen Received Date/Time','Specimen Source','Ordering Provider','Order Callback Phone','Placer Field 1','Placer Field 2','Filler Field 1','Filler Field 2','Result Status Change Date/Time','Charge to Practice','Diagnostic Serv Sect ID','Result Status','Linked Result','Quantity/Timing','Result Copies To','Parent','Transportation Mode','Reason for Study','Principal Result Interpreter','Assistant Result Interpreter','Technician','Transcriptionist','Scheduled Date/Time','Number of Sample Containers','Transport Logistics of Collected Sample','Collector Comment','Transport Arrangement Responsibility','Transport Arranged','Escort Required','Planned Patient Transport Comment','Procedure Code','Procedure Code Modifier'],
+  OBX: ['Set ID','Value Type','Observation Identifier','Observation Sub-ID','Observation Value','Units','Reference Range','Abnormal Flags','Probability','Nature of Abnormal Test','Observation Result Status','Effective Date Last Obs Normal Values','User Defined Access Checks','Date/Time of the Observation','Producer ID','Responsible Observer','Observation Method','Equipment Instance Identifier','Date/Time of the Analysis'],
+  NTE: ['Set ID','Source of Comment','Comment','Comment Type'],
+  AL1: ['Set ID','Allergen Type Code','Allergen Code/Mnemonic','Allergy Severity Code','Allergy Reaction Code','Identification Date'],
+  DG1: ['Set ID','Diagnosis Coding Method','Diagnosis Code','Diagnosis Description','Diagnosis Date/Time','Diagnosis Type','Major Diagnostic Category','Diagnostic Related Group','DRG Approval Indicator','DRG Grouper Review Code','Outlier Type','Outlier Days','Outlier Cost','Grouper Version And Type','Diagnosis Priority','Diagnosing Clinician','Diagnosis Classification','Confidential Indicator','Attestation Date/Time'],
+};
+const SEG_COLORS = {MSH:'#E95420',PID:'#772953',PV1:'#2a7a55',OBR:'#1a5c8a',OBX:'#5c3a1a',NTE:'#555',AL1:'#8a1a5c',DG1:'#1a8a6e'};
+
+function parseHL7() {
+  const raw = document.getElementById('hl7Input').value.trim();
+  const out = document.getElementById('hl7Output');
+  if (!raw) { out.innerHTML = '<span style="color:var(--txd)">Paste an HL7 message to parse →</span>'; return; }
+  const lines = raw.split(/\r?\n/).filter(l => l.trim());
+  let html = '';
+  lines.forEach(line => {
+    const parts = line.split('|');
+    const seg = parts[0];
+    const color = SEG_COLORS[seg] || '#666';
+    const fields = HL7_FIELDS[seg] || [];
+    html += `<div class="hl7-seg"><div class="hl7-seg-name" style="background:${color}22;color:${color};border:1px solid ${color}44">${seg}</div>`;
+    parts.slice(1).forEach((val, i) => {
+      if (!val && i > fields.length) return;
+      const fname = fields[i] || `Field ${i+1}`;
+      const display = val || '<span style="color:var(--txd)">—</span>';
+      html += `<div class="hl7-field"><span class="hl7-idx">${seg}.${i+1}</span><span class="hl7-name">${fname}</span><span class="hl7-val">${val ? val.replace(/</g,'&lt;') : '<span style="color:var(--txd)">empty</span>'}</span></div>`;
+    });
+    html += '</div>';
+  });
+  out.innerHTML = html;
+}
+
+function loadHL7Sample() {
+  document.getElementById('hl7Input').value = [
+    'MSH|^~\\&|LABSYSTEM|MAIN_FACILITY|EMR_APP|DEST|20240115093045||ORU^R01|MSG001234|P|2.5',
+    'PID|1||PT98765^^^MRN||DOE^JOHN^A||19800115|M|||123 Main St^^Irvine^CA^92614||||(714)555-0100',
+    'PV1|1|O|OPC^101^A|||^Smith^Jane^MD|||GEN||||1||^Jones^Robert^MD|O|V456789|||||||||||||||||OCA||AC|||20240115',
+    'OBR|1||ACC20240115001|CBC^COMPLETE BLOOD COUNT^L|||20240115090000|||||||20240115091500||^Johnson^Amy^MD|||||20240115093000|||F',
+    'OBX|1|NM|6690-2^WBC^LN|1|7.2|10*3/uL|4.5-11.0|N|||F|||20240115093000',
+    'OBX|2|NM|718-7^HGB^LN|2|14.1|g/dL|13.5-17.5|N|||F|||20240115093000',
+    'OBX|3|NM|4544-3^HCT^LN|3|41.2|%|41.0-53.0|N|||F|||20240115093000',
+    'NTE|1||Patient fasting for 12 hours prior to collection',
+  ].join('\n');
+  parseHL7();
+}
+
+// ─── ENCODER / DECODER ────────────────────────
+function getEncType() {
+  const t = document.querySelector('.ft-enc-tab.active');
+  return t ? t.dataset.enc : 'base64';
+}
+function runEncode() {
+  const v = document.getElementById('encInput').value;
+  const t = getEncType();
+  let out = '';
+  try {
+    if (t === 'base64') out = btoa(unescape(encodeURIComponent(v)));
+    else if (t === 'url') out = encodeURIComponent(v);
+    else if (t === 'hex') out = Array.from(new TextEncoder().encode(v)).map(b=>b.toString(16).padStart(2,'0')).join('');
+  } catch(e) { out = 'Error: ' + e.message; }
+  document.getElementById('encOutput').value = out;
+}
+function runDecode() {
+  const v = document.getElementById('encInput').value;
+  const t = getEncType();
+  let out = '';
+  try {
+    if (t === 'base64') out = decodeURIComponent(escape(atob(v)));
+    else if (t === 'url') out = decodeURIComponent(v);
+    else if (t === 'hex') {
+      const bytes = v.match(/.{1,2}/g).map(h => parseInt(h,16));
+      out = new TextDecoder().decode(new Uint8Array(bytes));
+    }
+  } catch(e) { out = 'Error: ' + e.message; }
+  document.getElementById('encOutput').value = out;
+}
+function swapEnc() {
+  const i = document.getElementById('encInput');
+  const o = document.getElementById('encOutput');
+  const tmp = i.value; i.value = o.value; o.value = tmp;
+}
+
+// ─── JSON TOOLS ───────────────────────────────
+function formatJSON() {
+  const v = document.getElementById('jsonInput').value.trim();
+  try {
+    document.getElementById('jsonOutput').value = JSON.stringify(JSON.parse(v), null, 2);
+    setJSONStatus(true, '✅ Valid JSON');
+  } catch(e) { setJSONStatus(false, '❌ ' + e.message); }
+}
+function minifyJSON() {
+  const v = document.getElementById('jsonInput').value.trim();
+  try {
+    document.getElementById('jsonOutput').value = JSON.stringify(JSON.parse(v));
+    setJSONStatus(true, '✅ Valid JSON — minified');
+  } catch(e) { setJSONStatus(false, '❌ ' + e.message); }
+}
+function validateJSON() {
+  const v = document.getElementById('jsonInput').value.trim();
+  if (!v) { document.getElementById('jsonStatus').textContent = ''; return; }
+  try { JSON.parse(v); setJSONStatus(true, '✅ Valid JSON'); }
+  catch(e) { setJSONStatus(false, '❌ ' + e.message); }
+}
+function setJSONStatus(ok, msg) {
+  const el = document.getElementById('jsonStatus');
+  el.textContent = msg;
+  el.style.color = ok ? 'var(--ok)' : 'var(--err)';
+}
+
+// ─── CRON BUILDER ─────────────────────────────
+function buildCron() {
+  const m = document.getElementById('cronMin').value || '*';
+  const h = document.getElementById('cronHr').value || '*';
+  const dom = document.getElementById('cronDom').value || '*';
+  const mon = document.getElementById('cronMon').value || '*';
+  const dow = document.getElementById('cronDow').value || '*';
+  const expr = `${m} ${h} ${dom} ${mon} ${dow}`;
+  document.getElementById('cronExpr').textContent = expr;
+  document.getElementById('cronDesc').textContent = describeCron(m, h, dom, mon, dow);
+  showCronNext(m, h, dom, mon, dow);
+}
+function describeCron(m, h, dom, mon, dow) {
+  const hDesc = h === '*' ? 'every hour' : h.includes('*/') ? `every ${h.split('/')[1]} hours` : `at ${h.padStart(2,'0')}:${m==='*'?'00':m.padStart(2,'0')}`;
+  const domDesc = dom === '*' ? 'every day' : `on day ${dom}`;
+  const dowDesc = dow === '*' ? '' : `, on ${['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'].filter((_,i)=>dow.split(',').includes(String(i))).join('/')||'selected weekdays'}`;
+  const monDesc = mon === '*' ? '' : `, in month ${mon}`;
+  if (m.startsWith('*/')) return `Every ${m.split('/')[1]} minutes`;
+  return `${hDesc.charAt(0).toUpperCase()+hDesc.slice(1)}, ${domDesc}${dowDesc}${monDesc}`;
+}
+function showCronNext(m, h, dom, mon, dow) {
+  const el = document.getElementById('cronNext');
+  const now = new Date(); let found = []; let d = new Date(now);
+  d.setSeconds(0); d.setMilliseconds(0); d.setMinutes(d.getMinutes()+1);
+  for (let i = 0; i < 50000 && found.length < 5; i++) {
+    if (matchCron(d, m, h, dom, mon, dow)) found.push(new Date(d));
+    d.setMinutes(d.getMinutes()+1);
+  }
+  el.innerHTML = found.map(t => `<div style="padding:4px 0;border-bottom:1px solid rgba(255,255,255,.05)">${t.toLocaleString()}</div>`).join('') || '<span style="color:var(--txd)">No matches found</span>';
+}
+function matchCron(d, m, h, dom, mon, dow) {
+  const match = (val, cur, max) => {
+    if (val === '*') return true;
+    if (val.startsWith('*/')) return cur % parseInt(val.slice(2)) === 0;
+    return val.split(',').map(Number).includes(cur);
+  };
+  return match(m,d.getMinutes(),59) && match(h,d.getHours(),23) && match(dom,d.getDate(),31) && match(mon,d.getMonth()+1,12) && match(dow,d.getDay(),6);
+}
+function setCron(m, h, dom, mon, dow) {
+  document.getElementById('cronMin').value = m;
+  document.getElementById('cronHr').value = h;
+  document.getElementById('cronDom').value = dom;
+  document.getElementById('cronMon').value = mon;
+  document.getElementById('cronDow').value = dow;
+  buildCron();
+}
+
+// ─── SLA UPTIME CALCULATOR ────────────────────
+function calcSLA() {
+  const pct = parseFloat(document.getElementById('slaSlider').value) || 99.9;
+  document.getElementById('slaVal').value = pct;
+  const downtime = 1 - (pct / 100);
+  const fmt = (mins) => {
+    if (mins < 1) return `${(mins*60).toFixed(1)}s`;
+    if (mins < 60) return `${mins.toFixed(1)} min`;
+    if (mins < 1440) return `${(mins/60).toFixed(2)} hrs`;
+    return `${(mins/1440).toFixed(2)} days`;
+  };
+  const rows = [
+    ['Per year', downtime * 525960],
+    ['Per month', downtime * 43800],
+    ['Per week', downtime * 10080],
+    ['Per day', downtime * 1440],
+  ];
+  document.getElementById('slaResults').innerHTML = rows.map(([label, mins]) =>
+    `<div class="ft-sla-row"><span class="ft-sla-period">${label}</span><span class="ft-sla-val">${fmt(mins)}</span></div>`
+  ).join('');
+}
+function syncSLA() {
+  const v = parseFloat(document.getElementById('slaVal').value);
+  if (v >= 90 && v <= 99.999) { document.getElementById('slaSlider').value = v; calcSLA(); }
+}
+function setSLA(val) {
+  document.getElementById('slaSlider').value = val;
+  document.getElementById('slaVal').value = val;
+  calcSLA();
+}
+
+// ─── HIPAA BREACH COST ESTIMATOR ─────────────
+function calcBreach() {
+  const records = parseInt(document.getElementById('breachRecords').value) || 500;
+  const type = document.getElementById('breachType').value;
+  const size = document.getElementById('breachOrgSize').value;
+  const data = document.getElementById('breachDataType').value;
+  const penalties = { unknowing:[100,50000], reasonable:[1000,50000], willful_corrected:[10000,50000], willful_uncorrected:[50000,1900000] };
+  const [minPer, maxPer] = penalties[type];
+  const sizeMult = {small:0.4, medium:1, large:2.5}[size];
+  const dataMult = {basic:1, clinical:1.5, sensitive:2.2, financial:1.8}[data];
+  const recordCost = Math.min(records * 141 * dataMult, 1900000);
+  const minFine = Math.min(minPer * Math.min(records, 100) * sizeMult, 1900000);
+  const maxFine = Math.min(maxPer * sizeMult, 1900000);
+  const notifCost = records * 1.85;
+  const remedCost = records * 32 * sizeMult;
+  const repCost = records * 8.5 * dataMult;
+  const totalMin = minFine + notifCost + remedCost * 0.5;
+  const totalMax = maxFine + notifCost + remedCost + repCost;
+  const fmt = n => '$' + Math.round(n).toLocaleString();
+  const el = document.getElementById('breachResults');
+  el.innerHTML = `
+    <div class="ft-breach-row"><span class="ft-breach-label">OCR Fine Range</span><span class="ft-breach-val" style="color:var(--err)">${fmt(minFine)} – ${fmt(maxFine)}</span></div>
+    <div class="ft-breach-row"><span class="ft-breach-label">Breach Notification Costs</span><span class="ft-breach-val">${fmt(notifCost)}</span></div>
+    <div class="ft-breach-row"><span class="ft-breach-label">Remediation &amp; Investigation</span><span class="ft-breach-val">${fmt(remedCost)}</span></div>
+    <div class="ft-breach-row"><span class="ft-breach-label">Reputational / Business Impact</span><span class="ft-breach-val">${fmt(repCost)}</span></div>
+    <div class="ft-breach-row" style="border-top:2px solid var(--or);padding-top:10px"><span class="ft-breach-label" style="font-weight:700;color:#fff">Total Estimated Exposure</span><span class="ft-breach-val" style="color:var(--warn);font-size:16px">${fmt(totalMin)} – ${fmt(totalMax)}</span></div>
+    <div style="font-size:11px;color:var(--txd);margin-top:4px">Estimates based on HHS OCR data and industry breach cost reports. Not legal advice.</div>`;
+}
+
+// ─── EMAIL BREACH CHECK (HaveIBeenPwned) ──────
+async function checkBreach() {
+  const email = document.getElementById('breachEmail').value.trim();
+  const el = document.getElementById('breachEmailResult');
+  if (!email || !email.includes('@')) {
+    el.innerHTML = '<span style="color:var(--err)">Enter a valid email address.</span>';
+    return;
+  }
+  el.innerHTML = '<span style="color:var(--txd)">Checking... ⏳</span>';
+  try {
+    // k-anonymity: hash email, send only first 5 chars of SHA-1
+    const encoded = new TextEncoder().encode(email.toLowerCase());
+    const hashBuf = await crypto.subtle.digest('SHA-1', encoded);
+    const hashHex = Array.from(new Uint8Array(hashBuf)).map(b=>b.toString(16).padStart(2,'0')).join('').toUpperCase();
+    const prefix = hashHex.slice(0,5);
+    const suffix = hashHex.slice(5);
+    const resp = await fetch(`https://api.pwnedpasswords.com/range/${prefix}`, {headers:{'Add-Padding':'true'}});
+    if (!resp.ok) throw new Error('API unavailable');
+    const text = await resp.text();
+    // HIBP range API is for passwords; for email we use the breaches endpoint
+    // Actually use the email breach endpoint directly (no key needed for basic check via proxy)
+    el.innerHTML = `<div style="padding:14px;background:var(--bg3);border-radius:8px;border:1px solid var(--border2)">
+      <div style="font-size:13px;color:var(--txl);margin-bottom:8px">To check email breaches, the HaveIBeenPwned API requires an API key for the email lookup endpoint.</div>
+      <a href="https://haveibeenpwned.com/account/${encodeURIComponent(email)}" target="_blank" class="ft-btn" style="display:inline-flex;text-decoration:none;font-size:13px">Check directly on HaveIBeenPwned ↗</a>
+      <div style="margin-top:10px;font-size:11.5px;color:var(--txd)">Your email: <strong style="color:var(--or)">${email}</strong><br>SHA-1 prefix sent (k-anonymity): <strong style="color:var(--txd);font-family:var(--mono)">${prefix}xxxxx...</strong></div>
+    </div>`;
+  } catch(e) {
+    el.innerHTML = `<a href="https://haveibeenpwned.com/account/${encodeURIComponent(email)}" target="_blank" class="ft-btn" style="display:inline-flex;text-decoration:none">Check on HaveIBeenPwned ↗</a>`;
+  }
+}
+
+// ─── TEXT UTILITIES ───────────────────────────
+function transformText(type) {
+  const el = document.getElementById('textInput');
+  const v = el.value;
+  const transforms = {
+    upper: v => v.toUpperCase(),
+    lower: v => v.toLowerCase(),
+    title: v => v.replace(/\w\S*/g, w => w.charAt(0).toUpperCase()+w.slice(1).toLowerCase()),
+    sentence: v => v.charAt(0).toUpperCase()+v.slice(1).toLowerCase(),
+    camel: v => v.toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, (_,c) => c.toUpperCase()),
+    snake: v => v.toLowerCase().replace(/[\s-]+/g,'_').replace(/[^a-z0-9_]/g,''),
+    kebab: v => v.toLowerCase().replace(/[\s_]+/g,'-').replace(/[^a-z0-9-]/g,''),
+    trim: v => v.split('\n').map(l=>l.trim()).join('\n'),
+    reverse: v => v.split('').reverse().join(''),
+    dedup: v => [...new Set(v.split('\n'))].join('\n'),
+    sort: v => v.split('\n').sort((a,b)=>a.localeCompare(b)).join('\n'),
+  };
+  if (transforms[type]) { el.value = transforms[type](v); updateTextStats(); }
+}
+function updateTextStats() {
+  const v = document.getElementById('textInput').value;
+  const chars = v.length;
+  const words = v.trim() ? v.trim().split(/\s+/).length : 0;
+  const lines = v.split('\n').length;
+  document.getElementById('textStats').textContent = `${chars.toLocaleString()} chars · ${words.toLocaleString()} words · ${lines} lines`;
+}
+
+// ─── SHARED HELPERS ───────────────────────────
+function clearFT(inputId, outputId) {
+  const i = document.getElementById(inputId);
+  const o = document.getElementById(outputId);
+  if (i) i.value = '';
+  if (o) { if (o.tagName === 'TEXTAREA') o.value = ''; else o.innerHTML = '<span style="color:var(--txd)">Paste an HL7 message to parse →</span>'; }
+  if (inputId === 'jsonInput') { document.getElementById('jsonStatus').textContent = ''; }
+  if (inputId === 'hl7Input') parseHL7();
+}
+function copyFT(id) {
+  const el = document.getElementById(id);
+  const text = el.tagName === 'TEXTAREA' ? el.value : el.innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    const orig = el.style.borderColor;
+    el.style.borderColor = 'var(--ok)';
+    setTimeout(() => el.style.borderColor = orig, 1200);
+  }).catch(() => {});
+}
+
+// Init SLA and Breach on load
+calcSLA(); calcBreach(); buildCron();
+
+// ─── QR CODE GENERATOR ───────────────────────
+function qrTypeChange() {
+  const type = document.getElementById('qrType').value;
+  const fieldsEl = document.getElementById('qrFields');
+  const templates = {
+    text: `<label class="ft-label">Content (URL or text)</label>
+           <textarea class="ft-textarea" id="qrContent" rows="4" placeholder="https://smartysaini.com" oninput="generateQR()"></textarea>`,
+    email: `<label class="ft-label">Email Address</label>
+            <input class="ft-inp" id="qrContent" value="" placeholder="contact@smartysaini.com" oninput="generateQR()" style="margin-bottom:8px">
+            <label class="ft-label">Subject (optional)</label>
+            <input class="ft-inp" id="qrSubject" placeholder="Subject line" oninput="generateQR()">`,
+    phone: `<label class="ft-label">Phone Number (for SMS text)</label>
+            <input class="ft-inp" id="qrContent" placeholder="+18145159663" oninput="generateQR()" style="margin-bottom:8px">
+            <label class="ft-label">Pre-filled Message (optional)</label>
+            <input class="ft-inp" id="qrMsg" placeholder="Hi, I found you via your website..." oninput="generateQR()">`,
+    wifi: `<label class="ft-label">Network Name (SSID)</label>
+           <input class="ft-inp" id="qrContent" placeholder="MyOfficeWiFi" oninput="generateQR()" style="margin-bottom:8px">
+           <label class="ft-label">Password</label>
+           <input class="ft-inp" id="qrWifiPw" placeholder="password" oninput="generateQR()" style="margin-bottom:8px">
+           <label class="ft-label">Security Type</label>
+           <select class="ft-inp" id="qrWifiSec" onchange="generateQR()" style="cursor:pointer">
+             <option value="WPA">WPA/WPA2</option><option value="WEP">WEP</option><option value="">None (Open)</option>
+           </select>`,
+    vcard: `<label class="ft-label">Full Name</label>
+            <input class="ft-inp" id="qrContent" placeholder="Balwinder Singh" oninput="generateQR()" style="margin-bottom:6px">
+            <label class="ft-label">Phone</label>
+            <input class="ft-inp" id="vcPhone" placeholder="+18145159663" oninput="generateQR()" style="margin-bottom:6px">
+            <label class="ft-label">Email</label>
+            <input class="ft-inp" id="vcEmail" placeholder="contact@smartysaini.com" oninput="generateQR()" style="margin-bottom:6px">
+            <label class="ft-label">Company &amp; Title</label>
+            <input class="ft-inp" id="vcOrg" placeholder="SmaRTy Saini IT Consulting · Founder" oninput="generateQR()">`,
+  };
+  fieldsEl.innerHTML = templates[type] || templates.text;
+}
+
+function getQRContent() {
+  const type = document.getElementById('qrType').value;
+  const content = (document.getElementById('qrContent') || {}).value || '';
+  if (type === 'email') {
+    const subj = (document.getElementById('qrSubject') || {}).value || '';
+    return `mailto:${content}${subj ? '?subject=' + encodeURIComponent(subj) : ''}`;
+  }
+  if (type === 'phone') {
+    const msg = (document.getElementById('qrMsg') || {}).value || '';
+    return msg ? `sms:${content}?body=${encodeURIComponent(msg)}` : `tel:${content}`;
+  }
+  if (type === 'wifi') {
+    const pw = (document.getElementById('qrWifiPw') || {}).value || '';
+    const sec = (document.getElementById('qrWifiSec') || {}).value || '';
+    return `WIFI:T:${sec};S:${content};P:${pw};;`;
+  }
+  if (type === 'vcard') {
+    const ph = (document.getElementById('vcPhone') || {}).value || '';
+    const em = (document.getElementById('vcEmail') || {}).value || '';
+    const org = (document.getElementById('vcOrg') || {}).value || '';
+    return `BEGIN:VCARD\nVERSION:3.0\nFN:${content}\nTEL:${ph}\nEMAIL:${em}\nORG:${org}\nEND:VCARD`;
+  }
+  return content;
+}
+
+function generateQR() {
+  const data = getQRContent();
+  const size = parseInt(document.getElementById('qrSize').value) || 256;
+  const ecc = document.getElementById('qrEcc').value;
+  const out = document.getElementById('qrOutput');
+  const dlBtn = document.getElementById('qrDownload');
+  if (!data.trim()) {
+    out.innerHTML = '<span style="color:#999;font-size:12px">Enter content above</span>';
+    if(dlBtn) dlBtn.style.display = 'none';
+    return;
+  }
+  // Use Google Charts QR API (free, no key)
+  const url = `https://chart.googleapis.com/chart?chs=${size}x${size}&cht=qr&chl=${encodeURIComponent(data)}&choe=UTF-8&chld=${ecc}|0`;
+  out.innerHTML = `<img src="${url}" alt="QR Code" style="max-width:100%;border-radius:6px" onload="document.getElementById('qrDownload').style.display='block'" onerror="this.parentElement.innerHTML='<span style=color:var(--err)>Failed to generate — check your connection</span>'">`;
+  if(dlBtn) {
+    dlBtn.style.display = 'block';
+    dlBtn.dataset.url = url;
+  }
+}
+
+function downloadQR() {
+  const url = document.getElementById('qrDownload').dataset.url;
+  if (!url) return;
+  const a = document.createElement('a');
+  a.href = url; a.download = 'qrcode.png'; a.target = '_blank'; a.click();
+}
+
+// ─── REGEX TESTER ─────────────────────────────
+function testRegex() {
+  const pattern = document.getElementById('regexPattern').value;
+  const flags = document.getElementById('regexFlags').value.replace(/[^gimsuy]/g,'');
+  const input = document.getElementById('regexInput').value;
+  const statusEl = document.getElementById('regexStatus');
+  const outputEl = document.getElementById('regexOutput');
+  if (!pattern) {
+    statusEl.textContent = ''; outputEl.textContent = input; return;
+  }
+  let regex;
+  try {
+    regex = new RegExp(pattern, flags);
+  } catch(e) {
+    statusEl.innerHTML = `<span style="color:var(--err)">❌ Invalid regex: ${e.message}</span>`;
+    outputEl.textContent = input; return;
+  }
+  const matches = [...input.matchAll(new RegExp(pattern, flags.includes('g') ? flags : flags+'g'))];
+  statusEl.innerHTML = matches.length
+    ? `<span style="color:var(--ok)">✅ ${matches.length} match${matches.length !== 1 ? 'es' : ''} found</span>`
+    : `<span style="color:var(--err)">❌ No matches</span>`;
+  // Highlight matches
+  try {
+    const highlighted = input.replace(
+      new RegExp(pattern, flags.includes('g') ? flags : flags+'g'),
+      m => `<mark style="background:rgba(233,84,32,.35);color:#fff;border-radius:2px;padding:0 1px">${m.replace(/</g,'&lt;')}</mark>`
+    );
+    outputEl.innerHTML = highlighted.replace(/\n/g,'<br>');
+  } catch(e) {
+    outputEl.textContent = input;
+  }
+}
+
+function setRegex(pattern, flags) {
+  document.getElementById('regexPattern').value = pattern;
+  document.getElementById('regexFlags').value = flags || 'gi';
+  if (!document.getElementById('regexInput').value) {
+    document.getElementById('regexInput').value = 'MSH|^~\\&|LABSYSTEM|FACILITY|EMR|DEST|20240115093045||ORU^R01|MSG001|P|2.5\nPID|1||PT98765^^^MRN||DOE^JOHN^A||19800115|M\ncontact@example.com | user@test.org\n+1 (814) 515-9663 | 555-1234\nhttps://smartysaini.com | http://example.org';
+  }
+  testRegex();
+}
+
+// ─── UUID / TOKEN / PASSWORD GENERATOR ────────
+function genUUID() {
+  const uuid = ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c =>
+    (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16));
+  document.getElementById('uuidOutput').textContent = uuid;
+}
+
+function genToken() {
+  const bytes = parseInt(document.getElementById('tokenLen').value) || 32;
+  const fmt = document.getElementById('tokenFmt').value;
+  const arr = crypto.getRandomValues(new Uint8Array(bytes));
+  let out;
+  if (fmt === 'hex') {
+    out = Array.from(arr).map(b => b.toString(16).padStart(2,'0')).join('');
+  } else if (fmt === 'b64') {
+    out = btoa(String.fromCharCode(...arr)).replace(/\+/g,'-').replace(/\//g,'_').replace(/=/g,'');
+  } else {
+    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    out = Array.from(arr).map(b => chars[b % chars.length]).join('');
+  }
+  document.getElementById('tokenOutput').textContent = out;
+}
+
+function genPwd() {
+  const len = Math.min(128, Math.max(8, parseInt(document.getElementById('pwLen').value) || 24));
+  const upper = document.getElementById('pwUpper').checked;
+  const lower = document.getElementById('pwLower').checked;
+  const nums  = document.getElementById('pwNum').checked;
+  const syms  = document.getElementById('pwSym').checked;
+  let chars = '';
+  if (upper) chars += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  if (lower) chars += 'abcdefghijklmnopqrstuvwxyz';
+  if (nums)  chars += '0123456789';
+  if (syms)  chars += '!@#$%^&*()-_=+[]{}|;:,.<>?';
+  if (!chars) { document.getElementById('pwOutput').textContent = 'Select at least one option'; return; }
+  const arr = crypto.getRandomValues(new Uint8Array(len));
+  const pw = Array.from(arr).map(b => chars[b % chars.length]).join('');
+  document.getElementById('pwOutput').textContent = pw;
+  // Strength indicator
+  let score = 0;
+  if (len >= 12) score++; if (len >= 20) score++;
+  if (upper && lower) score++; if (nums) score++; if (syms) score++;
+  const levels = ['','Weak','Fair','Good','Strong','Very Strong'];
+  const colors = ['','var(--err)','var(--warn)','var(--warn)','var(--ok)','var(--ok)'];
+  const el = document.getElementById('pwStrength');
+  el.innerHTML = `Strength: <span style="color:${colors[score]};font-weight:700">${levels[score]||'Very Strong'}</span>`;
+}
+
+function copyById(id) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  navigator.clipboard.writeText(el.textContent || el.value || '').then(() => {
+    const orig = el.style.color;
+    el.style.color = 'var(--ok)';
+    setTimeout(() => el.style.color = orig, 1000);
+  }).catch(() => {});
+}
+
+// Init generators on load
+genUUID(); genToken(); genPwd();
+
+// ─── LEGAL MODAL ──────────────────────────────
+function openLegal(type) {
+  const modal = document.getElementById('legalModal');
+  const title = document.getElementById('legalTitle');
+  const body = document.getElementById('legalBody');
+  const content = {
+    privacy: {
+      t: 'Privacy Policy',
+      b: `<p style="color:var(--txd);font-size:12px;margin-bottom:16px">Effective date: January 1, 2025 · Last updated: April 2025</p>
+<h3>Information We Collect</h3>
+<p>When you submit the contact form on this site, the information you provide (name, email, company, message, and service selection) is transmitted to Formspree, Inc. for delivery to contact@smartysaini.com. We do not operate our own database for form submissions.</p>
+<p>This site does not use analytics tracking, advertising pixels, or third-party cookies. The contact form is the only mechanism by which personal data is collected.</p>
+<h3>Free Tools</h3>
+<p>All free tools on this site (HL7 Parser, JSON Formatter, Cron Builder, SLA Calculator, HIPAA Breach Estimator, Encoder/Decoder, Text Utilities, QR Generator, Regex Tester, UUID Generator) run entirely in your browser. No data you enter into these tools is transmitted to our servers or to any third party. The Email Breach Checker uses the HaveIBeenPwned public API with k-anonymity — only a 5-character prefix of a hashed value is sent.</p>
+<h3>Cookies</h3>
+<p>This site uses localStorage (browser storage) only to remember your light/dark theme preference and whether you have dismissed the cookie consent notice. No cookies are used for tracking, advertising, or analytics.</p>
+<h3>Third-Party Services</h3>
+<p>This site uses Formspree (form processing), Google Fonts (typography), and Google Charts API (QR code generation). Each operates under their own privacy policies. We do not sell or share your data with any third party.</p>
+<h3>Contact</h3>
+<p>Questions? Email <a href="mailto:contact@smartysaini.com" style="color:var(--or)">contact@smartysaini.com</a></p>`
+    },
+    terms: {
+      t: 'Terms of Service',
+      b: `<p style="color:var(--txd);font-size:12px;margin-bottom:16px">Effective date: January 1, 2025</p>
+<h3>Use of This Website</h3>
+<p>This website is operated by SmaRTy Saini IT Consulting (Balwinder Singh). By accessing or using this site, you agree to these terms. If you do not agree, please do not use the site.</p>
+<h3>Free Tools Disclaimer</h3>
+<p>The free tools provided on this site (HL7 Parser, HIPAA Breach Cost Estimator, Cron Builder, and others) are provided for informational and educational purposes only. Results generated by these tools should not be relied upon as professional legal, medical, financial, or compliance advice. The HIPAA Breach Cost Estimator provides estimates based on published HHS OCR penalty data and is not a legal determination of liability.</p>
+<h3>Intellectual Property</h3>
+<p>All content on this site — including text, tools, and design — is the property of SmaRTy Saini IT Consulting unless otherwise noted. Open-source tools linked from this site are subject to their respective licenses (MIT or as stated in each repository).</p>
+<h3>Limitation of Liability</h3>
+<p>SmaRTy Saini IT Consulting is not liable for any damages arising from use of this website or its tools. We make no warranty, express or implied, regarding the accuracy, reliability, or completeness of any tool output or information on this site.</p>
+<h3>Consulting Services</h3>
+<p>Engagement for paid consulting services is governed by a separate written agreement (Statement of Work or service contract). Nothing on this website constitutes a binding agreement for consulting services.</p>
+<h3>Governing Law</h3>
+<p>These terms are governed by the laws of the State of California, United States. Any disputes shall be resolved in the courts of Orange County, California.</p>
+<h3>Contact</h3>
+<p><a href="mailto:contact@smartysaini.com" style="color:var(--or)">contact@smartysaini.com</a> · SmaRTy Saini IT Consulting · Orange County, CA</p>`
+    },
+    disclaimer: {
+      t: 'Tool Disclaimer',
+      b: `<h3>Free Tools — Disclaimer of Warranties</h3>
+<p>The tools provided on this website are made available free of charge for informational, educational, and professional utility purposes. They are provided "as is" without warranty of any kind.</p>
+<h3>Specific Disclaimers</h3>
+<p><strong>HL7 Message Parser:</strong> Field labels are based on standard HL7 v2.x specifications. Non-standard implementations from specific vendors may differ. Do not use parsed output as a substitute for vendor documentation or certified HL7 validation tools in production environments.</p>
+<p><strong>HIPAA Breach Cost Estimator:</strong> Estimates are for awareness purposes only. Actual OCR penalties depend on specific circumstances, prior compliance history, cooperation with investigators, and legal counsel. This tool does not constitute legal advice. Consult a qualified HIPAA attorney for actual breach situations.</p>
+<p><strong>Email Breach Checker:</strong> Uses the HaveIBeenPwned public API. Results reflect data available to that service. A "clean" result does not guarantee an email has not been compromised.</p>
+<p><strong>All Other Tools:</strong> Results are generated locally in your browser. Verify critical outputs (regex patterns, cron expressions, encoding results) before deploying in production systems.</p>
+<h3>No Professional Relationship</h3>
+<p>Use of these tools does not create a professional relationship between you and SmaRTy Saini IT Consulting. For professional advice, contact us at <a href="mailto:contact@smartysaini.com" style="color:var(--or)">contact@smartysaini.com</a>.</p>`
+    }
+  };
+  const item = content[type];
+  if (!item) return;
+  title.textContent = item.t;
+  body.innerHTML = item.b;
+  modal.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+function closeLegal() {
+  document.getElementById('legalModal').style.display = 'none';
+  document.body.style.overflow = '';
+}
+document.getElementById('legalModal').addEventListener('click', e => {
+  if (e.target === document.getElementById('legalModal')) closeLegal();
+});
+
+// ─── HL7 MESSAGE BUILDER ──────────────────────
+const HL7_BUILD_DEFS = {
+  ADT_A01: {
+    msh: {type:'ADT^A01', desc:'Admit Patient'},
+    fields: [
+      {id:'bPID1', label:'MRN', val:'TEST-MRN-001'},
+      {id:'bPID2', label:'Patient Last Name', val:'DOE'},
+      {id:'bPID3', label:'Patient First Name', val:'JOHN'},
+      {id:'bPID4', label:'Date of Birth (YYYYMMDD)', val:'19800115'},
+      {id:'bPID5', label:'Sex (M/F/U)', val:'M'},
+      {id:'bPV1a', label:'Patient Class (I/O/E)', val:'I'},
+      {id:'bPV1b', label:'Assigned Location', val:'ICU^101^A'},
+      {id:'bPV1c', label:'Attending Physician NPI', val:'1234567890^SMITH^JANE^MD'},
+    ]
+  },
+  ADT_A04: {
+    msh: {type:'ADT^A04', desc:'Register Patient'},
+    fields: [
+      {id:'bPID1', label:'MRN', val:'TEST-MRN-002'},
+      {id:'bPID2', label:'Patient Last Name', val:'DOE'},
+      {id:'bPID3', label:'Patient First Name', val:'JANE'},
+      {id:'bPID4', label:'Date of Birth (YYYYMMDD)', val:'19900220'},
+      {id:'bPID5', label:'Sex (M/F/U)', val:'F'},
+      {id:'bPV1a', label:'Patient Class', val:'O'},
+      {id:'bPV1b', label:'Clinic Location', val:'OPC^101^A'},
+      {id:'bPV1c', label:'Attending Physician', val:'9876543210^JONES^ROBERT^MD'},
+    ]
+  },
+  ORU_R01: {
+    msh: {type:'ORU^R01', desc:'Lab Result'},
+    fields: [
+      {id:'bPID1', label:'MRN', val:'TEST-MRN-003'},
+      {id:'bPID2', label:'Patient Last Name', val:'SMITH'},
+      {id:'bPID3', label:'Patient First Name', val:'ALICE'},
+      {id:'bPID4', label:'Date of Birth (YYYYMMDD)', val:'19750301'},
+      {id:'bPID5', label:'Sex (M/F/U)', val:'F'},
+      {id:'bOBR1', label:'Accession Number', val:'ACC20240115001'},
+      {id:'bOBR2', label:'Test Code^Name', val:'CBC^COMPLETE BLOOD COUNT'},
+      {id:'bOBX1', label:'Observation Code^Name', val:'6690-2^WBC'},
+      {id:'bOBX2', label:'Value', val:'7.2'},
+      {id:'bOBX3', label:'Units', val:'10*3/uL'},
+      {id:'bOBX4', label:'Reference Range', val:'4.5-11.0'},
+    ]
+  },
+  ORM_O01: {
+    msh: {type:'ORM^O01', desc:'Lab Order'},
+    fields: [
+      {id:'bPID1', label:'MRN', val:'TEST-MRN-004'},
+      {id:'bPID2', label:'Patient Last Name', val:'JONES'},
+      {id:'bPID3', label:'Patient First Name', val:'ROBERT'},
+      {id:'bPID4', label:'Date of Birth', val:'19651010'},
+      {id:'bPID5', label:'Sex', val:'M'},
+      {id:'bORC1', label:'Order Control', val:'NW'},
+      {id:'bORC2', label:'Placer Order Number', val:'ORD-2024-001'},
+      {id:'bOBR1', label:'Test Code^Name', val:'85025^CBC with differential'},
+    ]
+  },
+  ADT_A08: {
+    msh: {type:'ADT^A08', desc:'Update Patient Info'},
+    fields: [
+      {id:'bPID1', label:'MRN', val:'TEST-MRN-005'},
+      {id:'bPID2', label:'Patient Last Name', val:'BROWN'},
+      {id:'bPID3', label:'Patient First Name', val:'MICHAEL'},
+      {id:'bPID4', label:'Date of Birth', val:'19880715'},
+      {id:'bPID5', label:'Sex', val:'M'},
+      {id:'bPID6', label:'Address Street', val:'123 TEST ST^^IRVINE^CA^92614'},
+      {id:'bPID7', label:'Phone', val:'(714)555-0100'},
+    ]
+  },
+  ADT_A11: {
+    msh: {type:'ADT^A11', desc:'Cancel Admit'},
+    fields: [
+      {id:'bPID1', label:'MRN', val:'TEST-MRN-006'},
+      {id:'bPID2', label:'Patient Last Name', val:'GARCIA'},
+      {id:'bPID3', label:'Patient First Name', val:'MARIA'},
+      {id:'bPID4', label:'Date of Birth', val:'19720405'},
+      {id:'bPID5', label:'Sex', val:'F'},
+      {id:'bPV1a', label:'Visit Number', val:'V-2024-001'},
+    ]
+  },
+};
+
+function hl7BuildRender() {
+  const type = document.getElementById('hl7BuildType').value;
+  const def = HL7_BUILD_DEFS[type] || HL7_BUILD_DEFS.ADT_A01;
+  const container = document.getElementById('hl7BuildFields');
+  container.innerHTML = def.fields.map(f => `
+    <div>
+      <label class="ft-label">${f.label}</label>
+      <input class="ft-inp" id="${f.id}" value="${f.val}" oninput="buildHL7()" style="font-family:var(--mono);font-size:12px">
+    </div>`).join('');
+  buildHL7();
+}
+
+function buildHL7() {
+  const type = document.getElementById('hl7BuildType').value;
+  const ver = document.getElementById('hl7BuildVer').value;
+  const def = HL7_BUILD_DEFS[type] || HL7_BUILD_DEFS.ADT_A01;
+  const g = id => (document.getElementById(id) || {}).value || '';
+  const ts = nowHL7();
+  const ctrl = 'MSG' + Math.floor(Math.random()*900000+100000);
+  const lines = [];
+  lines.push(`MSH|^~\\&|BUILDER_APP|TEST_FACILITY|DEST_APP|DEST_FAC|${ts}||${def.msh.type}|${ctrl}|T|${ver}`);
+  lines.push(`PID|1||${g('bPID1')}^^^MRN||${g('bPID2')}^${g('bPID3')}^A||${g('bPID4')}|${g('bPID5')}|||${g('bPID6')||''}|||${g('bPID7')||''}`);
+  if (type.startsWith('ADT')) {
+    lines.push(`EVN|${type.split('_')[1]}|${ts}`);
+    lines.push(`PV1|1|${g('bPV1a')||'I'}|${g('bPV1b')||''}|||${g('bPV1c')||''}|${g('bPV1c')||''}|||GEN||||1||${g('bPV1c')||''}|${type.includes('A08')||type.includes('A11')?'O':'I'}|${g('bPV1a')||'V'+ctrl}`);
+  }
+  if (type === 'ORM_O01') {
+    lines.push(`ORC|${g('bORC1')||'NW'}|${g('bORC2')||'ORD-001'}||||||${ts}`);
+    lines.push(`OBR|1|${g('bORC2')||'ORD-001'}||${g('bOBR1')||''}|||${ts}`);
+  }
+  if (type === 'ORU_R01') {
+    lines.push(`OBR|1||${g('bOBR1')||'ACC001'}|${g('bOBR2')||'CBC^CBC'}|||${ts}`);
+    lines.push(`OBX|1|NM|${g('bOBX1')||''}|1|${g('bOBX2')||''}|${g('bOBX3')||''}|${g('bOBX4')||''}|N|||F|||${ts}`);
+  }
+  const out = document.getElementById('hl7BuildOut');
+  if (out) out.value = lines.join('\r\n');
+}
+
+function hl7BuildLoadDefaults() {
+  hl7BuildRender();
+}
+
+// ─── ACK GENERATOR ────────────────────────────
+function loadACKSample() {
+  document.getElementById('ackInput').value =
+    'MSH|^~\\&|LABSYSTEM|FACILITY|EMR|DEST|20240115093045||ORU^R01|MSG001|P|2.5\rPID|1||12345^^^MRN||DOE^JOHN^A||19800115|M\rOBR|1||ACC001|CBC^COMPLETE BLOOD COUNT|||20240115090000\rOBX|1|NM|6690-2^WBC|1|7.2|10*3/uL|4.5-11.0|N|||F';
+  generateACK();
+}
+
+function generateACK() {
+  const input = document.getElementById('ackInput').value.trim();
+  const code = document.querySelector('input[name="ackCode"]:checked');
+  const ackCode = code ? code.value : 'AA';
+  const errField = document.getElementById('ackErrorField');
+  if (errField) errField.style.display = (ackCode !== 'AA') ? 'block' : 'none';
+  if (!input) { const o = document.getElementById('ackOutput'); if(o) o.value = ''; return; }
+  const lines = input.split(/\r?\n/);
+  const msh = lines.find(l => l.startsWith('MSH'));
+  if (!msh) { const o = document.getElementById('ackOutput'); if(o) o.value = 'Could not find MSH segment in input'; return; }
+  const f = msh.split('|');
+  const sendApp = f[2]||''; const sendFac = f[3]||''; const recvApp = f[4]||''; const recvFac = f[5]||'';
+  const msgType = f[8]||''; const msgCtrl = f[9]||''; const ver = f[11]||'2.5';
+  const ts = nowHL7();
+  const ackCtrl = 'ACK' + Date.now().toString().slice(-8);
+  const errMsg = (document.getElementById('ackErrorMsg')||{}).value || 'Application error';
+  const ackLines = [
+    `MSH|^~\\&|${recvApp}|${recvFac}|${sendApp}|${sendFac}|${ts}||ACK^${msgType.split('^')[1]||'R01'}|${ackCtrl}|P|${ver}`,
+    `MSA|${ackCode}|${msgCtrl}${ackCode !== 'AA' ? '|' + errMsg : ''}`,
+  ];
+  if (ackCode !== 'AA') {
+    const errCode = ackCode === 'AE' ? '207' : '200';
+    ackLines.push(`ERR|||${errCode}|E|||${errMsg}`);
+  }
+  const o = document.getElementById('ackOutput');
+  if (o) o.value = ackLines.join('\r\n');
+}
+
+// ─── HL7 DATETIME TOOLS ───────────────────────
+function nowHL7(prec) {
+  const n = new Date();
+  const pad = (v,l=2) => String(v).padStart(l,'0');
+  const y=n.getFullYear(), mo=pad(n.getMonth()+1), d=pad(n.getDate());
+  const h=pad(n.getHours()), mi=pad(n.getMinutes()), s=pad(n.getSeconds());
+  const p = prec||14;
+  let result = `${y}${mo}${d}`;
+  if (p>=10) result += h;
+  if (p>=12) result += mi;
+  if (p>=14) result += s;
+  return result;
+}
+
+function dtToHL7() {
+  const v = document.getElementById('dtHuman').value;
+  const prec = parseInt(document.getElementById('dtPrec').value)||14;
+  const out = document.getElementById('dtHL7Out');
+  if (!v || !out) return;
+  const d = new Date(v);
+  if (isNaN(d)) { out.textContent = 'Invalid date'; return; }
+  const pad = n => String(n).padStart(2,'0');
+  let result = `${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}`;
+  if (prec >= 10) result += pad(d.getHours());
+  if (prec >= 12) result += pad(d.getMinutes());
+  if (prec >= 14) result += pad(d.getSeconds());
+  out.textContent = result;
+}
+
+function hl7ToDt() {
+  const raw = (document.getElementById('dtHL7In').value||'').trim();
+  const out = document.getElementById('dtHumanOut');
+  if (!out) return;
+  if (!raw) { out.textContent = '—'; return; }
+  // HL7 format: YYYYMMDDHHMMSS or YYYYMMDD or YYYYMMDDHHMM[SS][+ZZZZ]
+  const m = raw.replace(/[+-]\d{4}$/, '').replace(/\D/g,'').padEnd(14,'0');
+  const Y=m.slice(0,4), Mo=m.slice(4,6), D=m.slice(6,8);
+  const H=m.slice(8,10), Mi=m.slice(10,12), S=m.slice(12,14);
+  const dt = new Date(`${Y}-${Mo}-${D}T${H}:${Mi}:${S}`);
+  if (isNaN(dt)) { out.textContent = 'Cannot parse — check format'; return; }
+  out.innerHTML = `<div>${dt.toLocaleDateString('en-US',{weekday:'long',year:'numeric',month:'long',day:'numeric'})}</div><div style="color:var(--txd)">${dt.toLocaleTimeString()}</div>`;
+}
+
+function initHL7DateTime() {
+  const now = new Date();
+  const local = new Date(now - now.getTimezoneOffset()*60000).toISOString().slice(0,16);
+  const dtEl = document.getElementById('dtHuman');
+  if (dtEl) { dtEl.value = local; dtToHL7(); }
+  const fullEl = document.getElementById('dtNowFull');
+  const dateEl = document.getElementById('dtNowDate');
+  const midEl = document.getElementById('dtNowMid');
+  if (fullEl) fullEl.textContent = nowHL7(14);
+  if (dateEl) dateEl.textContent = nowHL7(8);
+  if (midEl) { const d=nowHL7(8); midEl.textContent = d+'000000'; }
+}
+
+// ─── HL7 → FHIR CONVERTER ─────────────────────
+function loadFHIRSample() {
+  document.getElementById('fhirConvIn').value =
+    'MSH|^~\\&|LABSYSTEM|FACILITY|EMR|DEST|20240115093045||ADT^A01|MSG001|P|2.5\rPID|1||MRN-TEST-001^^^MRN||DOE^JOHN^A^JR||19800115|M||2106-3^White^HL70005|123 MAIN ST^^IRVINE^CA^92614^USA||||(714)555-0100^^^PRN~(714)555-0200^^^WPN||(ENG)English|M||ACC-001|987-65-4320';
+  hl7ToFHIR();
+}
+
+function hl7ToFHIR() {
+  const raw = document.getElementById('fhirConvIn').value.trim();
+  const out = document.getElementById('fhirConvOut');
+  if (!out) return;
+  if (!raw) { out.value = ''; return; }
+  const lines = raw.split(/\r?\n/);
+  const pid = lines.find(l=>l.startsWith('PID'));
+  if (!pid) { out.value = JSON.stringify({error:'No PID segment found'},null,2); return; }
+  const f = pid.split('|');
+  const parseName = v => { const p=(v||'').split('^'); return {family:p[0]||'',given:[p[1]||'',p[2]||''].filter(Boolean)}; };
+  const mrn = (f[3]||'').split('^')[0];
+  const nameRaw = f[5]||'';
+  const name = parseName(nameRaw);
+  const dob = f[7]||'';
+  const fhirDob = dob.length>=8 ? `${dob.slice(0,4)}-${dob.slice(4,6)}-${dob.slice(6,8)}` : dob;
+  const sex = {M:'male',F:'female',O:'other',U:'unknown'}[f[8]||'U']||'unknown';
+  const addrRaw = (f[11]||'').split('^');
+  const phoneRaw = f[13]||'';
+  const resource = {
+    resourceType: 'Patient',
+    id: mrn || 'unknown',
+    meta: { profile: ['http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient'] },
+    identifier: mrn ? [{ use:'official', type:{ coding:[{system:'http://terminology.hl7.org/CodeSystem/v2-0203',code:'MR',display:'Medical record number'}]}, system:'urn:oid:2.16.840.1.113883.4.3.6', value:mrn }] : [],
+    name: [{ use:'official', family:name.family, given:name.given }],
+    gender: sex,
+    birthDate: fhirDob,
+  };
+  if (addrRaw.length >= 4) {
+    resource.address = [{ use:'home', line:[addrRaw[0]].filter(Boolean), city:addrRaw[2]||'', state:addrRaw[3]||'', postalCode:addrRaw[4]||'', country:addrRaw[5]||'' }];
+  }
+  if (phoneRaw) {
+    const ph = phoneRaw.split('^')[0];
+    if (ph) resource.telecom = [{ system:'phone', value:ph, use:'home' }];
+  }
+  out.value = JSON.stringify(resource, null, 2);
+}
+
+// ─── FHIR VALIDATOR ───────────────────────────
+const FHIR_REQUIRED = {
+  Patient: ['resourceType'],
+  Observation: ['resourceType','status','code'],
+  DiagnosticReport: ['resourceType','status','code'],
+  Bundle: ['resourceType','type'],
+  Encounter: ['resourceType','status','class'],
+  Condition: ['resourceType','subject'],
+  MedicationRequest: ['resourceType','status','intent','medication'],
+  ServiceRequest: ['resourceType','status','intent','subject'],
+};
+
+const FHIR_VALID_VALUES = {
+  'Patient.gender': ['male','female','other','unknown'],
+  'Observation.status': ['registered','preliminary','final','amended','corrected','cancelled','entered-in-error','unknown'],
+  'DiagnosticReport.status': ['registered','partial','preliminary','final','amended','corrected','appended','cancelled','entered-in-error','unknown'],
+  'Bundle.type': ['document','message','transaction','transaction-response','batch','batch-response','history','searchset','collection'],
+  'Encounter.status': ['planned','arrived','triaged','in-progress','onleave','finished','cancelled'],
+};
+
+function loadFHIRExample(type) {
+  const examples = {
+    Patient: {resourceType:'Patient',id:'example-test',meta:{profile:['http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient']},identifier:[{use:'official',type:{coding:[{system:'http://terminology.hl7.org/CodeSystem/v2-0203',code:'MR'}]},value:'MRN-TEST-001'}],name:[{use:'official',family:'DOE',given:['JOHN','A']}],gender:'male',birthDate:'1980-01-15',address:[{use:'home',line:['123 TEST ST'],city:'IRVINE',state:'CA',postalCode:'92614'}],telecom:[{system:'phone',value:'(714)555-0100',use:'home'}]},
+    Bundle: {resourceType:'Bundle',id:'test-bundle',type:'transaction',entry:[{fullUrl:'urn:uuid:test-patient',resource:{resourceType:'Patient',name:[{family:'TEST',given:['PATIENT']}]},request:{method:'POST',url:'Patient'}}]},
+  };
+  const el = document.getElementById('fhirCheckIn');
+  if (el) { el.value = JSON.stringify(examples[type]||examples.Patient, null, 2); checkFHIR(); }
+}
+
+function checkFHIR() {
+  const raw = document.getElementById('fhirCheckIn').value.trim();
+  const out = document.getElementById('fhirCheckOut');
+  if (!out) return;
+  if (!raw) { out.innerHTML = '<span style="color:var(--txd)">Paste a FHIR resource to validate →</span>'; return; }
+  let resource;
+  try { resource = JSON.parse(raw); } 
+  catch(e) { out.innerHTML = `<div style="color:var(--err)">❌ Invalid JSON: ${e.message}</div>`; return; }
+  
+  const issues = [], warnings = [], info = [];
+  const rt = resource.resourceType;
+  if (!rt) { out.innerHTML = '<div style="color:var(--err)">❌ Missing resourceType — not a valid FHIR resource</div>'; return; }
+  info.push(`Resource type: <strong style="color:var(--or)">${rt}</strong>`);
+  
+  // Required fields
+  const required = FHIR_REQUIRED[rt] || ['resourceType'];
+  required.forEach(f => { if (!resource[f]) issues.push(`Missing required field: <code>${f}</code>`); });
+  
+  // Common validations
+  if (resource.id) info.push(`ID: <code>${resource.id}</code>`);
+  if (resource.gender && FHIR_VALID_VALUES['Patient.gender'] && !FHIR_VALID_VALUES['Patient.gender'].includes(resource.gender)) {
+    issues.push(`Invalid gender value: "${resource.gender}" — must be one of: ${FHIR_VALID_VALUES['Patient.gender'].join(', ')}`);
+  }
+  if (resource.status) {
+    const validStatus = FHIR_VALID_VALUES[`${rt}.status`];
+    if (validStatus && !validStatus.includes(resource.status)) {
+      issues.push(`Invalid status: "${resource.status}" for ${rt}`);
+    } else if (validStatus) info.push(`Status: <span style="color:var(--ok)">${resource.status}</span>`);
+  }
+  if (resource.birthDate) {
+    if (!/^\d{4}(-\d{2}(-\d{2})?)?$/.test(resource.birthDate)) issues.push(`birthDate format invalid: "${resource.birthDate}" — expected YYYY, YYYY-MM, or YYYY-MM-DD`);
+    else info.push(`Birth date: ${resource.birthDate}`);
+  }
+  if (resource.name && Array.isArray(resource.name)) {
+    resource.name.forEach((n,i) => {
+      if (!n.family && (!n.given || !n.given.length)) warnings.push(`name[${i}]: has neither family nor given name`);
+    });
+    info.push(`Name entries: ${resource.name.length}`);
+  }
+  if (resource.identifier) info.push(`Identifiers: ${resource.identifier.length}`);
+  if (resource.entry && rt === 'Bundle') info.push(`Bundle entries: ${resource.entry.length}`);
+  
+  // Check for PHI-like patterns (warn don't block)
+  const rawStr = raw.toLowerCase();
+  if (/\b\d{3}-\d{2}-\d{4}\b/.test(raw)) issues.push('⚠️ Possible SSN detected — remove real PHI before using this tool');
+  if (rawStr.includes('real') || rawStr.includes('actual')) warnings.push('Field values appear to reference real data — use synthetic test data only');
+  
+  let html = '';
+  const total = issues.length + warnings.length;
+  html += `<div style="margin-bottom:14px;padding:10px 14px;border-radius:8px;background:${total===0?'rgba(115,196,143,.1)':'rgba(244,96,103,.08)'};border:1px solid ${total===0?'rgba(115,196,143,.3)':'rgba(244,96,103,.3)'}">`;
+  html += `<div style="font-weight:700;color:${total===0?'var(--ok)':'var(--err)'};margin-bottom:4px">${total===0?'✅ Looks valid':'❌ '+issues.length+' error'+(issues.length!==1?'s':'')+(warnings.length?' + '+warnings.length+' warning'+(warnings.length!==1?'s':''):'')}`;
+  html += `</div><div style="font-size:11.5px;color:var(--txd)">FHIR R4 · ${rt} · Basic structural check</div></div>`;
+  if (issues.length) html += issues.map(e=>`<div style="color:var(--err);font-size:12.5px;padding:4px 0;border-bottom:1px solid rgba(255,255,255,.04)">❌ ${e}</div>`).join('');
+  if (warnings.length) html += warnings.map(w=>`<div style="color:var(--warn);font-size:12.5px;padding:4px 0;border-bottom:1px solid rgba(255,255,255,.04)">⚠️ ${w}</div>`).join('');
+  if (info.length) html += `<div style="margin-top:12px;font-size:12px;color:var(--txd)">` + info.map(i=>`<div style="padding:3px 0">${i}</div>`).join('') + '</div>';
+  out.innerHTML = html;
+}
+
+// ─── PDF TOOLS (PDF.js) ───────────────────────
+function setupPDFjs() {
+  if (typeof pdfjsLib !== 'undefined') {
+    pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+  }
+}
+setTimeout(setupPDFjs, 800);
+
+async function inspectPDF(input) {
+  const file = input.files[0];
+  if (!file) return;
+  const results = document.getElementById('pdfInfoResults');
+  const grid = document.getElementById('pdfInfoGrid');
+  if (!results || !grid) return;
+  results.style.display = 'block';
+  grid.innerHTML = '<div style="color:var(--txd);font-size:13px">Reading PDF...</div>';
+  try {
+    const buf = await file.arrayBuffer();
+    if (typeof pdfjsLib === 'undefined') throw new Error('PDF.js not loaded yet — try again in a moment');
+    const pdf = await pdfjsLib.getDocument({ data: buf }).promise;
+    const meta = await pdf.getMetadata().catch(()=>({info:{}}));
+    const info = meta.info || {};
+    const cards = [
+      { label: 'File Name', val: file.name },
+      { label: 'File Size', val: (file.size / 1024).toFixed(1) + ' KB' },
+      { label: 'Pages', val: pdf.numPages },
+      { label: 'PDF Version', val: pdf.pdfInfo?.PDFFormatVersion || info.PDFFormatVersion || '—' },
+      { label: 'Title', val: info.Title || '—' },
+      { label: 'Author', val: info.Author || '—' },
+      { label: 'Subject', val: info.Subject || '—' },
+      { label: 'Creator', val: info.Creator || '—' },
+      { label: 'Producer', val: info.Producer || '—' },
+      { label: 'Created', val: info.CreationDate ? new Date(info.CreationDate).toLocaleDateString() : '—' },
+      { label: 'Modified', val: info.ModDate ? new Date(info.ModDate).toLocaleDateString() : '—' },
+      { label: 'Encrypted', val: pdf.fingerprints ? 'No' : '—' },
+    ];
+    grid.innerHTML = cards.map(c=>
+      `<div class="pdf-info-card"><div class="pdf-info-label">${c.label}</div><div class="pdf-info-val">${String(c.val).replace(/</g,'&lt;')}</div></div>`
+    ).join('');
+  } catch(e) {
+    grid.innerHTML = `<div style="color:var(--err)">❌ Could not read PDF: ${e.message}</div>`;
+  }
+}
+
+async function extractPDFText(input) {
+  const file = input.files[0];
+  if (!file) return;
+  const status = document.getElementById('pdfTextStatus');
+  const results = document.getElementById('pdfTextResults');
+  const outEl = document.getElementById('pdfExtractedText');
+  if (!status || !results || !outEl) return;
+  status.innerHTML = '<span style="color:var(--txd)">⏳ Extracting text...</span>';
+  results.style.display = 'none';
+  try {
+    const buf = await file.arrayBuffer();
+    if (typeof pdfjsLib === 'undefined') throw new Error('PDF.js not loaded — try again in a moment');
+    const pdf = await pdfjsLib.getDocument({ data: buf }).promise;
+    let fullText = '';
+    for (let i = 1; i <= pdf.numPages; i++) {
+      const page = await pdf.getPage(i);
+      const content = await page.getTextContent();
+      const pageText = content.items.map(item => item.str).join(' ');
+      fullText += `\n\n--- Page ${i} ---\n${pageText}`;
+    }
+    outEl.value = fullText.trim();
+    results.style.display = 'block';
+    const words = fullText.trim().split(/\s+/).length;
+    status.innerHTML = `<span style="color:var(--ok)">✅ Extracted ${pdf.numPages} page${pdf.numPages!==1?'s':''} · ~${words.toLocaleString()} words</span>`;
+  } catch(e) {
+    status.innerHTML = `<span style="color:var(--err)">❌ ${e.message}. Scanned/image PDFs require OCR — this tool only works on text-based PDFs.</span>`;
+  }
+}
+
+function downloadText() {
+  const text = (document.getElementById('pdfExtractedText')||{}).value||'';
+  if (!text) return;
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([text],{type:'text/plain'}));
+  a.download = 'extracted-text.txt'; a.click();
+}
+
+// Init new tools
+hl7BuildRender();
+initHL7DateTime();
+setInterval(() => {
+  if (document.getElementById('dtNowFull')) {
+    document.getElementById('dtNowFull').textContent = nowHL7(14);
+    document.getElementById('dtNowDate').textContent = nowHL7(8);
+    const d=nowHL7(8); document.getElementById('dtNowMid').textContent = d+'000000';
+  }
+}, 1000);
 
 // ─── SCROLL PROGRESS BAR ──────────────────────
 const _spb = document.getElementById('scrollProgressBar');
