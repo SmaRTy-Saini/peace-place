@@ -1,0 +1,5 @@
+Contact: mailto:contact@smartysaini.com
+Expires: 2027-08-09T23:59:59Z
+Canonical: https://smartysaini.com/.well-known/security.txt
+Preferred-Languages: en
+Policy: https://smartysaini.com/SECURITY.md

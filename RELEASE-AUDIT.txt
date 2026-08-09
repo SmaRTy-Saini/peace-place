@@ -1,0 +1,49 @@
+SmaRTy Saini GitHub Pages Release Audit
+Date: 2026-08-09
+Domain: https://smartysaini.com/
+
+AUDITED CONTENT
+- 24 HTML pages parsed
+- 21 indexable SEO pages
+- 21 sitemap URLs
+- Unique page titles and canonical URLs
+- Local links, assets, and internal fragments checked
+- JSON-LD parsed successfully
+- CNAME and .nojekyll present
+- robots.txt points to sitemap.xml
+- .well-known/security.txt included
+
+SECURITY CHECKS
+- No detected private keys, API keys, GitHub tokens, OpenAI-style secrets, or password assignments
+- No insecure http:// asset references (standards namespace declarations excluded)
+- No inline executable JavaScript
+- No inline event handlers
+- No innerHTML / outerHTML / insertAdjacentHTML / document.write / eval / new Function in site JavaScript
+- target=_blank links use noopener + noreferrer
+- Defense-in-depth meta Content Security Policy on all HTML pages
+- strict-origin-when-cross-origin referrer policy on all HTML pages
+- Contact form is POST over HTTPS to FormSubmit
+- Honeypot present; FormSubmit CAPTCHA is not disabled
+- PHI warning present at the contact form
+- Contact input lengths constrained
+- Credential verifier JS externalized and input constrained
+- Credential verifier uses DOM textContent/createElement, not HTML injection sinks
+- SSC-INT-26-MFJMY7 SHA-256 fingerprint present; raw certificate reference is not stored in verifier source
+
+FUNCTIONAL CHECKS
+- assets/site.js syntax passed Node.js parser
+- assets/verify.js syntax passed Node.js parser
+- Work filter logic passed mock-DOM tests for All, Lab Operations, Security, URL filter state, result counts, and mobile-menu state
+- Credential logic passed mock-DOM tests for valid credential and injection-shaped invalid input
+- share-card.png verified: 1200x630
+- balwinder-singh.webp verified as a valid image
+- CSS brace balance: 0
+
+GITHUB PAGES DEPLOYMENT ITEMS THAT MUST BE VERIFIED IN GITHUB/DNS
+- Settings > Pages > Enforce HTTPS must be ON
+- smartysaini.com should be verified in GitHub Pages domain settings
+- Avoid wildcard DNS records for the Pages domain
+- FormSubmit must be activated for contact@smartysaini.com before relying on lead delivery
+
+IMPORTANT STATIC-HOSTING LIMITATION
+GitHub Pages does not give this repository control over arbitrary HTTP response security headers. The site includes a meta CSP as defense in depth. If you later want full response-header controls (for example HSTS/CSP/X-Frame-Options-style protections at the edge), place a controlled CDN/reverse proxy such as your own Cloudflare configuration in front of Pages.
