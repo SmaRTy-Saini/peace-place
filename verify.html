@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Certificate Verification | SmaRTy Saini IT Consulting</title>
+<meta name="robots" content="noindex, follow">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230E6E68'/><text x='50' y='70' font-size='54' text-anchor='middle' fill='white' font-family='Arial Black'>S</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#F5F8F7;--card:#fff;--ink:#14262D;--muted:#54696F;--teal:#0E6E68;--teal-dk:#0A5450;--line:#DAE5E2;--mint:#E4EFEC;--pine:#0B3230;--amber:#E8A13B;--err:#C0452E;--disp:'Bricolage Grotesque',sans-serif;--body:'Public Sans',sans-serif;--mono:'IBM Plex Mono',monospace}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--body);color:var(--ink);background:var(--paper);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--teal)}
+nav{background:rgba(245,248,247,.92);border-bottom:1px solid var(--line)}
+.nav-in{max-width:720px;margin:0 auto;padding:0 22px;height:64px;display:flex;align-items:center;gap:10px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-family:var(--disp);font-weight:700;font-size:16px}
+.logo-mark{width:32px;height:32px;border-radius:8px;background:var(--teal);color:#fff;display:flex;align-items:center;justify-content:center;font-size:16px}
+main{max-width:640px;margin:0 auto;padding:56px 22px 80px}
+.badge{display:inline-flex;align-items:center;gap:9px;border-radius:100px;padding:9px 18px;font-weight:700;font-size:14.5px;margin-bottom:22px}
+.badge.ok{background:#E4F3EC;color:#1E7A4C}
+.badge.bad{background:#FBEAE6;color:var(--err)}
+.dot{width:9px;height:9px;border-radius:50%}
+.badge.ok .dot{background:#1E7A4C}
+.badge.bad .dot{background:var(--err)}
+h1{font-family:var(--disp);font-size:1.7rem;font-weight:700;margin-bottom:6px}
+.sub{color:var(--muted);font-size:15px;margin-bottom:30px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:28px 30px;margin-bottom:20px}
+.row{display:flex;justify-content:space-between;gap:20px;padding:12px 0;border-bottom:1px solid var(--paper)}
+.row:last-child{border-bottom:none}
+.row .k{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--teal);flex-shrink:0}
+.row .v{font-weight:600;text-align:right}
+.foot-note{font-size:13.5px;color:var(--muted);text-align:center;margin-top:24px}
+.searchbox{display:flex;gap:8px;margin-bottom:30px}
+.searchbox input{flex:1;padding:12px 14px;border:1.5px solid var(--line);border-radius:9px;font-family:var(--mono);font-size:14px;background:var(--card)}
+.searchbox button{padding:12px 20px;border:none;border-radius:9px;background:var(--teal);color:#fff;font-weight:700;cursor:pointer}
+.searchbox button:hover{background:var(--teal-dk)}
+footer{background:var(--pine);color:#A9C6C1;padding:26px 22px;text-align:center;font-size:13px;margin-top:40px}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-in">
+    <a class="logo" href="https://smartysaini.com"><span class="logo-mark">S</span>SmaRTy Saini IT Consulting</a>
+  </div>
+</nav>
+
+<main>
+  <div class="searchbox">
+    <input id="idInput" type="text" placeholder="Enter certificate reference number, e.g. SSC/INT/xxxxx">
+    <button onclick="lookup()">Verify</button>
+  </div>
+
+  <div id="result"></div>
+
+  <p class="foot-note">This page confirms whether a certificate reference number was issued by SmaRTy Saini IT Consulting. Contact <a href="mailto:contact@smartysaini.com">contact@smartysaini.com</a> for anything this page can't answer.</p>
+</main>
+
+<footer>&copy; 2026 SmaRTy Saini IT Consulting</footer>
+
+<script>
+// ---- certificate records ----
+// Add one entry per certificate issued. Key = reference number
+// (normalize slashes/dashes, the lookup below ignores formatting differences).
+const RECORDS = {
+  "SSCINT0001": {
+    name: "Harmandeep Singh",
+    refNo: "SSC/INT/0001",
+    domain: "Machine Learning",
+    institution: "GNA University",
+    duration: "June 22, 2026 \u2013 August 6, 2026",
+    grade: "A+",
+    issuedBy: "Balwinder Singh, Founder & Director",
+  },
+};
+
+function normalize(s) {
+  return (s || "").toUpperCase().replace(/[^A-Z0-9]/g, "");
+}
+
+function render(record, queried) {
+  const el = document.getElementById("result");
+  if (!record) {
+    el.innerHTML = `
+      <div class="badge bad"><span class="dot"></span>Not found</div>
+      <h1>No certificate matches "${queried}"</h1>
+      <p class="sub">Double-check the reference number printed on the certificate, or contact us directly to confirm authenticity.</p>
+    `;
+    return;
+  }
+  el.innerHTML = `
+    <div class="badge ok"><span class="dot"></span>Verified certificate</div>
+    <h1>${record.name}</h1>
+    <p class="sub">This certificate record was issued by SmaRTy Saini IT Consulting.</p>
+    <div class="card">
+      <div class="row"><span class="k">Reference No.</span><span class="v">${record.refNo}</span></div>
+      <div class="row"><span class="k">Domain</span><span class="v">${record.domain}</span></div>
+      <div class="row"><span class="k">Institution</span><span class="v">${record.institution}</span></div>
+      <div class="row"><span class="k">Duration</span><span class="v">${record.duration}</span></div>
+      <div class="row"><span class="k">Grade</span><span class="v">${record.grade}</span></div>
+      <div class="row"><span class="k">Issued By</span><span class="v">${record.issuedBy}</span></div>
+    </div>
+  `;
+}
+
+function lookup() {
+  const raw = document.getElementById("idInput").value;
+  const key = normalize(raw);
+  render(RECORDS[key], raw);
+  const url = new URL(window.location);
+  url.searchParams.set("id", raw);
+  history.replaceState(null, "", url);
+}
+
+// auto-run if the page was opened with ?id=... (this is what the QR code links to)
+window.addEventListener("DOMContentLoaded", () => {
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get("id");
+  if (id) {
+    document.getElementById("idInput").value = id;
+    lookup();
+  }
+});
+</script>
+</body>
+</html>
