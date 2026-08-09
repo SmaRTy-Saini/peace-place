@@ -1,40 +1,12 @@
-# 🐧 SmaRTyOS — Personal Portfolio Operating System
+# SmaRTy Saini — GitHub Pages site
 
-This repository contains the source code for **SmaRTyOS**, a custom-designed, interactive portfolio OS built exclusively for **SmaRTy Saini**.
+Production-ready static site for `smartysaini.com`.
 
-It exists solely as a **showcase**, not as an open-source project.
+## Positioning
+One technical partner across Tier 1–3 IT support, networking, infrastructure, cybersecurity, cloud, healthcare/laboratory IT, interoperability, automation, and custom software.
 
----
+## Design
+Restores the original SmaRTy Saini typography: Bricolage Grotesque, Public Sans, and IBM Plex Mono, with the cream / deep-pine / teal visual system. Fonts load from Google Fonts.
 
-## 🔒 Important Notice
-This is a **closed, personal project**.  
-The code, design, structure, UI/UX, and all related assets are **not open-source**.
-
-- ❌ No pull requests  
-- ❌ No forks  
-- ❌ No reuse  
-- ❌ No derivative works  
-- ❌ No redistribution  
-
-All rights are reserved by the author.
-
----
-
-## 📄 License
-This project is released under a **strict All Rights Reserved license**.  
-See `LICENSE` for details.
-
----
-
-## 📢 Security & Abuse
-To report any unauthorized use, plagiarism, or code scraping, see `SECURITY.md`.
-
----
-
-## 📬 Contact
-This OS is part of my personal brand presence online.  
-If you need to reach me:
-
-- GitHub: https://github.com/smarty-saini  
-- LinkedIn: https://linkedin.com/in/smartysaini  
-- Website: https://smartysaini.com
+## Deploy
+Replace the contents of the GitHub Pages repository with this folder, commit, and push. `CNAME` and `.nojekyll` are included.
