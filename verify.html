@@ -49,7 +49,7 @@ footer{background:var(--pine);color:#A9C6C1;padding:26px 22px;text-align:center;
 
 <main>
   <div class="searchbox">
-    <input id="idInput" type="text" placeholder="Enter certificate reference number, e.g. SSC/INT/xxxxx">
+    <input id="idInput" type="text" placeholder="Enter certificate reference number, e.g. SSC-INT-26-MFJMY7">
     <button onclick="lookup()">Verify</button>
   </div>
 
@@ -64,10 +64,15 @@ footer{background:var(--pine);color:#A9C6C1;padding:26px 22px;text-align:center;
 // ---- certificate records ----
 // Add one entry per certificate issued. Key = reference number
 // (normalize slashes/dashes, the lookup below ignores formatting differences).
+//
+// ID scheme: SSC-INT-{YY}-{6 random chars from ABCDEFGHJKMNPQRSTUVWXYZ23456789}
+// That charset skips 0/O and 1/I/L on purpose, so a certificate ID is never
+// ambiguous when read aloud or handwritten. Generate a new one with:
+//   node -e "const c='ABCDEFGHJKMNPQRSTUVWXYZ23456789';let s='';for(let i=0;i<6;i++)s+=c[Math.floor(Math.random()*c.length)];console.log('SSC-INT-26-'+s)"
 const RECORDS = {
-  "SSCINT0001": {
+  "SSCINT26MFJMY7": {
     name: "Harmandeep Singh",
-    refNo: "SSC/INT/0001",
+    refNo: "SSC-INT-26-MFJMY7",
     domain: "Machine Learning",
     institution: "GNA University",
     duration: "June 22, 2026 \u2013 August 6, 2026",
